@@ -1,3 +1,3 @@
-# Cursuri
+# Courses (in Romanian)
 
-Acces pentru cursurile de "Medii vizuale de programare" si "Sisteme computationale inteligente"
+"Visual Programming" and "Computational Intelligence" courses 
