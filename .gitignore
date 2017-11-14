@@ -17,3 +17,5 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+/Introducere_in_data_science/cursuri/Curs1/.ipynb_checkpoints
+/Introducere_in_data_science/laboratoare/Laborator1/.ipynb_checkpoints
