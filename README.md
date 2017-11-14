@@ -1,3 +1,5 @@
-# Courses (in Romanian)
+# Cursuri
 
-"Visual Programming" and "Computational Intelligence" courses 
+* Medii vizuale de programare
+* Sisteme computationale inteligente
+* Introducere in Data Science
