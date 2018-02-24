@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Laborator1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Laborator2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Laborator-1">Laborator 1<a class="anchor-link" href="#Laborator-1">&#182;</a></h1>
+<h1 id="Laborator-2">Laborator 2<a class="anchor-link" href="#Laborator-2">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11783,21 +11783,21 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Instalare-Anaconda">Instalare Anaconda<a class="anchor-link" href="#Instalare-Anaconda">&#182;</a></h2><ol>
-<li>Se descarca <a href="https://www.anaconda.com/download/">Anaconda</a>; folositi versiunea pe 64 de biti daca sistemul de operare este de acelasi tip.</li>
-<li>Pe parcursul instalarii se alege "Install just for me" - nu neceista drepturi de adminstrare pe calculatorul respectiv
-<img src="./images/img1.png" alt="Just for me"></li>
-<li>Pentru destination folder alegeti o unitate si un director pentru care aveti drepturi de scriere, de ex. D:\lucru</li>
-<li>Bifa de "Add Anaconda to my path environment variable" sa fie debifata, cea de "Register Anaconda..." bifata:
-<img src="./images/img2.png" alt="bife"></li>
-<li>Actualizarea pachetelor se face in doi pasi:<ol>
-<li>Se actualizeaza managerul de pachete conda:
-<code>conda update conda</code></li>
-<li>Se actualizeaza pachetele instalate:
-<code>conda update --all</code>
-Se poate specifica optiunea <code>--yes</code> pentru ca actualizarea sa se faca fara a mai astepta raspunsul utilizatorului: <code>conda update --all --yes</code>.
-Prima comanda se paote da doar in mediul <code>base</code> (a se vedea mai jos despre medii). A doua comanda poate fi data in orice mediu. </li>
-</ol>
+<h2 id="1.-Liste,-dictionare,-multimi">1. Liste, dictionare, multimi<a class="anchor-link" href="#1.-Liste,-dictionare,-multimi">&#182;</a></h2><ol>
+<li>Dandu-se o lista, sa se inverseze ordinea elementelor. Exista cel putin Jdoua variante de rezolvare: slicing si folosind o metoda a tipului lista.</li>
+<li>Pentru o lista de cuvinte (stringuri), sa se obtina un dictionar care are drept cheie cuvintele distincte din lista, iar valorile corespunzatoare sa fie numarul de aparitii ale fiecarui cuvant</li>
+<li>Dandu-se o lista de tuple binare, sa se obtina o lista care contine valoarea maxima a fiecarui tuplu.</li>
+<li>Sa se calculeze suma numerelor de indice par si produsul numerelor de indice impar dintr-o lista. </li>
+<li>Documentati-va asupra tipului de date Set (multime) si folositi-l pentru a determina elementele unice dintr-o lista de numere.</li>
+<li>Pentru o lista de stringuri si un numar n &gt; 1, sa se produca o lista care contine toate stringurile din lista initiala cu toate numere 1..n. 
+Exemplu: pentru lista = ['a', 'b', 'c'], n=2 se va produce lista_2 = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']; ordinea poate sa difere. Incercati o implementare bazata pe list comprehension.</li>
+<li>Dandu-se o lista de cuvinte, sa se produca o alta lista cu aceleasi cuvinte, dar: prima litera a fiecarui cuvant sa fie mare, celelalte din cuvant - mici. </li>
+<li>Documentati-va si explicati comportamentul pentru urmatoarea secventa de cod:<div class="highlight"><pre><span></span><span class="n">this</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;am&#39;</span><span class="p">,</span> <span class="s1">&#39;not&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;crook&#39;</span><span class="p">]</span>
+<span class="n">that</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;am&#39;</span><span class="p">,</span> <span class="s1">&#39;not&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;crook&#39;</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Test 1:&quot;</span><span class="p">,</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">that</span><span class="p">)</span>
+<span class="n">that</span> <span class="o">=</span> <span class="n">this</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Test 2:&quot;</span><span class="p">,</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">that</span><span class="p">)</span>
+</pre></div>
 </li>
 </ol>
 
@@ -11808,59 +11808,61 @@ Prima comanda se paote da doar in mediul <code>base</code> (a se vedea mai jos d
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Setare-mediu-virtual,-instalare-de-pachete">Setare mediu virtual, instalare de pachete<a class="anchor-link" href="#Setare-mediu-virtual,-instalare-de-pachete">&#182;</a></h2><p>In Anaconda se pot defini medii virtuale (virtual environments). Avantajul acestora este ca se permite ca intr-un mediu sa fie instalate pachete cu dependinte specifice fara a interfera cu pachetele din alte medii.</p>
-<p>Implicit, la instalarea Anaconda se creeaza un mediu <code>base</code>. Se pot crea medii virtuale urmand pasii de mai jos.</p>
+<h2 id="2.-Functii">2. Functii<a class="anchor-link" href="#2.-Functii">&#182;</a></h2><ol>
+<li>Pentru o lista de numere, sa se scrie o functie care returneaza suma elementelor si diferenta maxima dintre ele.</li>
+<li>Scrieti o functie care preia doua liste si returneaza <code>True</code> daca cele doua liste contin cel putin k elemente comune (k dat ca parametru, intreg &gt;= 1, valoare implicita 1), <code>False</code> altfel.</li>
+<li>Sa se scrie o functie care determina daca o lista contine doar cuvinte. Functia trebuie sa testeze daca elementele din lista sunt stringuri; un string este cuvant daca nu contine: spatiu, virgula si alti separatori.</li>
+<li>Sa se scrie o functie care returneaza numarul de litere mici si mari - 2 rezultate - dintr-un parametru dat.</li>
+<li>Sa se scrie o functie care primind o lista de dictionare, returneaza <code>True</code> daca toate dictionarele sunt goale si <code>False</code> altfel.</li>
+<li>Sa se scrie o functie recursiva care sa faca ridicarea la putere a unui numar, astfel:
+$$
+a^n = \begin{cases}
+a &amp; \text{daca }n=1
+\\
+\left(a^{n//2}\right)^2 &amp; \text{daca } n \text{ e par}
+\\
+\left(a^{n//2}\right)^2 \cdot a &amp; \text{daca } n \text{ e impar}, n&gt;1
+\\
+\end{cases}
+$$
+unde prin $n//2$ se reprezinta catul impartirii intregi intre $n$ si 2.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-Exercitii-simple-folosind-API-de-NumPy">3. Exercitii simple folosind API de NumPy<a class="anchor-link" href="#3.-Exercitii-simple-folosind-API-de-NumPy">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>Creati un mediu virtual (virtual environment) de data-science cu comanda:
-<pre><code>conda create --name data-science python=3.6 anaconda --yes</code></pre>
-Trecerea in mediul virtual se face cu:
-<pre><code>activate data-science</code></pre>
-iar iesirea cu:
-<pre><code>deactivate</code></pre>
-Lista mediilor virtuale se obtine prin:
-<pre><code>conda info --envs</code></pre>
-</li>
-<li>Instalati pachete auxiliare pentru Jupyter notebook:
-<pre><code>conda install -c conda-forge jupyter_contrib_nbextensions
-jupyter contrib nbextension install --user</code></pre>
-</li>
-<li>Se pot instala si pachete care nu se gasesc in canalul oficial de conda, folosind comanda <code>pip</code>. Orice distributie de Python are acces la pachete prin acest manager:
-<pre><code>pip install librosa</code></pre>
-sau pentru upgrade al unui pachet instalat:
-<pre><code>pip install keras --upgrade</code></pre>
-Lista tuturor pachetelor instalate in distributia Anaconda, in mediul curent, se obtine cu comanda
-<pre><code>conda list</code></pre>
-Cele in dreptul carora apare in ultima coloana specificatia <code>&lt;pip&gt;</code> se pot actualiza doar prin package manager-ul pip; celelalte - folosind utilitarul conda. </li>
+<li>Folosind functia <code>np.where</code>, determinati care sunt liniile si coloanele care contin un element dat intr-o matrice. </li>
+<li>Pentru o matrice de numere, sa se determine care este produsul elementelor pe linii.</li>
+<li>Folosind functia <code>np.all</code>, determinati daca toate elementele unei matrice <code>a</code> sunt mai mari sau egale decat toate de pe pozitiile corespondente din <code>b</code>.</li>
+<li>Determinati care e maximul pe coloanele unei matrice (functia <code>max</code> cu argumentul <code>axis</code> setat corespunzator) si maximul intregii matrice.</li>
+<li>Plecand de la un vector de numere de tip float pentru care un element este pus la valoarea <code>np.nan</code>, calculati suma elementelor. Explicati rezultatul.</li>
+<li>Pentru un vector de numere, care sunt <em>toate pozitiile</em> pe care apar valoarea maxima? Folositi functie NumPy.</li>
+<li>Sa se calculeze suma elementelor non-NaN intr-un 2d numpy array, in 3 feluri. Folosind comanda magica <code>%%timeit</code> <a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html#cell-magics">Built-in magic commands</a>, <a href="https://jakevdp.github.io/PythonDataScienceHandbook/01.03-magic-commands.html">IPython Magic Commands</a>, sa se determine care e mai rapida.<ol>
+<li>Peste o copie a tabelului initial (functia membru <code>copy()</code> a unui tablou) se suprascriu elementele nan cu 0, apoi se face suma;</li>
+<li>Folosind functia <code>np.nansum</code>;</li>
+<li>Folosind indiciere booleana si functi <code>np.isnan</code>, se determina colectia elementelor non-nan si se calculeaza suma lor in mod obisnuit.</li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Manifestul-Python">Manifestul Python<a class="anchor-link" href="#Manifestul-Python">&#182;</a></h2><p>Lansati interpretorul interactiv Python in linia de comanda: <code>ipython</code> si apoi rulati comanda: <code>import this</code>. Se va afisa pe ecran manifestul Python <a href="https://www.python.org/dev/peps/pep-0020/">the Zen of Python</a>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ciclari,-siruri-de-caractere">Ciclari, siruri de caractere<a class="anchor-link" href="#Ciclari,-siruri-de-caractere">&#182;</a></h2><p>Se recomanda ca urmatoarele exercitii sa le lucrari in Jupyter notebook. In linia de comanda (command prompt sau PowerShell) scrieti comanda:</p>
-
-<pre><code>jupyter notebook</code></pre>
-<p>Se va deschide automa browserul implicit la adresa localhost:8888 (daca portul 8888 nu e liber, se va cauta automat un alt port).</p>
-<ol>
-<li>(fizz-buzz test) Sa se scrie numerele de la 1 la n; pentru fiecare multiplu de 3 se va scrie in locul numarului 'Fizz', pentru multiplu al lui 5 se va scrie 'Buzz'; daca numarul este multiplu de 15 se va scrie in locul lui 'FizzBuzz'.</li>
-<li>Sa se verifice <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">conjectura Collatz</a> pentru numerele intre 1 si 1000. </li>
-<li>* Sa se creeze o functie care preia un numar n si returneaza un alt numar pe baza cifrelor lui n, astfel: se calculeaza numarul cifrelor pare din n (fie el si 0), numarul de cifre impare (poate fi si 0), suma lor si se formeaza numarul din acestea 3; daca exista vreun zero nesemnificativ, acesta se va ignora. Numarul obtinut se va supune aceleiasi transformari. Exemplu: 3-&gt;11-&gt;22-&gt;202-&gt;303-&gt;123-&gt;123-&gt;123... Verificati ca dupa un numar finit de transformari se ajunge la numarul 123; faceti aceste verificari pentru numerele din intevalul 1, 1000.</li>
-<li>* Se pleaca de la un numar intreg. Fiecare cifra a sa se scrie cu litere, in limba engleza (de exemplu 5-&gt;five). Claculati numarul total de caractere rezultate, iar pentru numarul obtinut repetati procedura. Verificati pentru numerele de la 1 la n ca se obtine intr-un numar finit de pasi numarul 4. Exemplu: 123-&gt;onetwothree-&gt;11-&gt;oneone-&gt;6-&gt;six-&gt;3-&gt;three-&gt;5-&gt;five-&gt;4-&gt;four-&gt;4-&gt;four....</li>
-<li>* Este rezultatul de mai sus valabil si pentru transcriere in limba romana?</li>
-<li>* Se pleaca de la un numar n; se scriu toti divizorii sai, inclusiv 1 si n; se aduna <em>cifrele</em> tuturor acestor divizori; pentru numarul obtinut se aplica acelasi procedeu. Verificati ca procesul se stabilizeaza in numarul 15. 
-Exemplu: 20-&gt;1, 2, 4, 5, 10, 20 -&gt; suma cifrelor: 15-&gt;1, 3, 5, 15-&gt; suma cifrelor: 15...</li>
+</li>
+<li>Se considera vectorul: <code>a = np.array([230, 10, 284, 39, 76])</code>. Folosind indexarea logica, sa se inmulteasca elementele din vector care sunt mai mici ca 100 cu 2 (restul raman neschimbate). Folosind ciclare, sa se aplice aceeasi operatie pana cand toate elementele devin mai mari ca 100. Sa se afiseze din vectorul final elementele care sunt mai mari de 150 si mai mici de 200.</li>
+<li>La curs s-a prezentat problema gasirii celei mai apropiate peerchi de puncte in spatiul 2d. Rescrieti rezolvarea pentru a determina cele mai apropiate k puncte (k dat) intr-un spatiu 5-dimensional.  </li>
+<li>Se dau doi vectori <strong>x</strong> si <strong>y</strong> de <em>m</em>, respectiv <em>n</em> componente. Sa se calculeze, folosind cod vectorizat si cod Python clasic (ciclu <code>for</code>):
+$$
+\sum\limits_{i, j} x_i \cdot y_j
+$$
+Efectuati masuratori asupra vitezei de calcul folosind <code>%%timeit</code>.</li>
 </ol>
 
 </div>
