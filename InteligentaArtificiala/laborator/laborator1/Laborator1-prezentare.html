@@ -15026,28 +15026,6 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css">
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
-
-<script>
-$( document ).ready(function(){
-
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "341.818px"}, "toc_section_display": true, "toc_window_display": true};
-
-            // fire the main function with these parameters
-            require(['nbextensions/toc2/toc2'], function (toc2) {
-                toc2.table_of_contents(cfg);
-            });
-    });
-</script>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -15097,7 +15075,7 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se poate face instalarea Anaconda nufara drepturi de administrator. Pasii sunt dati in capturile de ecran de mai jos.
+<p>Se poate face instalarea Anaconda fara drepturi de administrator. Pasii sunt dati in capturile de ecran de mai jos.
 <img src="./images/install1.png" alt="Screen 1">
 <img src="./images/install2.png" alt="Screen 2">
 <img src="./images/install3.png" alt="Screen 3">
@@ -15218,7 +15196,7 @@ Lista pachetelor instalate se obtine cu:</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Limbaj open source, gratuit</li>
-<li>Doua versiuni majore: Python 2 (ultima versiune: 2.7) si 3 (versiunea curenta: 3.6). </li>
+<li>Doua versiuni majore: Python 2 (ultima versiune: 2.7) si 3 (versiunea curenta: 3.7). </li>
 <li>Python este limbaj interpretat si netipizat</li>
 <li>Permite programare imperativa, orientata pe obiect, <a href="https://docs.python.org/3/library/functional.html">functionala</a></li>
 <li>Exista o paleta larga de biblioteci deja implementate pentru Python, usurand considerabil dezvoltarea de prototipuri sau chiar de aplicatii comerciale larg raspandite.</li>
@@ -15233,7 +15211,7 @@ Lista pachetelor instalate se obtine cu:</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="De-ce-Python?">De ce Python?<a class="anchor-link" href="#De-ce-Python?">&#182;</a></h2><p>Iata cateva motive solide pentru a utiliza Python, conform <a href="https://lwn.net/Articles/724255/">The unexpected effectiveness of Python in science</a></p>
 <ol>
-<li>Limbajul vine "cu toate bateriile incluse": multitudinea de biblioteci il face perfect pentru o gama larga de proiecte. Cercetatorii care il folosesc activeaza in astronomie, fizica, bioinformatica, chimie, stiinte cognitive etc. - si pentru toate aceste domenii exista biblioteci care simplifica mult dezvoltarea de prototipuri. Prin comparatie, limbaje traditionale precum C/C++/Java/Python vin cu mai putin suport disponibil, iar uneori includerea unui pachet/biblioteci poate fi o experienta consumatoare de timp. </li>
+<li>Limbajul vine "cu toate bateriile incluse": multitudinea de biblioteci il face perfect pentru o gama larga de proiecte. Cercetatorii care il folosesc activeaza in astronomie, fizica, bioinformatica, chimie, stiinte cognitive etc. - si pentru toate aceste domenii exista biblioteci care simplifica mult dezvoltarea de prototipuri. Prin comparatie, limbaje traditionale precum C/C++/Java/C# vin cu mai putin suport disponibil, iar uneori includerea unui pachet/biblioteci poate fi o experienta consumatoare de timp. </li>
 <li>Capacitatea de interoperare cu alte limbaje este iarasi un plus. Exista punti de comunicare (bridges) care permit apelul de cod Python din alte limbaje sau invers. Desigur, aceasta facilitate se regaseste si in alte limbaje.</li>
 <li>Natura dinamica a limbajului poate fi inteligent speculata: o functie poate sa preia o multitudine de parametri (lista, tuplu, dictionar) si cateva linii de cod functioneaza la fel de bine peste toate acestea.</li>
 <li>Python incurajeaza un stil de lucru experimental, via REPL: poate e nevoie de cateva incercari pentru a ajunge la instructiunile potrivite pentru o anumita functionalitate. Incercarea unei alte instructiuni nu necesita recompilarea sau rerularea codului anterior, ci vine in completare - pana cand ajungi la ce doresti sa obtii. </li>
