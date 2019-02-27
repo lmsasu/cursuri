@@ -15040,7 +15040,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -15064,8 +15064,8 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Instalare-Anaconda">Instalare Anaconda<a class="anchor-link" href="#Instalare-Anaconda">&#182;</a></h2><p>Este explicata in detaliu la <a href="https://github.com/lmsasu/cursuri/tree/master/InteligentaArtificiala/laborator/laborator1">alt laborator</a></p>
-<p><strong>Exercitiu:</strong> creati un mediu virtual numit <em>ids</em>, folosind conda, si actualizati-i pachetele.</p>
+<h2 id="Instalare-Anaconda">Instalare Anaconda<a class="anchor-link" href="#Instalare-Anaconda">&#182;</a></h2><p>Este explicata in detaliu la <a href="https://github.com/lmsasu/cursuri/tree/master/InteligentaArtificiala/laborator/laborator1">alt laborator</a>.</p>
+<p><strong>Exercitiu:</strong> creati un mediu virtual numit <em>ids</em>, folosind conda si actualizati-i pachetele.</p>
 
 </div>
 </div>
@@ -15083,7 +15083,7 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Jupyter-notebook">Jupyter notebook<a class="anchor-link" href="#Jupyter-notebook">&#182;</a></h2><p>In linia de comanda (command prompt sau powershell) scrieti comanda:</p>
+<h2 id="Jupyter-notebook">Jupyter notebook<a class="anchor-link" href="#Jupyter-notebook">&#182;</a></h2><p>In linia de comanda Anaconda prompt scrieti comanda:</p>
 
 <pre><code>jupyter notebook</code></pre>
 <p>se va deschide automa browserul implicit la adresa localhost:8888 (daca portul 8888 nu e liber, se va cauta automat un alt port).</p>
@@ -15098,10 +15098,10 @@ $( document ).ready(function(){
 <h2 id="Jupyter-lab">Jupyter lab<a class="anchor-link" href="#Jupyter-lab">&#182;</a></h2><p>Unii prefera folosirea de Jupyter lab in loc de Jupyter notebook; cel din urma este recomandat pentru incepatori, sugerandu-se sa se treaca ulterior la Jupyter lab. Jupyter lab este deja disponibil in distributia actuala de Anaconda, sau poate fi instalat conform instructiunilor de <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">aici</a>.</p>
 <p>Jupyter lab vs Jupyter notebook:</p>
 <ul>
-<li><a href="https://medium.com/@brianray_7981/jupyterlab-first-impressions-e6d70d8a175d">link1</a></li>
-<li><a href="https://towardsdatascience.com/jupyter-notebooks-are-breathtakingly-featureless-use-jupyter-lab-be858a67b59d">link2</a></li>
+<li><a href="https://medium.com/@brianray_7981/jupyterlab-first-impressions-e6d70d8a175d">JupyterLab first impressions</a></li>
+<li><a href="https://towardsdatascience.com/jupyter-notebooks-are-breathtakingly-featureless-use-jupyter-lab-be858a67b59d">Jupyter Notebooks are Breathtakingly Featureless — Use Jupyter Lab</a></li>
 </ul>
-<p>Se ruleaza din linia de comanda cu:</p>
+<p>Se porneste Jupyter lab cu:</p>
 
 <pre><code>jupyter lab</code></pre>
 
@@ -15112,7 +15112,7 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Folosire-de-controale-grafice">Folosire de controale grafice<a class="anchor-link" href="#Folosire-de-controale-grafice">&#182;</a></h2><p>Notebook-urile - indiferent ca se ruleaza in Jupyter lab sau Jupyter notebook - se pot folosi pentru demo-uri interactive. O varianta este modificarea codului in timpul demo-ului si rularea celulelor afectate - nu intotdeauna rapid de facut. O alta varianta eset folosirea de controale grafice care sa permita utilizatorului sa modifice optiuni, valori de parametri etc.</p>
+<h2 id="Folosire-de-controale-grafice">Folosire de controale grafice<a class="anchor-link" href="#Folosire-de-controale-grafice">&#182;</a></h2><p>Notebook-urile - indiferent ca se ruleaza in Jupyter lab sau Jupyter notebook - se pot folosi pentru demo-uri interactive. O varianta este modificarea codului in timpul demo-ului si rularea celulelor afectate - nu intotdeauna rapid de facut. O alta varianta este folosirea de controale grafice care sa permita utilizatorului sa modifice optiuni, valori de parametri etc.</p>
 <p><a href="https://ipywidgets.readthedocs.io/en/stable/">ipywidgets</a> este o biblioteca de controale grafice care permit interactiune cu utilizatorul. Mai jos sunt cateva demo-uri de urmarit.</p>
 <ul>
 <li><p>Demo 1: <a href="https://www.youtube.com/watch?v=nRmkS_6ngCU"><img src="https://img.youtube.com/vi/nRmkS_6ngCU/0.jpg" alt="Alt text"></a></p>
@@ -15120,6 +15120,8 @@ $( document ).ready(function(){
 <li><p>Demo 2: <a href="https://www.youtube.com/watch?v=j5d7vOQBttI"><img src="https://img.youtube.com/vi/j5d7vOQBttI/0.jpg" alt="Alt text"></a></p>
 </li>
 <li><p>Demo 3: <a href="https://www.youtube.com/watch?v=wxVx54ax47s"><img src="https://img.youtube.com/vi/wxVx54ax47s/0.jpg" alt="Alt text"></a></p>
+</li>
+<li><p>Demo 4: <a href="https://www.youtube.com/watch?v=i40d8-Hu4vM"><img src="https://img.youtube.com/vi/i40d8-Hu4vM/0.jpg" alt="Alt text"></a></p>
 </li>
 </ul>
 
@@ -15224,10 +15226,10 @@ $( document ).ready(function(){
 
  
  
-<div id="90441350-c424-4f75-8276-9e088c360d73"></div>
+<div id="81245929-4073-4b63-94cd-29af11c042cf"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#90441350-c424-4f75-8276-9e088c360d73');
+var element = $('#81245929-4073-4b63-94cd-29af11c042cf');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "4b712ecb6e0d408c85fa6e3b9b53c8af", "version_major": 2, "version_minor": 0}
@@ -15288,10 +15290,10 @@ var element = $('#90441350-c424-4f75-8276-9e088c360d73');
 
  
  
-<div id="a6ba9976-36eb-49d1-8877-4538ac9bc9bd"></div>
+<div id="e8f8f4ad-6ac0-4655-bec3-b3cb02993869"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a6ba9976-36eb-49d1-8877-4538ac9bc9bd');
+var element = $('#e8f8f4ad-6ac0-4655-bec3-b3cb02993869');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "0f405d25f0cf44c9886b4603327825c4", "version_major": 2, "version_minor": 0}
@@ -15365,10 +15367,10 @@ var element = $('#a6ba9976-36eb-49d1-8877-4538ac9bc9bd');
 
  
  
-<div id="f34450a7-b2b0-41d9-9c53-876135fa81aa"></div>
+<div id="a6f15628-ce41-4cbb-a195-c06857b0581b"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f34450a7-b2b0-41d9-9c53-876135fa81aa');
+var element = $('#a6f15628-ce41-4cbb-a195-c06857b0581b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "171b7663224147f5bf632c578d275803", "version_major": 2, "version_minor": 0}
@@ -15456,10 +15458,10 @@ var element = $('#f34450a7-b2b0-41d9-9c53-876135fa81aa');
 
  
  
-<div id="e4439616-1f48-474c-b4a5-dfd9afa35896"></div>
+<div id="ee487fd6-8a1b-47ad-aab4-dfc2681a879a"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#e4439616-1f48-474c-b4a5-dfd9afa35896');
+var element = $('#ee487fd6-8a1b-47ad-aab4-dfc2681a879a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "a303c0f3e2e9453fb752a4d21cfc0a2b", "version_major": 2, "version_minor": 0}
@@ -15518,10 +15520,10 @@ var element = $('#e4439616-1f48-474c-b4a5-dfd9afa35896');
 
  
  
-<div id="93e19756-de8c-48c3-aba3-2b494ad46bc9"></div>
+<div id="58ee2c13-46f4-4abb-a428-5ccd857aadca"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#93e19756-de8c-48c3-aba3-2b494ad46bc9');
+var element = $('#58ee2c13-46f4-4abb-a428-5ccd857aadca');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "4fbe80d62746458ab8526f39256aaa61", "version_major": 2, "version_minor": 0}
@@ -15607,10 +15609,10 @@ var element = $('#93e19756-de8c-48c3-aba3-2b494ad46bc9');
 
  
  
-<div id="2f26dd0d-fafb-45cc-a12f-f9a3be335334"></div>
+<div id="883344a7-c897-4c57-8c1f-0edf00760c28"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#2f26dd0d-fafb-45cc-a12f-f9a3be335334');
+var element = $('#883344a7-c897-4c57-8c1f-0edf00760c28');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "daea7a252125450e8354a69fef6dfff0", "version_major": 2, "version_minor": 0}
