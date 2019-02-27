@@ -15040,7 +15040,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -15083,13 +15083,10 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Jupyter-lab">Jupyter lab<a class="anchor-link" href="#Jupyter-lab">&#182;</a></h2><p>Unii prefera folosirea de Jupyter lab in loc de Jupyter notebook; cel din urma este recomandat pentru incepatori, sugerandu-se sa se treaca ulterior la Jupyter lab. Jupyter lab este deja disponibil in distributia actuala de Anaconda, sau poate fi instalat conform instructiunilor de <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">aici</a>.</p>
-<p>Jupyter lab vs Jupyter notebook:</p>
-<ul>
-<li><a href="https://medium.com/@brianray_7981/jupyterlab-first-impressions-e6d70d8a175d">link1</a></li>
-<li><a href="https://towardsdatascience.com/jupyter-notebooks-are-breathtakingly-featureless-use-jupyter-lab-be858a67b59d">link2</a></li>
-</ul>
-<p><strong>Exercitiu:</strong> Instalati si porniti Jupyter lab.</p>
+<h2 id="Jupyter-notebook">Jupyter notebook<a class="anchor-link" href="#Jupyter-notebook">&#182;</a></h2><p>In linia de comanda (command prompt sau powershell) scrieti comanda:</p>
+
+<pre><code>jupyter notebook</code></pre>
+<p>se va deschide automa browserul implicit la adresa localhost:8888 (daca portul 8888 nu e liber, se va cauta automat un alt port).</p>
 
 </div>
 </div>
@@ -15098,8 +15095,25 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Folosire-de-controale-grafice">Folosire de controale grafice<a class="anchor-link" href="#Folosire-de-controale-grafice">&#182;</a></h2><p>Notebook-urile - indiferent ca se ruleaza in Jupyter lab sau Jupyter notebook - se pot folosi pentru demo-uri interactive. O varianta este modificarea codului ijn timpul demo-ului si rularea celulelor afectate - nu intotdeauna rapid de facut. O alta varianta eset folosirea de controale grafice care sa permita utilizatorului sa modifice optiuni, valori de parametri etc.</p>
-<p><a href="https://ipywidgets.readthedocs.io/en/stable/">ipywidgets</a> este o biblioteca de controale grafice care pemrit interactiune cu utilizatorul. Mai jos sunt cateva demo-uri de urmarit.</p>
+<h2 id="Jupyter-lab">Jupyter lab<a class="anchor-link" href="#Jupyter-lab">&#182;</a></h2><p>Unii prefera folosirea de Jupyter lab in loc de Jupyter notebook; cel din urma este recomandat pentru incepatori, sugerandu-se sa se treaca ulterior la Jupyter lab. Jupyter lab este deja disponibil in distributia actuala de Anaconda, sau poate fi instalat conform instructiunilor de <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">aici</a>.</p>
+<p>Jupyter lab vs Jupyter notebook:</p>
+<ul>
+<li><a href="https://medium.com/@brianray_7981/jupyterlab-first-impressions-e6d70d8a175d">link1</a></li>
+<li><a href="https://towardsdatascience.com/jupyter-notebooks-are-breathtakingly-featureless-use-jupyter-lab-be858a67b59d">link2</a></li>
+</ul>
+<p>Se ruleaza din linia de comanda cu:</p>
+
+<pre><code>jupyter lab</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Folosire-de-controale-grafice">Folosire de controale grafice<a class="anchor-link" href="#Folosire-de-controale-grafice">&#182;</a></h2><p>Notebook-urile - indiferent ca se ruleaza in Jupyter lab sau Jupyter notebook - se pot folosi pentru demo-uri interactive. O varianta este modificarea codului in timpul demo-ului si rularea celulelor afectate - nu intotdeauna rapid de facut. O alta varianta eset folosirea de controale grafice care sa permita utilizatorului sa modifice optiuni, valori de parametri etc.</p>
+<p><a href="https://ipywidgets.readthedocs.io/en/stable/">ipywidgets</a> este o biblioteca de controale grafice care permit interactiune cu utilizatorul. Mai jos sunt cateva demo-uri de urmarit.</p>
 <ul>
 <li><p>Demo 1: <a href="https://www.youtube.com/watch?v=nRmkS_6ngCU"><img src="https://img.youtube.com/vi/nRmkS_6ngCU/0.jpg" alt="Alt text"></a></p>
 </li>
@@ -15116,7 +15130,7 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exemple-de-utilizare">Exemple de utilizare<a class="anchor-link" href="#Exemple-de-utilizare">&#182;</a></h3><p>Un tutorial amplu se gaseste <a href="https://ipywidgets.readthedocs.io/en/stable/user_guide.html">aici</a>.</p>
+<h3 id="Exemple-de-utilizare">Exemple de utilizare<a class="anchor-link" href="#Exemple-de-utilizare">&#182;</a></h3><p>Documentatia completa si exemple <a href="https://ipywidgets.readthedocs.io/en/stable/user_guide.html">aici</a>.</p>
 <p>Incarcarea pachetului de <code>ipywidgets</code> se face prin:</p>
 
 </div>
@@ -15124,7 +15138,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
@@ -15146,7 +15160,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span>
@@ -15168,7 +15182,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">n_factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -15186,7 +15200,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">n_factorial</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
@@ -15210,13 +15224,13 @@ $( document ).ready(function(){
 
  
  
-<div id="dc8af4bf-01c5-4359-a44d-130dd82a710e"></div>
+<div id="90441350-c424-4f75-8276-9e088c360d73"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#dc8af4bf-01c5-4359-a44d-130dd82a710e');
+var element = $('#90441350-c424-4f75-8276-9e088c360d73');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "0b33b681bdcb47d49f0c8a76b43a79a7", "version_major": 2, "version_minor": 0}
+{"model_id": "4b712ecb6e0d408c85fa6e3b9b53c8af", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15224,7 +15238,7 @@ var element = $('#dc8af4bf-01c5-4359-a44d-130dd82a710e');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -15250,7 +15264,7 @@ var element = $('#dc8af4bf-01c5-4359-a44d-130dd82a710e');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">n_factorial</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
@@ -15274,13 +15288,13 @@ var element = $('#dc8af4bf-01c5-4359-a44d-130dd82a710e');
 
  
  
-<div id="f869461a-efc4-4b91-a263-beac4f72b339"></div>
+<div id="a6ba9976-36eb-49d1-8877-4538ac9bc9bd"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f869461a-efc4-4b91-a263-beac4f72b339');
+var element = $('#a6ba9976-36eb-49d1-8877-4538ac9bc9bd');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a80cb4e84c89431fae0c046249c5aeeb", "version_major": 2, "version_minor": 0}
+{"model_id": "0f405d25f0cf44c9886b4603327825c4", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15288,7 +15302,7 @@ var element = $('#f869461a-efc4-4b91-a263-beac4f72b339');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -15323,7 +15337,7 @@ var element = $('#f869461a-efc4-4b91-a263-beac4f72b339');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
@@ -15351,13 +15365,13 @@ var element = $('#f869461a-efc4-4b91-a263-beac4f72b339');
 
  
  
-<div id="6ce0d8d3-3129-4fb0-8f0a-9e38b43de584"></div>
+<div id="f34450a7-b2b0-41d9-9c53-876135fa81aa"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#6ce0d8d3-3129-4fb0-8f0a-9e38b43de584');
+var element = $('#f34450a7-b2b0-41d9-9c53-876135fa81aa');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e853034b36d94d74a59736cc924ec0d1", "version_major": 2, "version_minor": 0}
+{"model_id": "171b7663224147f5bf632c578d275803", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15365,7 +15379,7 @@ var element = $('#6ce0d8d3-3129-4fb0-8f0a-9e38b43de584');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[&nbsp;]:</div>
+<div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -15392,7 +15406,7 @@ var element = $('#6ce0d8d3-3129-4fb0-8f0a-9e38b43de584');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import de pachete numerice si grafice</span>
@@ -15408,7 +15422,7 @@ var element = $('#6ce0d8d3-3129-4fb0-8f0a-9e38b43de584');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f_square</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">c</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span><span class="n">left</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
@@ -15442,13 +15456,13 @@ var element = $('#6ce0d8d3-3129-4fb0-8f0a-9e38b43de584');
 
  
  
-<div id="a4f1e705-dee9-409e-acfe-f7d69ca618c6"></div>
+<div id="e4439616-1f48-474c-b4a5-dfd9afa35896"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#a4f1e705-dee9-409e-acfe-f7d69ca618c6');
+var element = $('#e4439616-1f48-474c-b4a5-dfd9afa35896');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "bd97626fb9d64e67b742ef73e83ff459", "version_major": 2, "version_minor": 0}
+{"model_id": "a303c0f3e2e9453fb752a4d21cfc0a2b", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15456,7 +15470,7 @@ var element = $('#a4f1e705-dee9-409e-acfe-f7d69ca618c6');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[&nbsp;]:</div>
+<div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -15473,7 +15487,7 @@ var element = $('#a4f1e705-dee9-409e-acfe-f7d69ca618c6');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sinusoid</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
@@ -15504,13 +15518,13 @@ var element = $('#a4f1e705-dee9-409e-acfe-f7d69ca618c6');
 
  
  
-<div id="47ddc1b3-183b-4ffa-b537-1ba8bd332a14"></div>
+<div id="93e19756-de8c-48c3-aba3-2b494ad46bc9"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#47ddc1b3-183b-4ffa-b537-1ba8bd332a14');
+var element = $('#93e19756-de8c-48c3-aba3-2b494ad46bc9');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "0c749eef1faf4fc187f210f10c31f5c4", "version_major": 2, "version_minor": 0}
+{"model_id": "4fbe80d62746458ab8526f39256aaa61", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15518,7 +15532,7 @@ var element = $('#47ddc1b3-183b-4ffa-b537-1ba8bd332a14');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[&nbsp;]:</div>
+<div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -15535,7 +15549,7 @@ var element = $('#47ddc1b3-183b-4ffa-b537-1ba8bd332a14');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -15593,13 +15607,13 @@ var element = $('#47ddc1b3-183b-4ffa-b537-1ba8bd332a14');
 
  
  
-<div id="cab3a235-0f22-4131-9c9b-b4041c81fe7e"></div>
+<div id="2f26dd0d-fafb-45cc-a12f-f9a3be335334"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#cab3a235-0f22-4131-9c9b-b4041c81fe7e');
+var element = $('#2f26dd0d-fafb-45cc-a12f-f9a3be335334');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "330d9761fe4e445e98bf198acae77142", "version_major": 2, "version_minor": 0}
+{"model_id": "daea7a252125450e8354a69fef6dfff0", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15607,7 +15621,7 @@ var element = $('#cab3a235-0f22-4131-9c9b-b4041c81fe7e');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[&nbsp;]:</div>
+<div class="prompt output_prompt">Out[50]:</div>
 
 
 
@@ -15627,9 +15641,11 @@ var element = $('#cab3a235-0f22-4131-9c9b-b4041c81fe7e');
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Exercitii:">Exercitii:<a class="anchor-link" href="#Exercitii:">&#182;</a></h3><ol>
+<li>Se considera urmatorul enunt: fie functia $f(x) = x^2$ si punctul $P=(5, 3)$, sa se modifice functia $f$ a.i. minimul functiei sa sa afle in punctul $P$, fara sa se modifice forma grafica a functiei $f$. Se cere desenarea axelor OX si OY cu, reprezentarea puntului $P$ printr-un dreptunghi, desenarea functiei $f$ folosind o curba de 50 de puncte. Se vor determina coeficientii necesari mutarii functiei si se vor definii controale pentru acestea.</li>
 <li>Reprezentati functia $a*x^4 + b*x^3+c*x^2+d*x+e$ si derivata ei intr-un punct ales de catre utilizator</li>
 <li>Incarcati fisierul de date <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data">iris</a> si in functie de alegerile exprimate de un utilizator, afisati intr-un grafic bidimensional coloanele numerice alese (de exemplu, coloana 0 si coloana 2).</li>
-<li>Arpad, poti sa mai adaugi 2 exercitii?</li>
+<li>Generati o lista de 20 de perechi de valori $\{x_i, y_i\}_{i=0,19}$, afisati aceste valori pe un grafic, impreuna cu o dreapta definita de o functie liniara $y=a*x+b$. Intr-un alt plot afisati, ca histograma, distanta dintre un punct de coordona punct fata de dreapta. Dreapta trebuie sa fie controlabila din widgets, prin cei doi coeficienti. Constatati modificarea histogramei in functie de pozitia dreptei si calculati suma: $\sum_{i=0}^{19} (y_i - (a\cdot x_i + b))^2$, adica suam patratelor lungimilor segmentelor verzi de mai jos.
+<img src="./images/linreg.png" alt="linear regression"></li>
 </ol>
 
 </div>
@@ -15639,10 +15655,7 @@ var element = $('#cab3a235-0f22-4131-9c9b-b4041c81fe7e');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ciclari,-siruri-de-caractere">Ciclari, siruri de caractere<a class="anchor-link" href="#Ciclari,-siruri-de-caractere">&#182;</a></h2><p>Se recomanda ca urmatoarele exercitii sa le lucrari in Jupyter notebook. In linia de comanda (command prompt sau PowerShell) scrieti comanda:</p>
-
-<pre><code>jupyter notebook</code></pre>
-<p>Se va deschide automa browserul implicit la adresa localhost:8888 (daca portul 8888 nu e liber, se va cauta automat un alt port).</p>
+<h2 id="Ciclari,-siruri-de-caractere">Ciclari, siruri de caractere<a class="anchor-link" href="#Ciclari,-siruri-de-caractere">&#182;</a></h2><p>Se recomanda ca urmatoarele exercitii sa le lucrati in Jupyter notebook/lab. Incercati parametrizarea functiilor cu ipywidgets.</p>
 <ol>
 <li>(fizz-buzz test) Sa se scrie numerele de la 1 la n; pentru fiecare multiplu de 3 se va scrie in locul numarului 'Fizz', pentru multiplu al lui 5 se va scrie 'Buzz'; daca numarul este multiplu de 15 se va scrie in locul lui 'FizzBuzz'.</li>
 <li>Sa se verifice <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">conjectura Collatz</a> pentru numerele intre 1 si 1000. </li>
