@@ -11794,7 +11794,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -11810,7 +11810,17 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Laborator-2">Laborator 2<a class="anchor-link" href="#Laborator-2">&#182;</a></h1>
+<h1 id="Laborator-2">Laborator 2<a class="anchor-link" href="#Laborator-2">&#182;</a></h1><p>Saptamana 4-8 martie, 2019</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Enunturile de mai jos sunt obligatorii. Prezentarea se va face in saptamana 11-15 martie 2019. Se poate lucra in echipe de cate 2 persoane. Prezentarea temelor se face de catre ambele persoane, la fiecare intrebare poate fi solicitat oricine din echipa sa raspunda.</p>
+
 </div>
 </div>
 </div>
@@ -11830,9 +11840,8 @@ $( document ).ready(function(){
 <li><p>(Optional) Incarcati fisierul <code>yacht_hydrodynamics.csv</code> (adaptare dupa <a href="http://archive.ics.uci.edu/ml/datasets/Carbon+Nanotubes">Carbon Nanotubes Data Set</a>). In functie de alegerile exprimate de un utilizator, afisati intr-un grafic 2D coloanele numerice alese (de exemplu, coloana 0 si coloana 2).
 <em>Indicatii/optiuni</em>:</p>
 <ol>
-<li>Incarcarea de date se poate face cu numpy, functia <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html">loadtxt</a>. Specificati faptul ca se sare peste prima linie din fisier (header).</li>
-<li>Numarul de coloane din setul de date incarcat este 8 si se poate afla cu <code>data.shape[1]</code>.</li>
-<li>Puteti descarca fisierul direct de pe net, de exemplu cu functia <code>urlopen</code> din pachetul <code>urllib.request</code> sau cu pachetul <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">pandas</a>.</li>
+<li>Incarcarea de date se poate face cu numpy, functia <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.loadtxt.html">loadtxt</a>. Specificati faptul ca se sare peste prima linie din fisier (header). Alternativ, puteti folosi <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">pandas.read_csv</a>.</li>
+<li>Numarul de coloane din setul de date se poate afla cu <code>data.shape[1]</code>.</li>
 <li>Pentru cele doua alegeri puteti sa instantiati doua obiecte <a href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html#Dropdown">Dropdown</a> sau <a href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html#Select">Select</a>.</li>
 <li>Daca in variabila <code>data</code> sunt datele incarcate, selectarea coloanei <code>i</code> se face cu <code>data[:, i]</code>.</li>
 </ol>
@@ -11846,15 +11855,44 @@ $( document ).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ciclari,-siruri-de-caractere">Ciclari, siruri de caractere<a class="anchor-link" href="#Ciclari,-siruri-de-caractere">&#182;</a></h2><p>Se recomanda ca urmatoarele exercitii sa le lucrati in Jupyter notebook/lab. Incercati parametrizarea functiilor cu ipywidgets.</p>
+<h2 id="Ciclari,-siruri-de-caractere,-colectii">Ciclari, siruri de caractere, colectii<a class="anchor-link" href="#Ciclari,-siruri-de-caractere,-colectii">&#182;</a></h2><p>Se recomanda ca urmatoarele exercitii sa le lucrati in Jupyter notebook.</p>
 <ol>
 <li>(fizz-buzz test) Sa se scrie numerele de la 1 la n; pentru fiecare multiplu de 3 se va scrie in locul numarului 'Fizz', pentru multiplu al lui 5 se va scrie 'Buzz'; daca numarul este multiplu de 15 se va scrie in locul lui 'FizzBuzz'.</li>
-<li>Sa se verifice <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">conjectura Collatz</a> pentru numerele intre 1 si 1000. Optional: reprezentati intr-un scatter plot numarul de pasi neceserai pentru stabilizare, precum <a href="https://en.wikipedia.org/wiki/Collatz_conjecture#/media/File:Collatz-stopping-time.svg">aici</a>.</li>
-<li>Sa se creeze o functie care preia un numar n si returneaza un alt numar pe baza cifrelor lui n, astfel: se calculeaza numarul cifrelor pare din n (posibil sa fie si 0), numarul de cifre impare (poate fi si 0), suma lor si se formeaza numarul din acestea 3; daca exista vreun zero nesemnificativ, acesta se va ignora. Numarul obtinut se va supune aceleiasi transformari. Exemplu: 3-&gt;11-&gt;22-&gt;202-&gt;303-&gt;123-&gt;123-&gt;123... Verificati ca dupa un numar finit de transformari se ajunge la numarul 123; faceti aceste verificari pentru numerele din intevalul 1, 1000.</li>
-<li>* Se pleaca de la un numar intreg. Fiecare cifra a sa se scrie cu litere, in limba engleza (de exemplu 5-&gt;five). Claati numarul total de caractere rezultate, iar pentru numarul obtinut repetati procedura. Verificati pentru numerele de la 1 la n ca se obtine intr-un numar finit de pasi numarul 4. Exemplu: 123-&gt;onetwothree-&gt;11-&gt;oneone-&gt;6-&gt;six-&gt;3-&gt;three-&gt;5-&gt;five-&gt;4-&gt;four-&gt;4-&gt;four....</li>
+<li>Sa se verifice <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">conjectura Collatz</a> pentru numerele intre 1 si $n$. Reprezentati intr-un scatter plot numarul de pasi neceseri pentru stabilizare, precum <a href="https://en.wikipedia.org/wiki/Collatz_conjecture#/media/File:Collatz-stopping-time.svg">aici</a>. Numarul $n$ se da printr-un control ipywidgets.</li>
+<li>Sa se creeze o functie care preia un numar $n$ - via ipywidgets- si returneaza un alt numar pe baza cifrelor lui $n$, astfel: se calculeaza numarul cifrelor pare din $n$ (posibil sa fie si 0), numarul de cifre impare (poate fi si 0), suma lor si se formeaza numarul din acestea 3; daca exista vreun zero nesemnificativ, acesta se va ignora. Numarul obtinut se va supune aceleiasi transformari. Exemplu: 3-&gt;11-&gt;22-&gt;202-&gt;303-&gt;123-&gt;123-&gt;123... Verificati ca dupa un numar finit de transformari se ajunge la numarul 123; faceti aceste verificari pentru numerele din intevalul 1, $n$.</li>
+<li>Se pleaca de la un numar intreg $n$, citit prin ipywidgets. Fiecare cifra a sa se scrie cu litere, in limba engleza (de exemplu 5-&gt;five). Calculati numarul total de caractere rezultate, iar pentru numarul obtinut repetati procedura. Verificati pentru numerele de la 1 la n ca se obtine intr-un numar finit de pasi numarul 4. Exemplu: 123-&gt;onetwothree-&gt;11-&gt;oneone-&gt;6-&gt;six-&gt;3-&gt;three-&gt;5-&gt;five-&gt;4-&gt;four-&gt;4-&gt;four....</li>
 <li>Este comportamentul de mai sus valabil si pentru transcriere in limba romana, eventual pentru alt cuvant?</li>
 <li>Se pleaca de la un numar n; se scriu toti divizorii sai, inclusiv 1 si n; se aduna <em>cifrele</em> tuturor acestor divizori; pentru numarul obtinut se aplica acelasi procedeu. Verificati ca procesul se stabilizeaza in numarul 15. 
 Exemplu: 20-&gt;1, 2, 4, 5, 10, 20 -&gt; suma cifrelor: 15-&gt;1, 3, 5, 15-&gt; suma cifrelor: 15...</li>
+<li>Pentru o lista de cuvinte (stringuri), sa se obtina un dictionar care are drept cheie cuvintele distincte din lista, iar valorile corespunzatoare sa fie numarul de aparitii ale fiecarui cuvant. </li>
+<li>Dandu-se o lista de tuple de maxim 4 elemente, sa se obtina o lista care contine valoarea maxima a fiecarui tuplu. Sa se verifice ca fiecare tuplu din lista are cel  mult 4 elemente.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Functii">Functii<a class="anchor-link" href="#Functii">&#182;</a></h2><ol>
+<li>Pentru o lista de numere, sa se scrie o functie care returneaza suma elementelor si diferenta maxima dintre ele.</li>
+<li>Scrieti o functie care preia doua liste si returneaza <code>True</code> daca cele doua liste contin cel putin k elemente comune (k dat ca parametru, intreg &gt;= 1, valoare implicita 1), <code>False</code> altfel.</li>
+<li>Sa se scrie o functie care determina daca o lista contine doar cuvinte. Functia trebuie sa testeze daca elementele din lista sunt stringuri; un string este cuvant daca nu contine: spatiu, virgula si alti separatori.</li>
+<li>Sa se scrie o functie care returneaza numarul de litere mici si mari - 2 rezultate - dintr-un parametru dat.</li>
+<li>Sa se scrie o functie care primind o lista de dictionare, returneaza <code>True</code> daca toate dictionarele sunt goale si <code>False</code> altfel.</li>
+<li>Sa se scrie o functie recursiva care sa faca ridicarea la putere a unui numar, astfel:
+$$
+a^n = \begin{cases}
+a &amp; \text{daca }n=1
+\\
+\left(a^{n//2}\right)^2 &amp; \text{daca } n \text{ e par}
+\\
+\left(a^{n//2}\right)^2 \cdot a &amp; \text{daca } n \text{ e impar}, n&gt;1
+\\
+\end{cases}
+$$
+unde prin $n//2$ se reprezinta catul impartirii intregi intre $n$ si 2.</li>
 </ol>
 
 </div>
