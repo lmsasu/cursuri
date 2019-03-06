@@ -11714,6 +11714,19 @@ ul.typeahead-list > li > a {
 .ansi-bold { font-weight: bold; }
 
     </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+    </style>
 
 
 <style type="text/css">
@@ -11767,6 +11780,28 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
+
+<script>
+$( document ).ready(function(){
+
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+
+            // fire the main function with these parameters
+            require(['nbextensions/toc2/toc2'], function (toc2) {
+                toc2.table_of_contents(cfg);
+            });
+    });
+</script>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -12167,7 +12202,7 @@ Dupa filtrare: [&#39;Stopword&#39;, &#39;filtering&#39;, &#39;common&#39;, &#39;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Functiile sunt de trei feluri:</p>
 <ul>
-<li>Functii deja definite in limbajul Python, cum ar fi len(), print()</li>
+<li>Functii deja definite in limbajul Python, cum ar fi <code>len()</code>, <code>print()</code></li>
 <li>Functii definite de utilizator</li>
 <li>Lambda functii</li>
 </ul>
@@ -12806,8 +12841,8 @@ measurement_unit kg
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;function sum_2 at 0x0000020C3B3092F0&gt;
-&lt;function dif_2 at 0x0000020C3B309378&gt;
+<pre>&lt;function sum_2 at 0x000001B83D0DED90&gt;
+&lt;function dif_2 at 0x000001B83D0DE7B8&gt;
 </pre>
 </div>
 </div>
@@ -12860,6 +12895,261 @@ measurement_unit kg
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Adnotari-de-tipuri">Adnotari de tipuri<a class="anchor-link" href="#Adnotari-de-tipuri">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Incepand cu versiunea 3.5 a limbajului Python, se pot adnota variabilele, parametrii de functii, tipul de retur al functiilor. Operatia de type annotations este optionala si este destinata a mari lizibilitatea codului. Ele sunt definite in documentul de Python Enhancement Proposal <a href="https://www.python.org/dev/peps/pep-0484/">PEP484</a>.</p>
+<p>In afara de cod mai usor de citit, un alt beneficiu este analiza static de cod, de exemplu in PyCharm sau <a href="http://mypy-lang.org">MyPy</a>, sau suport imbunatatit pentru code completion.</p>
+<p>Adnotarile se precizeaza dupa numele variabilei,  urmat de doua puncte si denumirea tipului:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">21</span>
+<span class="n">name</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Guido van Rossum&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Adnotarea nu inhiba in niciun fel utilizarea variabile, sau schimbarea in instructiunile urmatoare a tipului lor:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mf">21.5</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pentru adnotara parametrilor si a tipului functiilor se poate urmari exemplul de mai jos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s1">&#39;Salut &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;, ai &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; de ani&#39;</span>
+
+<span class="n">f</span><span class="p">(</span><span class="s1">&#39;Rafael&#39;</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[47]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;salut Rafael, ai 23 de ani&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pentru tipuri complexe se va folosi clasa <code>typing</code>, care pune la dispozitie tipuri precum <code>Dict</code>, <code>Tuple</code>, <code>List</code>, <code>Set</code> etc.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">List</span>
+
+<span class="k">def</span> <span class="nf">salut_multi</span><span class="p">(</span><span class="n">nume</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">varste</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nume</span><span class="p">,</span> <span class="n">varste</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Salut </span><span class="si">{n}</span><span class="s1">, ai </span><span class="si">{v}</span><span class="s1"> de ani&#39;</span><span class="p">)</span>
+        
+<span class="n">salut_multi</span><span class="p">([</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Salut Ana, ai 20 de ani
+Salut Dan, ai 21 de ani
+Salut Maria, ai 22 de ani
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se pot defini tipuri utilizator, folosindu-ne de cele disponibile:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Tuple</span>
+
+<span class="n">Point2D</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">plot_point</span><span class="p">(</span><span class="n">point</span><span class="p">:</span> <span class="n">Point2D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="c1">## operatii</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">def</span> <span class="nf">rotat_point</span><span class="p">(</span><span class="n">p</span><span class="p">:</span><span class="n">Point2D</span><span class="p">,</span> <span class="n">angle</span><span class="p">:</span><span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Point2D</span><span class="p">:</span>
+    <span class="c1">## operatii</span>
+    <span class="c1">## newPoint = ....</span>
+    <span class="k">return</span> <span class="n">newPoint</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Daca o variabila poate avea unul din mai multe tipuri posibile, putem urma exemplul:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Union</span>
+
+<span class="k">def</span> <span class="nf">print_value</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Daca o variabila poate sa fie de un anumit tip sau sa vina cu valoarea None, se procedeaza precum mai jos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Optional</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">param</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">param</span><span class="p">:</span> <span class="c1"># adica: param nu e None</span>
+        <span class="k">return</span> <span class="n">param</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pentru alte constructii: definirea de tipuri noi, callback functions, colectii generice etc. recomandam consultarea bibliografiei.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Bibliografie-recomandata">Bibliografie recomandata<a class="anchor-link" href="#Bibliografie-recomandata">&#182;</a></h3><ol>
+<li><a href="https://www.python.org/dev/peps/pep-0484/">PEP484</a> </li>
+<li><a href="https://docs.python.org/3/library/typing.html">typing — Support for type hints</a></li>
+</ol>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12977,7 +13267,7 @@ measurement_unit kg
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\python36.zip&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\DLLs&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib&#39;, &#39;C:\\Anaconda3\\envs\\data-science&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib\\site-packages&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib\\site-packages\\win32&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib\\site-packages\\win32\\lib&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib\\site-packages\\Pythonwin&#39;, &#39;C:\\Anaconda3\\envs\\data-science\\lib\\site-packages\\IPython\\extensions&#39;, &#39;C:\\Users\\Lucian\\.ipython&#39;]
+<pre>[&#39;C:\\Anaconda3\\envs\\ids\\python36.zip&#39;, &#39;C:\\Anaconda3\\envs\\ids\\DLLs&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib&#39;, &#39;C:\\Anaconda3\\envs\\ids&#39;, &#39;&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib\\site-packages&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib\\site-packages\\win32&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib\\site-packages\\win32\\lib&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib\\site-packages\\Pythonwin&#39;, &#39;C:\\Anaconda3\\envs\\ids\\lib\\site-packages\\IPython\\extensions&#39;, &#39;C:\\Users\\Lucian\\.ipython&#39;]
 </pre>
 </div>
 </div>
@@ -13064,92 +13354,6 @@ measurement_unit kg
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Alte exemple de utilizare de pachete sunt:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> <span class="c1">#pachet pentru expresii regulate</span>
-<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Am cumparat: mere, pere, prune... si caise&#39;</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\W+&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Am&#39;, &#39;cumparat&#39;, &#39;mere&#39;, &#39;pere&#39;, &#39;prune&#39;, &#39;si&#39;, &#39;caise&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Serializare cu pickle</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
-
-<span class="n">favorite_color</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;lion&quot;</span><span class="p">:</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;kitty&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span> <span class="p">}</span>
-
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">favorite_color</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span> <span class="p">)</span> <span class="p">)</span>
-<span class="k">del</span> <span class="n">favorite_color</span> <span class="c1">#nu mai e necesar</span>
-
-<span class="c1">#restaurare</span>
-<span class="n">favorite_color_restored</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span> <span class="p">)</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dupa deserializare:&#39;</span><span class="p">,</span> <span class="n">favorite_color_restored</span><span class="p">)</span>
-
-<span class="o">!</span>del save.pkl #sterge fisierul pickle de pe disk
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>dupa deserializare: {&#39;lion&#39;: &#39;yellow&#39;, &#39;kitty&#39;: &#39;red&#39;}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Pachete-Python">Pachete Python<a class="anchor-link" href="#Pachete-Python">&#182;</a></h2>
 </div>
 </div>
@@ -13158,7 +13362,7 @@ measurement_unit kg
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Un pachet este o colectie de module. Fizic, un modul este o structura ierarhica de directoare in care se gasesc module si alte pachete. Este obligatoriu ca in orice director care se doreste a fi vazut ca un pachet sa existe un fisier numit <code>__init__.py</code>. In prima faza, <code>__init__.py</code> poate fi gol. Plecam de la structura de directoare si fisiere:</p>
+<p>Un pachet este o colectie de module. Fizic, un pachet este o structura ierarhica de directoare in care se gasesc module si alte pachete. Este obligatoriu ca in orice director care se doreste a fi vazut ca un pachet sa existe un fisier numit <code>__init__.py</code>. In prima faza, <code>__init__.py</code> poate fi gol. Plecam de la structura de directoare si fisiere:</p>
 
 <pre><code>---myUtils\
  |------ mySmartModule.py
@@ -13273,6 +13477,92 @@ measurement_unit kg
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Alte exemple de utilizare de pachete sunt:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> <span class="c1">#pachet pentru expresii regulate</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Am cumparat: mere, pere, prune... si caise&#39;</span>
+<span class="n">tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\W+&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Am&#39;, &#39;cumparat&#39;, &#39;mere&#39;, &#39;pere&#39;, &#39;prune&#39;, &#39;si&#39;, &#39;caise&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Serializare cu pickle</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="n">favorite_color</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;lion&quot;</span><span class="p">:</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;kitty&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span> <span class="p">}</span>
+
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">favorite_color</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">del</span> <span class="n">favorite_color</span> <span class="c1">#nu mai e necesar</span>
+
+<span class="c1">#restaurare</span>
+<span class="n">favorite_color_restored</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span> <span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dupa deserializare:&#39;</span><span class="p">,</span> <span class="n">favorite_color_restored</span><span class="p">)</span>
+
+<span class="o">!</span>del save.pkl #sterge fisierul pickle de pe disk
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dupa deserializare: {&#39;lion&#39;: &#39;yellow&#39;, &#39;kitty&#39;: &#39;red&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Pachetul-NumPy">Pachetul NumPy<a class="anchor-link" href="#Pachetul-NumPy">&#182;</a></h2>
 </div>
 </div>
@@ -13287,8 +13577,8 @@ measurement_unit kg
 <li>o imagine in tonuri de gri poate fi vazuta ca o matrice bidimensionala de numere; fiecare numar reprezinta intensitatea pixelului (0 - negru, 255 - alb; frecvent se folosesc valorile scalate in intevalul [0, 1])
 <img src="./images/mnist_image.png" alt="Imagine minsi scalata 0-1"></li>
 <li>o imagine color poate fi vazuta ca o matrice cu trei dimensiuni: 3 matrice bidimensionale "paralele", corespunzatoare canalelor red, green, blue; pentru fiecare canal de culoare valorile pot fi intre 0 si 255:
-<img src="./images/rgb_image.png" alt="Imagine RGB descompusa in 3 canale"></li>
-<li>un fisir audio este vazut ca unul/doi/$k$ vectori dimensionali, corespunzatoare cazurilor: mono, stereo, $k$ canale. Valorile numerice in cazul unui fisier wav reprezinta amplitudinea sunetului;:
+<img src="./images/channelsrgb.gif" alt="Imagine RGB descompusa in 3 canale"></li>
+<li>un fisir audio este vazut ca unul/doi/$k$ vectori dimensionali, corespunzatoare cazurilor: mono, stereo, $k$ canale. Valorile numerice in cazul unui fisier wav reprezinta deplasarea membranei microfonului, discretizata in timp si amplitudine:
 <img src="./images/sound.png" alt="sunet"></li>
 <li>un text poate fi tradus in vectori numerici prin tehnici precum <a href="https://en.wikipedia.org/wiki/Bag-of-words_model">Bag of words</a> sau <a href="https://en.wikipedia.org/wiki/Word2vec">Word2vec</a>.</li>
 </ul>
@@ -13410,6 +13700,42 @@ float16
  [4 5 6]]
 (2, 3)
 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># matrice de valori constante:</span>
+<span class="n">mat_7</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> <span class="o">*</span> <span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mat_7</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[7. 7. 7. 7. 7. 7. 7. 7. 7. 7.]
+ [7. 7. 7. 7. 7. 7. 7. 7. 7. 7.]
+ [7. 7. 7. 7. 7. 7. 7. 7. 7. 7.]
+ [7. 7. 7. 7. 7. 7. 7. 7. 7. 7.]]
 </pre>
 </div>
 </div>
@@ -14235,11 +14561,11 @@ True
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span>
-c_big = np.empty_like(a_big)
-for i in range(c_big.shape[0]):
-    for j in range(c_big.shape[1]):
-        c_big[i, j] = a_big[i, j] * b_big[i, j]
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
+<span class="n">c_big</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">a_big</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">c_big</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">c_big</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="n">c_big</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">a_big</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_big</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14270,8 +14596,8 @@ for i in range(c_big.shape[0]):
 <div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span>
-c_big = a_big * b_big
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
+<span class="n">c_big</span> <span class="o">=</span> <span class="n">a_big</span> <span class="o">*</span> <span class="n">b_big</span>
 </pre></div>
 
 </div>
@@ -14705,7 +15031,16 @@ vector[4]=4
 </div>
 </div>
 
-</div>Pentru matrice putem folosi:
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pentru matrice putem folosi:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
@@ -15067,6 +15402,105 @@ vector[4]=4
 Dupa:
  [[  1.    2.3   0.    4. ]
  [ 10.    0.    0.    0. ]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Indexarea logica permite specificarea elementelor dintr-un tablou pentru care se efectueaza anumite operatii:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># numerele pare se inmultesc cu 10, celelalte raman cum sunt </span>
+<span class="n">tablou</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte de modificare:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="n">tablou</span><span class="p">[</span><span class="n">tablou</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Inainte de modificare:
+ [[1 2 3 4]
+ [5 6 7 8]]
+Dupa modificare:
+ [[ 1 20  3 40]
+ [ 5 60  7 80]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Modificareaa se poate face si doar pe o anumita axa:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tablou</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte de modificare</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="c1">#coloanele 0, 2, 3 se modifica</span>
+<span class="n">bool_columns</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+<span class="n">tablou</span><span class="p">[:,</span> <span class="n">bool_columns</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tablou</span><span class="p">[:,</span> <span class="n">bool_columns</span><span class="p">]</span> <span class="o">+</span><span class="mi">3</span> <span class="p">)</span><span class="o">/</span><span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Inainte de modificare
+ [[1. 2. 3. 4.]
+ [5. 6. 7. 8.]]
+Dupa modificare
+ [[0.4 2.  0.6 0.7]
+ [0.8 6.  1.  1.1]]
 </pre>
 </div>
 </div>
@@ -15442,7 +15876,7 @@ z
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Bibliografie">Bibliografie<a class="anchor-link" href="#Bibliografie">&#182;</a></h4><p><a href="https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html">Basic broadcasting: https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html</a></p>
+<h3 id="Bibliografie">Bibliografie<a class="anchor-link" href="#Bibliografie">&#182;</a></h3><p><a href="https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html">Basic broadcasting: https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html</a></p>
 <p><a href="http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc">http://scipy.github.io/old-wiki/pages/EricsBroadcastingDoc</a></p>
 <p><a href="http://cs231n.github.io/python-numpy-tutorial/#numpy-broadcasting">http://cs231n.github.io/python-numpy-tutorial/#numpy-broadcasting</a></p>
 
@@ -15889,12 +16323,12 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
 
-d = np.empty((n, n))
-for i in range(n):
-    for j in range(n):
-        d[i, j] = (x[i] - x[j])**2 + (y[i]-y[j])**2
+<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">y</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -15961,12 +16395,12 @@ for i in range(n):
 <div class="prompt input_prompt">In&nbsp;[97]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
 
-dx = (x[:, np.newaxis] - x[np.newaxis, :]) ** 2
-dy = (y[:, np.newaxis] - y[np.newaxis, :]) ** 2
+<span class="n">dx</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:])</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="n">dy</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">-</span> <span class="n">y</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:])</span> <span class="o">**</span> <span class="mi">2</span>
 
-d = dx + dy
+<span class="n">d</span> <span class="o">=</span> <span class="n">dx</span> <span class="o">+</span> <span class="n">dy</span>
 </pre></div>
 
 </div>
