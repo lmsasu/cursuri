@@ -13102,8 +13102,8 @@ div#notebook {
 <li>date medicale anonimizate</li>
 <li>inregistrari video in care se cere recunoasterea si localizarea de obiecte</li>
 </ul>
-<p>Un exemplu de depozit de date frecvent utilizat de cercetatori este <a href="http://archive.ics.uci.edu/ml/datasets.html">UCI Machine Learning repository</a>. O lista ampla se gaseste la <a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a>, <a href="https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research">Wikipedia</a>, <a href="https://blog.algorithmia.com/machine-learning-datasets-for-data-scientists/">aici</a>, <a href="http://homepages.inf.ed.ac.uk/rbf/IAPR/researchers/MLPAGES/mldat.htm">aici</a> sau <a href="https://storage.googleapis.com/openimages/web/index.html">aici</a>.</p>
-<p>Exista posibilitatea de a partaja si descarca seturi de date prin torrents, <img src="./images/academic_torrents.png" alt="Academic torrents">.</p>
+<p>Un exemplu de depozit de date frecvent utilizat de cercetatori este <a href="http://archive.ics.uci.edu/ml/datasets.php">UCI Machine Learning repository</a>. O lista ampla se gaseste la <a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a>, <a href="https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research">Wikipedia</a>, <a href="https://blog.algorithmia.com/machine-learning-datasets-for-data-scientists/">aici</a>, <a href="http://homepages.inf.ed.ac.uk/rbf/IAPR/researchers/MLPAGES/mldat.htm">aici</a> sau <a href="https://storage.googleapis.com/openimages/web/index.html">aici</a>.</p>
+<p>Exista posibilitatea de a partaja si descarca seturi de date prin <a href="http://academictorrents.com">Academic torrents</a>, <img src="./images/academic_torrents.png" alt="Academic torrents">.</p>
 <p>De exemplu, pornindu-se de la diferite emailuri, care au fost etichetate de utilizator drept spam sau non-spam, se doreste construirea unui clasificator automat care pe viitor sa faca sortarea automata a mesajelor. Modelul rezulta in urma determinarii unor relatii intre cuvintele care apar (sau nu) in mailuri si clasa fiecarui email.</p>
 <p><img src="./images/nigerian_scam.png" alt="Nigerian spam email"></p>
 
@@ -13151,7 +13151,7 @@ div#notebook {
 <li>pentru atribute nominale: orice asociere unu-la-unu (bijectie), de exemplu permutari; daca toti angajatii au un id, reasignarea lor nu ar modifica esenta datelor;</li>
 <li>pentru atribute ordinale: orice modificare de valori care respecta ordinea datelor (transformare monotona); multimea {mic, mediu, mare} poate fi reprezentata prin {A, B, C};</li>
 <li>pentru atribute interval: transformari de forma $a*val\_veche + b$ unde $a$ si $b$ sunt constante; ex: transformarea din Celsius in Fahrenheit;</li>
-<li>$val\_noua\;/\;val\_veche=a$; ex: raportul greutatii lui $x$ si $y$ este 2.</li>
+<li>pentru artribute multiplicabile: $val\_noua\;/\;val\_veche=a$; ex: raportul greutatii lui $x$ si $y$ este 2.</li>
 </ol>
 
 </div>
@@ -13504,7 +13504,7 @@ $$d_E(\mathbf{x}, \mathbf{y}) = d_2(\mathbf{x}, \mathbf{y}) = \sqrt{\sum\limits_
 <p>Alte distante si similaritati folosite sunt:</p>
 <ul>
 <li>distanta $L_1$, zisa si distanta Manhattan, city-block: $$d_1(\mathbf{x}, \mathbf{y}) = \sum\limits_{i=0}^{n-1} \left|x_i-y_i\right|$$</li>
-<li>similaritatea cosinus intre vectori: $$similaritate = \cos(\theta) = \frac{\mathbf{x} \cdot \mathbf{y}}{\|\mathbf{x}\|\|\mathbf{y}|}$$ unde $\theta$ este unghiul dintre ccei doi vectori, iar $\cdot$ este produsul scalar al celor doi vectori;</li>
+<li>similaritatea cosinus intre vectori: $$similaritate = \cos(\theta) = \frac{\mathbf{x} \cdot \mathbf{y}}{\|\mathbf{x}\|\|\mathbf{y}\|}$$ unde $\theta$ este unghiul dintre ccei doi vectori, iar $\cdot$ este produsul scalar al celor doi vectori;</li>
 <li>distanta Minkowski, generalizand distanta Euclidiana si pe $L_1$: $$d_p(\mathbf{x}, \mathbf{y}) = \left( \sum\limits_{i=0}^{n-1} \left|x_i-y_i\right|^p\right)^{1/p}$$
 <img src="./images/2D_unit_balls.svg.png" alt="Minkowski"> sursa: <a href="https://commons.wikimedia.org/wiki/File:2D_unit_balls.svg">https://commons.wikimedia.org/wiki/File:2D_unit_balls.svg</a></li>
 <li>indexul Jaccard, sau "Intersection over Union" sau coeficientul de similaritate Jaccard, utilizat pentru a calcula similaritatea a doua multimi:
@@ -13691,7 +13691,7 @@ $$
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n_rows</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span><span class="p">,</span> <span class="p">:]</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">n_rows</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span><span class="p">:,</span> <span class="p">:]</span>
 <span class="n">y_train</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n_rows</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n_rows</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">y_test</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n_rows</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13819,8 +13819,8 @@ y_test: {2}
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0 0 1 2 0 2 0 1 0 1 1 0 0 2 2 1 1 2 0 0 1 1 2 0 2 2 0 0 1 1 2 1 1 2 2 0 2
- 1 1 0 2 2 1 0 2 1 0 2 1 0]
+<pre>[2 0 1 1 0 0 2 2 1 2 1 1 2 1 0 1 0 2 0 1 1 1 2 0 1 2 1 0 1 0 0 1 0 2 1 1 2
+ 1 1 2 0 0 2 2 1 1 1 1 2 2]
 </pre>
 </div>
 </div>
@@ -13931,13 +13931,13 @@ Counter({0: 19, 2: 16, 1: 15})
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;np.__version__=</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">__version__sion__</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;np.__version__=</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14055,13 +14055,13 @@ Counter({0: 19, 2: 16, 1: 15})
 
  
  
-<div id="821d3994-000c-4c26-923f-91cba8b8fca7"></div>
+<div id="5c37eee4-125b-4daa-95eb-6cbf81eb2a08"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#821d3994-000c-4c26-923f-91cba8b8fca7');
+var element = $('#5c37eee4-125b-4daa-95eb-6cbf81eb2a08');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e6ee7a237257435e868e1372b8120a06", "version_major": 2, "version_minor": 0}
+{"model_id": "b9de43fc7d4f44999c0bbfe1f50ad676", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
