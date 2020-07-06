@@ -1,0 +1,322 @@
+const CREATE_USER_URL = '/api/v1/accounts/create_user_from_scratch/';
+const ONBOARDING_REDIRECT = "/onboarding#is_new";
+const DASHBOARD_REDIRECT = '/dashboard';
+const SOCIAL_TOKEN_URL = '/api/v1/accounts/get_social_token/';
+const SOCIAL_AUTH_DONE_URL = '/api/v1/accounts/social_auth_done/';
+
+var state = {
+    auth_open: false,
+    type: "google",
+    _interval_id: null,
+    _popup: null,
+    timezone: window.jstz.determine().name(),
+    name: "",
+    email: "",
+    password: "",
+};
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+function signup_error(error) {
+    error.response.json().then(function(errors) {render_errors(errors)})
+}
+function signup_call(creds) {
+    return dq_fetch(CREATE_USER_URL, {post_obj: creds})
+        .then(new_token)
+        .catch(signup_error)
+}
+
+
+function update_email(event) {
+    state.email = event.target.value
+}
+
+function update_name(event) {
+    state.name = event.target.value
+}
+
+function update_password(event) {
+    state.password = event.target.value
+}
+
+function render_errors (errors) {
+    var errors_string = ""
+    for(var i = 0;i<errors.length;i++) {
+        errors_string += "<div class='error'>" + errors[i][Object.keys(errors[i])[0]] + "</div>"
+    }
+    document.getElementById("errors_area").innerHTML = errors_string;
+}
+
+function remove_undefined_values(cookies) {
+  var dict = {}
+  for (var cookie_name in cookies) {
+    var cookie_value = cookies[cookie_name]
+    if (typeof cookie_value !== 'undefined' && cookie_value !== '') {
+      dict[cookie_name] = cookie_value
+    }
+  }
+  return dict
+}
+
+function get_marketing_info_from_cookies () {
+    var marketing_info = {}
+  
+    var referer_url_from_cookie = getCookie('dataquest-cac-referer-url')
+    var referer_url = referer_url_from_cookie ? referer_url_from_cookie : document.referrer
+    // Check that referer_url is not internal (from dataquest)
+    if (referer_url && referer_url.indexOf('dataquest.io') === -1) {
+      marketing_info.referer_url = referer_url
+    }
+
+    var landing_page_last_touch_from_cookie = getCookie('dataquest-cac-landing-page-last-touch')
+    var landing_page_last_touch = landing_page_last_touch_from_cookie ? landing_page_last_touch_from_cookie : window.parent.location.pathname
+    var extracted_info_from_cookies = {
+        'utm_source': getCookie('dataquest-cac-utm-source'),
+        'utm_medium': getCookie('dataquest-cac-utm-medium'),
+        'utm_campaign': getCookie('dataquest-cac-utm-campaign'),
+        'utm_content': getCookie('dataquest-cac-utm-content'),
+        'utm_term': getCookie('dataquest-cac-utm-term'),
+        'landing_page': getCookie('dataquest-cac-landing-page'),
+        'landing_page_last_touch': landing_page_last_touch,
+    }
+    
+    var valid_values_from_cookies = remove_undefined_values(extracted_info_from_cookies)
+    for (var field_name in valid_values_from_cookies) { 
+      marketing_info[field_name] = valid_values_from_cookies[field_name]; 
+    }
+
+    marketing_info['signup_form'] = 'embed'
+
+    return marketing_info
+}
+    
+
+
+function signup(event) {
+    event.preventDefault()
+    document.getElementById("errors_area").innerHTML = null;
+    var error = check_fields()
+    if (error) {
+        render_errors([{"general": error}])
+        return
+    }
+    // initiate recaptcha validation
+    grecaptcha.execute()
+}
+
+function get_path_slug_from_location_if_available (url) {
+  var extracted_path_slug = url.match('/path/(.*)/')
+  if (extracted_path_slug && extracted_path_slug.length > 1) {
+    // The first element in the list is always the input, so we get the second element that has the match
+    return extracted_path_slug[1]
+  }
+}
+
+function check_fields() {
+    if (!state.email) {
+        return 'Please enter your email'
+    }
+    if (!state.password) {
+        return 'Please enter your password'
+    }
+    return null
+}
+
+function track_signup(new_user, options) {
+  var event_name = "accounts-logged-in"
+  if (new_user) {
+    event_name = "accounts-signup-success-frontend"
+  }
+  try {
+    window.analytics.track(event_name, options)
+  } catch (error) {
+
+  }
+}
+
+function redirect(new_user) {
+  if (new_user) {
+    if (window.location.hash === '#iframe') {
+      var redirect_url_for_new_user = ONBOARDING_REDIRECT
+      if (document.referrer.indexOf('path') !== -1) {
+        var path_slug = get_path_slug_from_location_if_available(document.referrer)
+        redirect_url_for_new_user = '/path/' + path_slug
+      }
+        window.parent.parent.location = redirect_url_for_new_user
+      } else {
+        window.location = ONBOARDING_REDIRECT
+      }
+    } else {
+      if (window.location.hash === '#iframe') {
+        window.parent.parent.location = DASHBOARD_REDIRECT
+      } else {
+        window.location = DASHBOARD_REDIRECT
+      }
+    }
+}
+
+function set_token(data) {
+    Cookies.set('token', _.pick(data, [
+        'token',
+        'cm_jwt',
+    ]))
+}
+
+function new_token(data) {
+    set_token(data)
+    var new_user = true;
+    if ('new_user' in data) {
+      new_user = data.new_user;
+    }
+    track_signup(new_user, {})
+    redirect(new_user)
+}
+
+function onSuccess() {
+    const url = SOCIAL_TOKEN_URL
+    var post_obj = get_marketing_info_from_cookies()
+    var path_slug = get_path_slug_from_location_if_available(document.referrer)
+    if (path_slug) {
+      post_obj['path_slug'] = path_slug
+    }
+  
+    return dq_fetch(url, {post_obj: post_obj})
+        .then(new_token)
+        .catch(signup_error)
+}
+
+function onFailure(message) {
+   render_errors([{"general": "Social account authorization error."}])
+}
+
+function get_popup_options() {
+    var _window = window;
+    var width = 500
+    var height = 500
+    const options = {
+        width: width,
+        height: height,
+        left: _window.screenX + ((_window.outerWidth - width) / 2),
+        top: _window.screenY + ((_window.outerHeight - height) / 2.5),
+    }
+    return _.map(options, function(value, key) {return `${key}=${value}`}
+).
+    join(',')
+}
+function get_url() {
+    const type = (state.type === 'google') ? 'google-oauth2' : state.type
+    return `/api/v1/accounts/login/${type}`
+}
+
+function auth_success() {
+    close_auth();
+    onSuccess()
+}
+function auth_failure(message) {
+    close_auth();
+    onFailure(message)
+}
+function close_auth() {
+    state.auth_open = false;
+    if (state._popup && state._popup.close) {
+      state._popup.close()
+    }
+    state._popup = undefined
+}
+
+function _the_poll() {
+    if (!state.auth_open) {
+        window.clearInterval(state._interval_id);
+        return
+    }
+
+    try {
+        const current_url = state._popup.location.pathname;
+        if (current_url === SOCIAL_AUTH_DONE_URL) {
+            window.clearInterval(state._interval_id)
+            auth_success()
+            return // done!
+        }
+    } catch (error) {
+    }
+    if (!state._popup) {
+        window.clearInterval(state._interval_id)
+        auth_failure('Provider Popup Blocked')
+    } else if (state._popup.closed !== false) {
+        window.clearInterval(state._interval_id)
+        auth_failure('Authorization Failed')
+    }
+}
+function setup_polling_listeners() {
+    const delay = 100
+    state._interval_id = window.setInterval(_the_poll, delay)
+}
+
+function open_social_auth_window(type) {
+    state.auth_open = true;
+    state.type = type;
+    state._popup = window.open(get_url(), state.type, get_popup_options())
+    setup_polling_listeners()
+    if (state._popup && state._popup.focus) state._popup.focus()
+}
+
+/**
+   * recaptcha data callback
+   * executed when user submits a successful response
+   * g-recaptcha-response token is passed in as an argument
+   * @param {string} token
+   */
+function onRecaptchaCallback(token) {
+  var marketing_info = get_marketing_info_from_cookies()
+
+  var post_obj = {
+      name: state.name,
+      email: state.email,
+      password: state.email,
+      timezone: state.timezone,
+      recaptchaToken: token,
+  }
+  for (var field_name in marketing_info) { 
+    post_obj[field_name] = marketing_info[field_name]; 
+  }
+
+  var path_slug = get_path_slug_from_location_if_available(document.referrer)
+  if (path_slug) {
+    post_obj['path_slug'] = path_slug
+  }
+  
+  signup_call(post_obj)
+}
+
+/**
+ * recaptcha tokene expired callback
+ * executed when the reCAPTCHA response expires and the user needs to re-verify.
+ * @param {*} e
+ */
+function onRecaptchaExpired(e) {
+  console.error('recaptcha expired', e)
+}
+
+/**
+ * recaptcha error callback
+ * executed when reCAPTCHA encounters an error (usually network connectivity) 
+ * and cannot continue until connectivity is restored
+ * @param {string} e
+ */
+function onRecaptchaError(e) {
+  console.error('recaptcha error', e)
+}
