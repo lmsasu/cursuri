@@ -57,6 +57,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
   </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+  </style>
 
 
 
@@ -14406,7 +14419,7 @@ $$</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Acuratetea poate fi inselatoare in cazurile in care clasele sunt debalansate (numar foarte mare de exemplare intr-o clasa in comparatie cu numarul de date din cealalta clasa).</p>
+<p>Considerarea doar a acurateti poate fi inselatoare in cazurile in care clasele sunt debalansate (numar foarte mare de exemplare intr-o clasa in comparatie cu numarul de date din cealalta clasa).</p>
 
 </div>
 </div>
@@ -14446,15 +14459,15 @@ $$</p>
   <tr>
     <td class="tg-c3ow" rowspan="2"><span style="font-weight:bold">Actual </span><br><span style="font-weight:bold">(real, ground</span><br><span style="font-weight:bold">truth)</span></td>
     <td class="tg-7btt">Positive</td>
-    <td class="tg-c3ow">998</td>
-    <td class="tg-c3ow">0</td>
-    <td class="tg-c3ow"><span style="font-weight:bold">P=998</span></td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow"><span style="font-weight:bold">P=2</span></td>
   </tr>
   <tr>
     <td class="tg-7btt">Negative</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow"><span style="font-weight:bold">N=2</span></td>
+    <td class="tg-c3ow">0</td>
+    <td class="tg-c3ow">998</td>
+    <td class="tg-c3ow"><span style="font-weight:bold">N=999</span></td>
   </tr>
 </tbody>
 </table></div>
@@ -14471,8 +14484,8 @@ $$</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Mai mult, pentru o astfel de situatie debalansata, un clasificator care prrezice mereu "pozitiv" are rata de succes de 99.8%!</p>
-<p>Daca acele 2 cazuri negativ sunt insa importante (incercare de frauda/intruziune, mail legitim si crucial care e clasificat eronat ca fiind spam), clasificarea este de fapt slaba. Precision, recall si F1 score sunt niste metrici senzitive la clase dezechilibrate.</p>
+<p>Mai mult, pentru o astfel de situatie debalansata, un clasificator care prrezice mereu "negativ" are rata de succes de 99.8%!</p>
+<p>Daca acele 2 cazuri pozitiv sunt insa importante (incercare de frauda/intruziune, recunoasterea de virusi/virusuri etc), clasificarea este de fapt slaba. Precision, recall si F1 score sunt niste metrici senzitive la clase dezechilibrate.</p>
 
 </div>
 </div>
@@ -14489,7 +14502,7 @@ Precision = \frac{TP}{TP+FP}
 $$
 Pentru exemplul numeric de mai sus obtinem:
 $$
-Precision = \frac{998}{998+1}=0.998998998998999=98.899\%
+Precision = \frac{1}{1+0}=1
 $$</p>
 
 </div>
@@ -14507,7 +14520,7 @@ Recall = \frac{TP}{TP+FN} = \frac{TP}{P}
 $$
 Pentru exemplul numeric de mai sus obtinem:
 $$
-Recall = \frac{998}{998}=1
+Recall = \frac{1}{1+1}=0.5
 $$</p>
 
 </div>
@@ -14520,7 +14533,7 @@ F1 = 2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}
 $$
 Pentru exemplul numeric de mai sus obtinem:
 $$
-F1 = 2 \cdot \frac{\frac{998}{999} \cdot 1}{\frac{998}{999} + 1} \approx 0.99949
+F1 = 2 \cdot \frac{1 \cdot 0.5}{1+0.5} \approx 0.66
 $$</p>
 
 </div>
@@ -14535,9 +14548,9 @@ $$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Actual Value</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ground truth</span>
 <span class="n">labels</span> <span class="o">=</span>      <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="c1"># Predicted Value</span>
+<span class="c1"># predicted</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
