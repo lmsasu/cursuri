@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14878,8 +14878,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># produs cartezian</span>
-<span class="n">colours</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span> <span class="p">]</span>
-<span class="n">things</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;house&quot;</span><span class="p">,</span> <span class="s2">&quot;car&quot;</span><span class="p">,</span> <span class="s2">&quot;tree&quot;</span> <span class="p">]</span>
+<span class="n">colours</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">,</span> <span class="s2">"blue"</span> <span class="p">]</span>
+<span class="n">things</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">"house"</span><span class="p">,</span> <span class="s2">"car"</span><span class="p">,</span> <span class="s2">"tree"</span> <span class="p">]</span>
 <span class="n">produs_cartezian</span> <span class="o">=</span> <span class="p">[(</span><span class="n">colour</span><span class="p">,</span> <span class="n">thing</span><span class="p">)</span> <span class="k">for</span> <span class="n">colour</span> <span class="ow">in</span> <span class="n">colours</span> <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">produs_cartezian</span><span class="p">)</span>
 <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">produs_cartezian</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">colours</span><span class="p">)</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">things</span><span class="p">)</span>
@@ -15016,11 +15016,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dintr-o lista de cuvinte se mentin doar cele care nu fac parte dintr-o alta lista specificata (stop words)</span>
-<span class="n">stop_words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;about&quot;</span><span class="p">,</span> <span class="s2">&quot;above&quot;</span><span class="p">,</span> <span class="s2">&quot;above&quot;</span><span class="p">,</span> <span class="s2">&quot;across&quot;</span><span class="p">,</span> <span class="s2">&quot;after&quot;</span><span class="p">,</span> <span class="s2">&quot;afterwards&quot;</span><span class="p">,</span> <span class="s2">&quot;again&quot;</span><span class="p">,</span> <span class="s2">&quot;against&quot;</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="s2">&quot;almost&quot;</span><span class="p">,</span> <span class="s2">&quot;alone&quot;</span><span class="p">,</span> <span class="s2">&quot;along&quot;</span><span class="p">,</span> <span class="s2">&quot;already&quot;</span><span class="p">,</span> <span class="s2">&quot;also&quot;</span><span class="p">,</span><span class="s2">&quot;although&quot;</span><span class="p">,</span><span class="s2">&quot;always&quot;</span><span class="p">,</span><span class="s2">&quot;am&quot;</span><span class="p">,</span><span class="s2">&quot;among&quot;</span><span class="p">,</span> <span class="s2">&quot;amongst&quot;</span><span class="p">,</span> <span class="s2">&quot;amoungst&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">,</span>  <span class="s2">&quot;an&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span> <span class="s2">&quot;another&quot;</span><span class="p">,</span> <span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="s2">&quot;anyhow&quot;</span><span class="p">,</span><span class="s2">&quot;anyone&quot;</span><span class="p">,</span><span class="s2">&quot;anything&quot;</span><span class="p">,</span><span class="s2">&quot;anyway&quot;</span><span class="p">,</span> <span class="s2">&quot;anywhere&quot;</span><span class="p">,</span> <span class="s2">&quot;are&quot;</span><span class="p">,</span> <span class="s2">&quot;around&quot;</span><span class="p">,</span> <span class="s2">&quot;as&quot;</span><span class="p">,</span>  <span class="s2">&quot;at&quot;</span><span class="p">,</span> <span class="s2">&quot;back&quot;</span><span class="p">,</span><span class="s2">&quot;be&quot;</span><span class="p">,</span><span class="s2">&quot;became&quot;</span><span class="p">,</span> <span class="s2">&quot;because&quot;</span><span class="p">,</span><span class="s2">&quot;become&quot;</span><span class="p">,</span><span class="s2">&quot;becomes&quot;</span><span class="p">,</span> <span class="s2">&quot;becoming&quot;</span><span class="p">,</span> <span class="s2">&quot;been&quot;</span><span class="p">,</span> <span class="s2">&quot;before&quot;</span><span class="p">,</span> <span class="s2">&quot;beforehand&quot;</span><span class="p">,</span> <span class="s2">&quot;behind&quot;</span><span class="p">,</span> <span class="s2">&quot;being&quot;</span><span class="p">,</span> <span class="s2">&quot;below&quot;</span><span class="p">,</span> <span class="s2">&quot;beside&quot;</span><span class="p">,</span> <span class="s2">&quot;besides&quot;</span><span class="p">,</span> <span class="s2">&quot;between&quot;</span><span class="p">,</span> <span class="s2">&quot;beyond&quot;</span><span class="p">,</span> <span class="s2">&quot;bill&quot;</span><span class="p">,</span> <span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="s2">&quot;bottom&quot;</span><span class="p">,</span><span class="s2">&quot;but&quot;</span><span class="p">,</span> <span class="s2">&quot;by&quot;</span><span class="p">,</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span> <span class="s2">&quot;can&quot;</span><span class="p">,</span> <span class="s2">&quot;cannot&quot;</span><span class="p">,</span> <span class="s2">&quot;cant&quot;</span><span class="p">,</span> <span class="s2">&quot;co&quot;</span><span class="p">,</span> <span class="s2">&quot;con&quot;</span><span class="p">,</span> <span class="s2">&quot;could&quot;</span><span class="p">,</span> <span class="s2">&quot;couldnt&quot;</span><span class="p">,</span> <span class="s2">&quot;cry&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">,</span> <span class="s2">&quot;describe&quot;</span><span class="p">,</span> <span class="s2">&quot;detail&quot;</span><span class="p">,</span> <span class="s2">&quot;do&quot;</span><span class="p">,</span> <span class="s2">&quot;done&quot;</span><span class="p">,</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span> <span class="s2">&quot;due&quot;</span><span class="p">,</span> <span class="s2">&quot;during&quot;</span><span class="p">,</span> <span class="s2">&quot;each&quot;</span><span class="p">,</span> <span class="s2">&quot;eg&quot;</span><span class="p">,</span> <span class="s2">&quot;eight&quot;</span><span class="p">,</span> <span class="s2">&quot;either&quot;</span><span class="p">,</span> <span class="s2">&quot;eleven&quot;</span><span class="p">,</span><span class="s2">&quot;else&quot;</span><span class="p">,</span> <span class="s2">&quot;elsewhere&quot;</span><span class="p">,</span> <span class="s2">&quot;empty&quot;</span><span class="p">,</span> <span class="s2">&quot;enough&quot;</span><span class="p">,</span> <span class="s2">&quot;etc&quot;</span><span class="p">,</span> <span class="s2">&quot;even&quot;</span><span class="p">,</span> <span class="s2">&quot;ever&quot;</span><span class="p">,</span> <span class="s2">&quot;every&quot;</span><span class="p">,</span> <span class="s2">&quot;everyone&quot;</span><span class="p">,</span> <span class="s2">&quot;everything&quot;</span><span class="p">,</span> <span class="s2">&quot;everywhere&quot;</span><span class="p">,</span> <span class="s2">&quot;except&quot;</span><span class="p">,</span> <span class="s2">&quot;few&quot;</span><span class="p">,</span> <span class="s2">&quot;fifteen&quot;</span><span class="p">,</span> <span class="s2">&quot;fify&quot;</span><span class="p">,</span> <span class="s2">&quot;fill&quot;</span><span class="p">,</span> <span class="s2">&quot;find&quot;</span><span class="p">,</span> <span class="s2">&quot;fire&quot;</span><span class="p">,</span> <span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">,</span> <span class="s2">&quot;for&quot;</span><span class="p">,</span> <span class="s2">&quot;former&quot;</span><span class="p">,</span> <span class="s2">&quot;formerly&quot;</span><span class="p">,</span> <span class="s2">&quot;forty&quot;</span><span class="p">,</span> <span class="s2">&quot;found&quot;</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">,</span> <span class="s2">&quot;from&quot;</span><span class="p">,</span> <span class="s2">&quot;front&quot;</span><span class="p">,</span> <span class="s2">&quot;full&quot;</span><span class="p">,</span> <span class="s2">&quot;further&quot;</span><span class="p">,</span> <span class="s2">&quot;get&quot;</span><span class="p">,</span> <span class="s2">&quot;give&quot;</span><span class="p">,</span> <span class="s2">&quot;go&quot;</span><span class="p">,</span> <span class="s2">&quot;had&quot;</span><span class="p">,</span> <span class="s2">&quot;has&quot;</span><span class="p">,</span> <span class="s2">&quot;hasnt&quot;</span><span class="p">,</span> <span class="s2">&quot;have&quot;</span><span class="p">,</span> <span class="s2">&quot;he&quot;</span><span class="p">,</span> <span class="s2">&quot;hence&quot;</span><span class="p">,</span> <span class="s2">&quot;her&quot;</span><span class="p">,</span> <span class="s2">&quot;here&quot;</span><span class="p">,</span> <span class="s2">&quot;hereafter&quot;</span><span class="p">,</span> <span class="s2">&quot;hereby&quot;</span><span class="p">,</span> <span class="s2">&quot;herein&quot;</span><span class="p">,</span> <span class="s2">&quot;hereupon&quot;</span><span class="p">,</span> <span class="s2">&quot;hers&quot;</span><span class="p">,</span> <span class="s2">&quot;herself&quot;</span><span class="p">,</span> <span class="s2">&quot;him&quot;</span><span class="p">,</span> <span class="s2">&quot;himself&quot;</span><span class="p">,</span> <span class="s2">&quot;his&quot;</span><span class="p">,</span> <span class="s2">&quot;how&quot;</span><span class="p">,</span> <span class="s2">&quot;however&quot;</span><span class="p">,</span> <span class="s2">&quot;hundred&quot;</span><span class="p">,</span> <span class="s2">&quot;ie&quot;</span><span class="p">,</span> <span class="s2">&quot;if&quot;</span><span class="p">,</span> <span class="s2">&quot;in&quot;</span><span class="p">,</span> <span class="s2">&quot;inc&quot;</span><span class="p">,</span> <span class="s2">&quot;indeed&quot;</span><span class="p">,</span> <span class="s2">&quot;interest&quot;</span><span class="p">,</span> <span class="s2">&quot;into&quot;</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">,</span> <span class="s2">&quot;its&quot;</span><span class="p">,</span> <span class="s2">&quot;itself&quot;</span><span class="p">,</span> <span class="s2">&quot;keep&quot;</span><span class="p">,</span> <span class="s2">&quot;last&quot;</span><span class="p">,</span> <span class="s2">&quot;latter&quot;</span><span class="p">,</span> <span class="s2">&quot;latterly&quot;</span><span class="p">,</span> <span class="s2">&quot;least&quot;</span><span class="p">,</span> <span class="s2">&quot;less&quot;</span><span class="p">,</span> <span class="s2">&quot;ltd&quot;</span><span class="p">,</span> <span class="s2">&quot;made&quot;</span><span class="p">,</span> <span class="s2">&quot;many&quot;</span><span class="p">,</span> <span class="s2">&quot;may&quot;</span><span class="p">,</span> <span class="s2">&quot;me&quot;</span><span class="p">,</span> <span class="s2">&quot;meanwhile&quot;</span><span class="p">,</span> <span class="s2">&quot;might&quot;</span><span class="p">,</span> <span class="s2">&quot;mill&quot;</span><span class="p">,</span> <span class="s2">&quot;mine&quot;</span><span class="p">,</span> <span class="s2">&quot;more&quot;</span><span class="p">,</span> <span class="s2">&quot;moreover&quot;</span><span class="p">,</span> <span class="s2">&quot;most&quot;</span><span class="p">,</span> <span class="s2">&quot;mostly&quot;</span><span class="p">,</span> <span class="s2">&quot;move&quot;</span><span class="p">,</span> <span class="s2">&quot;much&quot;</span><span class="p">,</span> <span class="s2">&quot;must&quot;</span><span class="p">,</span> <span class="s2">&quot;my&quot;</span><span class="p">,</span> <span class="s2">&quot;myself&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;namely&quot;</span><span class="p">,</span> <span class="s2">&quot;neither&quot;</span><span class="p">,</span> <span class="s2">&quot;never&quot;</span><span class="p">,</span> <span class="s2">&quot;nevertheless&quot;</span><span class="p">,</span> <span class="s2">&quot;next&quot;</span><span class="p">,</span> <span class="s2">&quot;nine&quot;</span><span class="p">,</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span> <span class="s2">&quot;nobody&quot;</span><span class="p">,</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="s2">&quot;noone&quot;</span><span class="p">,</span> <span class="s2">&quot;nor&quot;</span><span class="p">,</span> <span class="s2">&quot;not&quot;</span><span class="p">,</span> <span class="s2">&quot;nothing&quot;</span><span class="p">,</span> <span class="s2">&quot;now&quot;</span><span class="p">,</span> <span class="s2">&quot;nowhere&quot;</span><span class="p">,</span> <span class="s2">&quot;of&quot;</span><span class="p">,</span> <span class="s2">&quot;off&quot;</span><span class="p">,</span> <span class="s2">&quot;often&quot;</span><span class="p">,</span> <span class="s2">&quot;on&quot;</span><span class="p">,</span> <span class="s2">&quot;once&quot;</span><span class="p">,</span> <span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="s2">&quot;only&quot;</span><span class="p">,</span> <span class="s2">&quot;onto&quot;</span><span class="p">,</span> <span class="s2">&quot;or&quot;</span><span class="p">,</span> <span class="s2">&quot;other&quot;</span><span class="p">,</span> <span class="s2">&quot;others&quot;</span><span class="p">,</span> <span class="s2">&quot;otherwise&quot;</span><span class="p">,</span> <span class="s2">&quot;our&quot;</span><span class="p">,</span> <span class="s2">&quot;ours&quot;</span><span class="p">,</span> <span class="s2">&quot;ourselves&quot;</span><span class="p">,</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span> <span class="s2">&quot;over&quot;</span><span class="p">,</span> <span class="s2">&quot;own&quot;</span><span class="p">,</span><span class="s2">&quot;part&quot;</span><span class="p">,</span> <span class="s2">&quot;per&quot;</span><span class="p">,</span> <span class="s2">&quot;perhaps&quot;</span><span class="p">,</span> <span class="s2">&quot;please&quot;</span><span class="p">,</span> <span class="s2">&quot;put&quot;</span><span class="p">,</span> <span class="s2">&quot;rather&quot;</span><span class="p">,</span> <span class="s2">&quot;re&quot;</span><span class="p">,</span> <span class="s2">&quot;same&quot;</span><span class="p">,</span> <span class="s2">&quot;see&quot;</span><span class="p">,</span> <span class="s2">&quot;seem&quot;</span><span class="p">,</span> <span class="s2">&quot;seemed&quot;</span><span class="p">,</span> <span class="s2">&quot;seeming&quot;</span><span class="p">,</span> <span class="s2">&quot;seems&quot;</span><span class="p">,</span> <span class="s2">&quot;serious&quot;</span><span class="p">,</span> <span class="s2">&quot;several&quot;</span><span class="p">,</span> <span class="s2">&quot;she&quot;</span><span class="p">,</span> <span class="s2">&quot;should&quot;</span><span class="p">,</span> <span class="s2">&quot;show&quot;</span><span class="p">,</span> <span class="s2">&quot;side&quot;</span><span class="p">,</span> <span class="s2">&quot;since&quot;</span><span class="p">,</span> <span class="s2">&quot;sincere&quot;</span><span class="p">,</span> <span class="s2">&quot;six&quot;</span><span class="p">,</span> <span class="s2">&quot;sixty&quot;</span><span class="p">,</span> <span class="s2">&quot;so&quot;</span><span class="p">,</span> <span class="s2">&quot;some&quot;</span><span class="p">,</span> <span class="s2">&quot;somehow&quot;</span><span class="p">,</span> <span class="s2">&quot;someone&quot;</span><span class="p">,</span> <span class="s2">&quot;something&quot;</span><span class="p">,</span> <span class="s2">&quot;sometime&quot;</span><span class="p">,</span> <span class="s2">&quot;sometimes&quot;</span><span class="p">,</span> <span class="s2">&quot;somewhere&quot;</span><span class="p">,</span> <span class="s2">&quot;still&quot;</span><span class="p">,</span> <span class="s2">&quot;such&quot;</span><span class="p">,</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;take&quot;</span><span class="p">,</span> <span class="s2">&quot;ten&quot;</span><span class="p">,</span> <span class="s2">&quot;than&quot;</span><span class="p">,</span> <span class="s2">&quot;that&quot;</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">,</span> <span class="s2">&quot;their&quot;</span><span class="p">,</span> <span class="s2">&quot;them&quot;</span><span class="p">,</span> <span class="s2">&quot;themselves&quot;</span><span class="p">,</span> <span class="s2">&quot;then&quot;</span><span class="p">,</span> <span class="s2">&quot;thence&quot;</span><span class="p">,</span> <span class="s2">&quot;there&quot;</span><span class="p">,</span> <span class="s2">&quot;thereafter&quot;</span><span class="p">,</span> <span class="s2">&quot;thereby&quot;</span><span class="p">,</span> <span class="s2">&quot;therefore&quot;</span><span class="p">,</span> <span class="s2">&quot;therein&quot;</span><span class="p">,</span> <span class="s2">&quot;thereupon&quot;</span><span class="p">,</span> <span class="s2">&quot;these&quot;</span><span class="p">,</span> <span class="s2">&quot;they&quot;</span><span class="p">,</span> <span class="s2">&quot;thickv&quot;</span><span class="p">,</span> <span class="s2">&quot;thin&quot;</span><span class="p">,</span> <span class="s2">&quot;third&quot;</span><span class="p">,</span> <span class="s2">&quot;this&quot;</span><span class="p">,</span> <span class="s2">&quot;those&quot;</span><span class="p">,</span> <span class="s2">&quot;though&quot;</span><span class="p">,</span> <span class="s2">&quot;three&quot;</span><span class="p">,</span> <span class="s2">&quot;through&quot;</span><span class="p">,</span> <span class="s2">&quot;throughout&quot;</span><span class="p">,</span> <span class="s2">&quot;thru&quot;</span><span class="p">,</span> <span class="s2">&quot;thus&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">,</span> <span class="s2">&quot;together&quot;</span><span class="p">,</span> <span class="s2">&quot;too&quot;</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;toward&quot;</span><span class="p">,</span> <span class="s2">&quot;towards&quot;</span><span class="p">,</span> <span class="s2">&quot;twelve&quot;</span><span class="p">,</span> <span class="s2">&quot;twenty&quot;</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="s2">&quot;un&quot;</span><span class="p">,</span> <span class="s2">&quot;under&quot;</span><span class="p">,</span> <span class="s2">&quot;until&quot;</span><span class="p">,</span> <span class="s2">&quot;up&quot;</span><span class="p">,</span> <span class="s2">&quot;upon&quot;</span><span class="p">,</span> <span class="s2">&quot;us&quot;</span><span class="p">,</span> <span class="s2">&quot;very&quot;</span><span class="p">,</span> <span class="s2">&quot;via&quot;</span><span class="p">,</span> <span class="s2">&quot;was&quot;</span><span class="p">,</span> <span class="s2">&quot;we&quot;</span><span class="p">,</span> <span class="s2">&quot;well&quot;</span><span class="p">,</span> <span class="s2">&quot;were&quot;</span><span class="p">,</span> <span class="s2">&quot;what&quot;</span><span class="p">,</span> <span class="s2">&quot;whatever&quot;</span><span class="p">,</span> <span class="s2">&quot;when&quot;</span><span class="p">,</span> <span class="s2">&quot;whence&quot;</span><span class="p">,</span> <span class="s2">&quot;whenever&quot;</span><span class="p">,</span> <span class="s2">&quot;where&quot;</span><span class="p">,</span> <span class="s2">&quot;whereafter&quot;</span><span class="p">,</span> <span class="s2">&quot;whereas&quot;</span><span class="p">,</span> <span class="s2">&quot;whereby&quot;</span><span class="p">,</span> <span class="s2">&quot;wherein&quot;</span><span class="p">,</span> <span class="s2">&quot;whereupon&quot;</span><span class="p">,</span> <span class="s2">&quot;wherever&quot;</span><span class="p">,</span> <span class="s2">&quot;whether&quot;</span><span class="p">,</span> <span class="s2">&quot;which&quot;</span><span class="p">,</span> <span class="s2">&quot;while&quot;</span><span class="p">,</span> <span class="s2">&quot;whither&quot;</span><span class="p">,</span> <span class="s2">&quot;who&quot;</span><span class="p">,</span> <span class="s2">&quot;whoever&quot;</span><span class="p">,</span> <span class="s2">&quot;whole&quot;</span><span class="p">,</span> <span class="s2">&quot;whom&quot;</span><span class="p">,</span> <span class="s2">&quot;whose&quot;</span><span class="p">,</span> <span class="s2">&quot;why&quot;</span><span class="p">,</span> <span class="s2">&quot;will&quot;</span><span class="p">,</span> <span class="s2">&quot;with&quot;</span><span class="p">,</span> <span class="s2">&quot;within&quot;</span><span class="p">,</span> <span class="s2">&quot;without&quot;</span><span class="p">,</span> <span class="s2">&quot;would&quot;</span><span class="p">,</span> <span class="s2">&quot;yet&quot;</span><span class="p">,</span> <span class="s2">&quot;you&quot;</span><span class="p">,</span> <span class="s2">&quot;your&quot;</span><span class="p">,</span> <span class="s2">&quot;yours&quot;</span><span class="p">,</span> <span class="s2">&quot;yourself&quot;</span><span class="p">,</span> <span class="s2">&quot;yourselves&quot;</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">]</span>
-<span class="n">paragraph_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Stopword&#39;</span><span class="p">,</span><span class="s1">&#39;filtering&#39;</span><span class="p">,</span><span class="s1">&#39;is&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;common&#39;</span><span class="p">,</span><span class="s1">&#39;step&#39;</span><span class="p">,</span><span class="s1">&#39;in&#39;</span><span class="p">,</span><span class="s1">&#39;preprocessing&#39;</span><span class="p">,</span><span class="s1">&#39;text&#39;</span><span class="p">,</span><span class="s1">&#39;for&#39;</span><span class="p">,</span><span class="s1">&#39;various&#39;</span><span class="p">,</span><span class="s1">&#39;purposes&#39;</span><span class="p">,</span><span class="s1">&#39;This&#39;</span><span class="p">,</span><span class="s1">&#39;is&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;list&#39;</span><span class="p">,</span><span class="s1">&#39;of&#39;</span><span class="p">,</span><span class="s1">&#39;several&#39;</span><span class="p">,</span><span class="s1">&#39;different&#39;</span><span class="p">,</span><span class="s1">&#39;stopword&#39;</span><span class="p">,</span><span class="s1">&#39;lists&#39;</span><span class="p">,</span><span class="s1">&#39;extracted&#39;</span><span class="p">,</span><span class="s1">&#39;from&#39;</span><span class="p">,</span><span class="s1">&#39;various&#39;</span><span class="p">,</span><span class="s1">&#39;search&#39;</span><span class="p">,</span><span class="s1">&#39;engines&#39;</span><span class="p">,</span><span class="s1">&#39;libraries&#39;</span><span class="p">,</span><span class="s1">&#39;and&#39;</span><span class="p">,</span><span class="s1">&#39;articles&#39;</span><span class="p">,</span><span class="s1">&#39;There&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;surprising&#39;</span><span class="p">,</span><span class="s1">&#39;number&#39;</span><span class="p">,</span><span class="s1">&#39;of&#39;</span><span class="p">,</span><span class="s1">&#39;different&#39;</span><span class="p">,</span><span class="s1">&#39;lists&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Initial:&#39;</span><span class="p">,</span><span class="n">paragraph_list</span><span class="p">)</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"about"</span><span class="p">,</span> <span class="s2">"above"</span><span class="p">,</span> <span class="s2">"above"</span><span class="p">,</span> <span class="s2">"across"</span><span class="p">,</span> <span class="s2">"after"</span><span class="p">,</span> <span class="s2">"afterwards"</span><span class="p">,</span> <span class="s2">"again"</span><span class="p">,</span> <span class="s2">"against"</span><span class="p">,</span> <span class="s2">"all"</span><span class="p">,</span> <span class="s2">"almost"</span><span class="p">,</span> <span class="s2">"alone"</span><span class="p">,</span> <span class="s2">"along"</span><span class="p">,</span> <span class="s2">"already"</span><span class="p">,</span> <span class="s2">"also"</span><span class="p">,</span><span class="s2">"although"</span><span class="p">,</span><span class="s2">"always"</span><span class="p">,</span><span class="s2">"am"</span><span class="p">,</span><span class="s2">"among"</span><span class="p">,</span> <span class="s2">"amongst"</span><span class="p">,</span> <span class="s2">"amoungst"</span><span class="p">,</span> <span class="s2">"amount"</span><span class="p">,</span>  <span class="s2">"an"</span><span class="p">,</span> <span class="s2">"and"</span><span class="p">,</span> <span class="s2">"another"</span><span class="p">,</span> <span class="s2">"any"</span><span class="p">,</span><span class="s2">"anyhow"</span><span class="p">,</span><span class="s2">"anyone"</span><span class="p">,</span><span class="s2">"anything"</span><span class="p">,</span><span class="s2">"anyway"</span><span class="p">,</span> <span class="s2">"anywhere"</span><span class="p">,</span> <span class="s2">"are"</span><span class="p">,</span> <span class="s2">"around"</span><span class="p">,</span> <span class="s2">"as"</span><span class="p">,</span>  <span class="s2">"at"</span><span class="p">,</span> <span class="s2">"back"</span><span class="p">,</span><span class="s2">"be"</span><span class="p">,</span><span class="s2">"became"</span><span class="p">,</span> <span class="s2">"because"</span><span class="p">,</span><span class="s2">"become"</span><span class="p">,</span><span class="s2">"becomes"</span><span class="p">,</span> <span class="s2">"becoming"</span><span class="p">,</span> <span class="s2">"been"</span><span class="p">,</span> <span class="s2">"before"</span><span class="p">,</span> <span class="s2">"beforehand"</span><span class="p">,</span> <span class="s2">"behind"</span><span class="p">,</span> <span class="s2">"being"</span><span class="p">,</span> <span class="s2">"below"</span><span class="p">,</span> <span class="s2">"beside"</span><span class="p">,</span> <span class="s2">"besides"</span><span class="p">,</span> <span class="s2">"between"</span><span class="p">,</span> <span class="s2">"beyond"</span><span class="p">,</span> <span class="s2">"bill"</span><span class="p">,</span> <span class="s2">"both"</span><span class="p">,</span> <span class="s2">"bottom"</span><span class="p">,</span><span class="s2">"but"</span><span class="p">,</span> <span class="s2">"by"</span><span class="p">,</span> <span class="s2">"call"</span><span class="p">,</span> <span class="s2">"can"</span><span class="p">,</span> <span class="s2">"cannot"</span><span class="p">,</span> <span class="s2">"cant"</span><span class="p">,</span> <span class="s2">"co"</span><span class="p">,</span> <span class="s2">"con"</span><span class="p">,</span> <span class="s2">"could"</span><span class="p">,</span> <span class="s2">"couldnt"</span><span class="p">,</span> <span class="s2">"cry"</span><span class="p">,</span> <span class="s2">"de"</span><span class="p">,</span> <span class="s2">"describe"</span><span class="p">,</span> <span class="s2">"detail"</span><span class="p">,</span> <span class="s2">"do"</span><span class="p">,</span> <span class="s2">"done"</span><span class="p">,</span> <span class="s2">"down"</span><span class="p">,</span> <span class="s2">"due"</span><span class="p">,</span> <span class="s2">"during"</span><span class="p">,</span> <span class="s2">"each"</span><span class="p">,</span> <span class="s2">"eg"</span><span class="p">,</span> <span class="s2">"eight"</span><span class="p">,</span> <span class="s2">"either"</span><span class="p">,</span> <span class="s2">"eleven"</span><span class="p">,</span><span class="s2">"else"</span><span class="p">,</span> <span class="s2">"elsewhere"</span><span class="p">,</span> <span class="s2">"empty"</span><span class="p">,</span> <span class="s2">"enough"</span><span class="p">,</span> <span class="s2">"etc"</span><span class="p">,</span> <span class="s2">"even"</span><span class="p">,</span> <span class="s2">"ever"</span><span class="p">,</span> <span class="s2">"every"</span><span class="p">,</span> <span class="s2">"everyone"</span><span class="p">,</span> <span class="s2">"everything"</span><span class="p">,</span> <span class="s2">"everywhere"</span><span class="p">,</span> <span class="s2">"except"</span><span class="p">,</span> <span class="s2">"few"</span><span class="p">,</span> <span class="s2">"fifteen"</span><span class="p">,</span> <span class="s2">"fify"</span><span class="p">,</span> <span class="s2">"fill"</span><span class="p">,</span> <span class="s2">"find"</span><span class="p">,</span> <span class="s2">"fire"</span><span class="p">,</span> <span class="s2">"first"</span><span class="p">,</span> <span class="s2">"five"</span><span class="p">,</span> <span class="s2">"for"</span><span class="p">,</span> <span class="s2">"former"</span><span class="p">,</span> <span class="s2">"formerly"</span><span class="p">,</span> <span class="s2">"forty"</span><span class="p">,</span> <span class="s2">"found"</span><span class="p">,</span> <span class="s2">"four"</span><span class="p">,</span> <span class="s2">"from"</span><span class="p">,</span> <span class="s2">"front"</span><span class="p">,</span> <span class="s2">"full"</span><span class="p">,</span> <span class="s2">"further"</span><span class="p">,</span> <span class="s2">"get"</span><span class="p">,</span> <span class="s2">"give"</span><span class="p">,</span> <span class="s2">"go"</span><span class="p">,</span> <span class="s2">"had"</span><span class="p">,</span> <span class="s2">"has"</span><span class="p">,</span> <span class="s2">"hasnt"</span><span class="p">,</span> <span class="s2">"have"</span><span class="p">,</span> <span class="s2">"he"</span><span class="p">,</span> <span class="s2">"hence"</span><span class="p">,</span> <span class="s2">"her"</span><span class="p">,</span> <span class="s2">"here"</span><span class="p">,</span> <span class="s2">"hereafter"</span><span class="p">,</span> <span class="s2">"hereby"</span><span class="p">,</span> <span class="s2">"herein"</span><span class="p">,</span> <span class="s2">"hereupon"</span><span class="p">,</span> <span class="s2">"hers"</span><span class="p">,</span> <span class="s2">"herself"</span><span class="p">,</span> <span class="s2">"him"</span><span class="p">,</span> <span class="s2">"himself"</span><span class="p">,</span> <span class="s2">"his"</span><span class="p">,</span> <span class="s2">"how"</span><span class="p">,</span> <span class="s2">"however"</span><span class="p">,</span> <span class="s2">"hundred"</span><span class="p">,</span> <span class="s2">"ie"</span><span class="p">,</span> <span class="s2">"if"</span><span class="p">,</span> <span class="s2">"in"</span><span class="p">,</span> <span class="s2">"inc"</span><span class="p">,</span> <span class="s2">"indeed"</span><span class="p">,</span> <span class="s2">"interest"</span><span class="p">,</span> <span class="s2">"into"</span><span class="p">,</span> <span class="s2">"is"</span><span class="p">,</span> <span class="s2">"it"</span><span class="p">,</span> <span class="s2">"its"</span><span class="p">,</span> <span class="s2">"itself"</span><span class="p">,</span> <span class="s2">"keep"</span><span class="p">,</span> <span class="s2">"last"</span><span class="p">,</span> <span class="s2">"latter"</span><span class="p">,</span> <span class="s2">"latterly"</span><span class="p">,</span> <span class="s2">"least"</span><span class="p">,</span> <span class="s2">"less"</span><span class="p">,</span> <span class="s2">"ltd"</span><span class="p">,</span> <span class="s2">"made"</span><span class="p">,</span> <span class="s2">"many"</span><span class="p">,</span> <span class="s2">"may"</span><span class="p">,</span> <span class="s2">"me"</span><span class="p">,</span> <span class="s2">"meanwhile"</span><span class="p">,</span> <span class="s2">"might"</span><span class="p">,</span> <span class="s2">"mill"</span><span class="p">,</span> <span class="s2">"mine"</span><span class="p">,</span> <span class="s2">"more"</span><span class="p">,</span> <span class="s2">"moreover"</span><span class="p">,</span> <span class="s2">"most"</span><span class="p">,</span> <span class="s2">"mostly"</span><span class="p">,</span> <span class="s2">"move"</span><span class="p">,</span> <span class="s2">"much"</span><span class="p">,</span> <span class="s2">"must"</span><span class="p">,</span> <span class="s2">"my"</span><span class="p">,</span> <span class="s2">"myself"</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">,</span> <span class="s2">"namely"</span><span class="p">,</span> <span class="s2">"neither"</span><span class="p">,</span> <span class="s2">"never"</span><span class="p">,</span> <span class="s2">"nevertheless"</span><span class="p">,</span> <span class="s2">"next"</span><span class="p">,</span> <span class="s2">"nine"</span><span class="p">,</span> <span class="s2">"no"</span><span class="p">,</span> <span class="s2">"nobody"</span><span class="p">,</span> <span class="s2">"none"</span><span class="p">,</span> <span class="s2">"noone"</span><span class="p">,</span> <span class="s2">"nor"</span><span class="p">,</span> <span class="s2">"not"</span><span class="p">,</span> <span class="s2">"nothing"</span><span class="p">,</span> <span class="s2">"now"</span><span class="p">,</span> <span class="s2">"nowhere"</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span> <span class="s2">"off"</span><span class="p">,</span> <span class="s2">"often"</span><span class="p">,</span> <span class="s2">"on"</span><span class="p">,</span> <span class="s2">"once"</span><span class="p">,</span> <span class="s2">"one"</span><span class="p">,</span> <span class="s2">"only"</span><span class="p">,</span> <span class="s2">"onto"</span><span class="p">,</span> <span class="s2">"or"</span><span class="p">,</span> <span class="s2">"other"</span><span class="p">,</span> <span class="s2">"others"</span><span class="p">,</span> <span class="s2">"otherwise"</span><span class="p">,</span> <span class="s2">"our"</span><span class="p">,</span> <span class="s2">"ours"</span><span class="p">,</span> <span class="s2">"ourselves"</span><span class="p">,</span> <span class="s2">"out"</span><span class="p">,</span> <span class="s2">"over"</span><span class="p">,</span> <span class="s2">"own"</span><span class="p">,</span><span class="s2">"part"</span><span class="p">,</span> <span class="s2">"per"</span><span class="p">,</span> <span class="s2">"perhaps"</span><span class="p">,</span> <span class="s2">"please"</span><span class="p">,</span> <span class="s2">"put"</span><span class="p">,</span> <span class="s2">"rather"</span><span class="p">,</span> <span class="s2">"re"</span><span class="p">,</span> <span class="s2">"same"</span><span class="p">,</span> <span class="s2">"see"</span><span class="p">,</span> <span class="s2">"seem"</span><span class="p">,</span> <span class="s2">"seemed"</span><span class="p">,</span> <span class="s2">"seeming"</span><span class="p">,</span> <span class="s2">"seems"</span><span class="p">,</span> <span class="s2">"serious"</span><span class="p">,</span> <span class="s2">"several"</span><span class="p">,</span> <span class="s2">"she"</span><span class="p">,</span> <span class="s2">"should"</span><span class="p">,</span> <span class="s2">"show"</span><span class="p">,</span> <span class="s2">"side"</span><span class="p">,</span> <span class="s2">"since"</span><span class="p">,</span> <span class="s2">"sincere"</span><span class="p">,</span> <span class="s2">"six"</span><span class="p">,</span> <span class="s2">"sixty"</span><span class="p">,</span> <span class="s2">"so"</span><span class="p">,</span> <span class="s2">"some"</span><span class="p">,</span> <span class="s2">"somehow"</span><span class="p">,</span> <span class="s2">"someone"</span><span class="p">,</span> <span class="s2">"something"</span><span class="p">,</span> <span class="s2">"sometime"</span><span class="p">,</span> <span class="s2">"sometimes"</span><span class="p">,</span> <span class="s2">"somewhere"</span><span class="p">,</span> <span class="s2">"still"</span><span class="p">,</span> <span class="s2">"such"</span><span class="p">,</span> <span class="s2">"system"</span><span class="p">,</span> <span class="s2">"take"</span><span class="p">,</span> <span class="s2">"ten"</span><span class="p">,</span> <span class="s2">"than"</span><span class="p">,</span> <span class="s2">"that"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">,</span> <span class="s2">"their"</span><span class="p">,</span> <span class="s2">"them"</span><span class="p">,</span> <span class="s2">"themselves"</span><span class="p">,</span> <span class="s2">"then"</span><span class="p">,</span> <span class="s2">"thence"</span><span class="p">,</span> <span class="s2">"there"</span><span class="p">,</span> <span class="s2">"thereafter"</span><span class="p">,</span> <span class="s2">"thereby"</span><span class="p">,</span> <span class="s2">"therefore"</span><span class="p">,</span> <span class="s2">"therein"</span><span class="p">,</span> <span class="s2">"thereupon"</span><span class="p">,</span> <span class="s2">"these"</span><span class="p">,</span> <span class="s2">"they"</span><span class="p">,</span> <span class="s2">"thickv"</span><span class="p">,</span> <span class="s2">"thin"</span><span class="p">,</span> <span class="s2">"third"</span><span class="p">,</span> <span class="s2">"this"</span><span class="p">,</span> <span class="s2">"those"</span><span class="p">,</span> <span class="s2">"though"</span><span class="p">,</span> <span class="s2">"three"</span><span class="p">,</span> <span class="s2">"through"</span><span class="p">,</span> <span class="s2">"throughout"</span><span class="p">,</span> <span class="s2">"thru"</span><span class="p">,</span> <span class="s2">"thus"</span><span class="p">,</span> <span class="s2">"to"</span><span class="p">,</span> <span class="s2">"together"</span><span class="p">,</span> <span class="s2">"too"</span><span class="p">,</span> <span class="s2">"top"</span><span class="p">,</span> <span class="s2">"toward"</span><span class="p">,</span> <span class="s2">"towards"</span><span class="p">,</span> <span class="s2">"twelve"</span><span class="p">,</span> <span class="s2">"twenty"</span><span class="p">,</span> <span class="s2">"two"</span><span class="p">,</span> <span class="s2">"un"</span><span class="p">,</span> <span class="s2">"under"</span><span class="p">,</span> <span class="s2">"until"</span><span class="p">,</span> <span class="s2">"up"</span><span class="p">,</span> <span class="s2">"upon"</span><span class="p">,</span> <span class="s2">"us"</span><span class="p">,</span> <span class="s2">"very"</span><span class="p">,</span> <span class="s2">"via"</span><span class="p">,</span> <span class="s2">"was"</span><span class="p">,</span> <span class="s2">"we"</span><span class="p">,</span> <span class="s2">"well"</span><span class="p">,</span> <span class="s2">"were"</span><span class="p">,</span> <span class="s2">"what"</span><span class="p">,</span> <span class="s2">"whatever"</span><span class="p">,</span> <span class="s2">"when"</span><span class="p">,</span> <span class="s2">"whence"</span><span class="p">,</span> <span class="s2">"whenever"</span><span class="p">,</span> <span class="s2">"where"</span><span class="p">,</span> <span class="s2">"whereafter"</span><span class="p">,</span> <span class="s2">"whereas"</span><span class="p">,</span> <span class="s2">"whereby"</span><span class="p">,</span> <span class="s2">"wherein"</span><span class="p">,</span> <span class="s2">"whereupon"</span><span class="p">,</span> <span class="s2">"wherever"</span><span class="p">,</span> <span class="s2">"whether"</span><span class="p">,</span> <span class="s2">"which"</span><span class="p">,</span> <span class="s2">"while"</span><span class="p">,</span> <span class="s2">"whither"</span><span class="p">,</span> <span class="s2">"who"</span><span class="p">,</span> <span class="s2">"whoever"</span><span class="p">,</span> <span class="s2">"whole"</span><span class="p">,</span> <span class="s2">"whom"</span><span class="p">,</span> <span class="s2">"whose"</span><span class="p">,</span> <span class="s2">"why"</span><span class="p">,</span> <span class="s2">"will"</span><span class="p">,</span> <span class="s2">"with"</span><span class="p">,</span> <span class="s2">"within"</span><span class="p">,</span> <span class="s2">"without"</span><span class="p">,</span> <span class="s2">"would"</span><span class="p">,</span> <span class="s2">"yet"</span><span class="p">,</span> <span class="s2">"you"</span><span class="p">,</span> <span class="s2">"your"</span><span class="p">,</span> <span class="s2">"yours"</span><span class="p">,</span> <span class="s2">"yourself"</span><span class="p">,</span> <span class="s2">"yourselves"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">]</span>
+<span class="n">paragraph_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Stopword'</span><span class="p">,</span><span class="s1">'filtering'</span><span class="p">,</span><span class="s1">'is'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'common'</span><span class="p">,</span><span class="s1">'step'</span><span class="p">,</span><span class="s1">'in'</span><span class="p">,</span><span class="s1">'preprocessing'</span><span class="p">,</span><span class="s1">'text'</span><span class="p">,</span><span class="s1">'for'</span><span class="p">,</span><span class="s1">'various'</span><span class="p">,</span><span class="s1">'purposes'</span><span class="p">,</span><span class="s1">'This'</span><span class="p">,</span><span class="s1">'is'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'list'</span><span class="p">,</span><span class="s1">'of'</span><span class="p">,</span><span class="s1">'several'</span><span class="p">,</span><span class="s1">'different'</span><span class="p">,</span><span class="s1">'stopword'</span><span class="p">,</span><span class="s1">'lists'</span><span class="p">,</span><span class="s1">'extracted'</span><span class="p">,</span><span class="s1">'from'</span><span class="p">,</span><span class="s1">'various'</span><span class="p">,</span><span class="s1">'search'</span><span class="p">,</span><span class="s1">'engines'</span><span class="p">,</span><span class="s1">'libraries'</span><span class="p">,</span><span class="s1">'and'</span><span class="p">,</span><span class="s1">'articles'</span><span class="p">,</span><span class="s1">'There'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'surprising'</span><span class="p">,</span><span class="s1">'number'</span><span class="p">,</span><span class="s1">'of'</span><span class="p">,</span><span class="s1">'different'</span><span class="p">,</span><span class="s1">'lists'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Initial:'</span><span class="p">,</span><span class="n">paragraph_list</span><span class="p">)</span>
 <span class="n">filtered</span> <span class="o">=</span> <span class="p">[</span><span class="n">cuvant</span> <span class="k">for</span> <span class="n">cuvant</span> <span class="ow">in</span> <span class="n">paragraph_list</span> <span class="k">if</span> <span class="n">cuvant</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Dupa filtrare:&#39;</span><span class="p">,</span> <span class="n">filtered</span><span class="p">)</span>        
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Dupa filtrare:'</span><span class="p">,</span> <span class="n">filtered</span><span class="p">)</span>        
 </pre></div>
 
      </div>
@@ -15114,7 +15114,7 @@ Dupa filtrare: [&#39;Stopword&#39;, &#39;filtering&#39;, &#39;common&#39;, &#39;
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Salutare&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Salutare'</span><span class="p">)</span>
     
 <span class="n">hello</span><span class="p">()</span>
 </pre></div>
@@ -15156,16 +15156,16 @@ Dupa filtrare: [&#39;Stopword&#39;, &#39;filtering&#39;, &#39;common&#39;, &#39;
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello_with_name</span><span class="p">(</span><span class="n">nume</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+    <span class="sd">"""</span>
 <span class="sd">    Functia preia un argument si afiseaza mesajul: Salutare urmat de valoarea argumentului.</span>
 <span class="sd">    Functia returneaza argumentul cu litere mari.</span>
 <span class="sd">    :param nume: numele care se cere afisat</span>
 <span class="sd">    :return: sirul din :param nume: cu litere mari</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Salutare &#39;</span> <span class="o">+</span> <span class="n">nume</span><span class="p">)</span>
+<span class="sd">    """</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Salutare '</span> <span class="o">+</span> <span class="n">nume</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">nume</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 
-<span class="n">nume</span> <span class="o">=</span> <span class="s1">&#39;Natalia&#39;</span>
+<span class="n">nume</span> <span class="o">=</span> <span class="s1">'Natalia'</span>
 <span class="n">nume_litere_mari</span> <span class="o">=</span> <span class="n">hello_with_name</span><span class="p">(</span><span class="n">nume</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nume_litere_mari</span><span class="p">)</span>
 <span class="n">help</span><span class="p">(</span><span class="n">hello_with_name</span><span class="p">)</span>
@@ -15233,7 +15233,7 @@ hello_with_name(nume)
     
 <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span>
 <span class="n">min_2</span><span class="p">,</span> <span class="n">max_2</span> <span class="o">=</span> <span class="n">min_max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Minimul este:&#39;</span><span class="p">,</span> <span class="n">min_2</span><span class="p">,</span> <span class="s1">&#39;; maximul este:&#39;</span><span class="p">,</span> <span class="n">max_2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Minimul este:'</span><span class="p">,</span> <span class="n">min_2</span><span class="p">,</span> <span class="s1">'; maximul este:'</span><span class="p">,</span> <span class="n">max_2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15367,20 +15367,20 @@ hello_with_name(nume)
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Good morning!&quot;</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="s2">"Good morning!"</span><span class="p">):</span>
+   <span class="sd">"""</span>
 <span class="sd">   This function greets to the person with the provided message.</span>
 
-<span class="sd">   If message is not provided, it defaults to &quot;Good morning!&quot;</span>
+<span class="sd">   If message is not provided, it defaults to "Good morning!"</span>
 <span class="sd">   :param name: Name of the guy to be greeted</span>
-<span class="sd">   :param msg: a message shown as greeting. It defaults to &quot;Good morning&quot;</span>
-<span class="sd">   &quot;&quot;&quot;</span>
+<span class="sd">   :param msg: a message shown as greeting. It defaults to "Good morning"</span>
+<span class="sd">   """</span>
 
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello"</span><span class="p">,</span><span class="n">name</span> <span class="o">+</span> <span class="s1">', '</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
 
-<span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Kate&quot;</span><span class="p">)</span>
-<span class="n">greet</span><span class="p">(</span><span class="s2">&quot;Bruce&quot;</span><span class="p">,</span><span class="s2">&quot;How do you do?&quot;</span><span class="p">)</span>
-<span class="c1"># echivalent: greet(name=&quot;Bruce&quot;,msg=&quot;How do you do?&quot;)</span>
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Kate"</span><span class="p">)</span>
+<span class="n">greet</span><span class="p">(</span><span class="s2">"Bruce"</span><span class="p">,</span><span class="s2">"How do you do?"</span><span class="p">)</span>
+<span class="c1"># echivalent: greet(name="Bruce",msg="How do you do?")</span>
 </pre></div>
 
      </div>
@@ -15433,11 +15433,11 @@ Hello Bruce, How do you do?
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Functie cu numar arbitrar de argumente</span>
-<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Good morning!&quot;</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="o">*</span><span class="n">names</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="s2">"Good morning!"</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
-<span class="n">greet</span><span class="p">(</span><span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Mary&#39;</span><span class="p">)</span>      
-<span class="n">greet</span><span class="p">(</span><span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Mary&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">&#39;How do you do?&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">', '</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+<span class="n">greet</span><span class="p">(</span><span class="s1">'Dan'</span><span class="p">,</span> <span class="s1">'John'</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">)</span>      
+<span class="n">greet</span><span class="p">(</span><span class="s1">'Dan'</span><span class="p">,</span> <span class="s1">'John'</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">'How do you do?'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15496,7 +15496,7 @@ Hello Mary, How do you do?
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">demo_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
     
-<span class="n">demo_kwargs</span><span class="p">(</span><span class="n">fruits</span><span class="o">=</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="n">quantity</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">measurement_unit</span><span class="o">=</span><span class="s1">&#39;kg&#39;</span><span class="p">)</span>
+<span class="n">demo_kwargs</span><span class="p">(</span><span class="n">fruits</span><span class="o">=</span><span class="s1">'apples'</span><span class="p">,</span> <span class="n">quantity</span><span class="o">=</span><span class="s1">'3'</span><span class="p">,</span> <span class="n">measurement_unit</span><span class="o">=</span><span class="s1">'kg'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15551,7 +15551,7 @@ Hello Mary, How do you do?
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
         
-<span class="n">demo_kwargs_iter</span><span class="p">(</span><span class="n">fruits</span><span class="o">=</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="n">quantity</span><span class="o">=</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="n">measurement_unit</span><span class="o">=</span><span class="s1">&#39;kg&#39;</span><span class="p">)</span>
+<span class="n">demo_kwargs_iter</span><span class="p">(</span><span class="n">fruits</span><span class="o">=</span><span class="s1">'apples'</span><span class="p">,</span> <span class="n">quantity</span><span class="o">=</span><span class="s1">'3'</span><span class="p">,</span> <span class="n">measurement_unit</span><span class="o">=</span><span class="s1">'kg'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15604,7 +15604,7 @@ measurement_unit kg
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dictionar_argumente</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;fruits&#39;</span><span class="p">:</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;quantity&#39;</span><span class="p">:</span><span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;measurement_unit&#39;</span><span class="p">:</span><span class="s1">&#39;kg&#39;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dictionar_argumente</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'fruits'</span><span class="p">:</span><span class="s1">'apples'</span><span class="p">,</span> <span class="s1">'quantity'</span><span class="p">:</span><span class="s1">'3'</span><span class="p">,</span> <span class="s1">'measurement_unit'</span><span class="p">:</span><span class="s1">'kg'</span><span class="p">}</span>
 <span class="n">demo_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">dictionar_argumente</span><span class="p">)</span>
 </pre></div>
 
@@ -15863,8 +15863,8 @@ measurement_unit kg
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;function sum_2 at 0x0000018D6DCA89D0&gt;
-&lt;function dif_2 at 0x0000018D6DCA8A60&gt;
+<pre>&lt;function sum_2 at 0x000001F5F07F0D30&gt;
+&lt;function dif_2 at 0x000001F5F07F0DC0&gt;
 </pre>
 </div>
 </div>
@@ -15963,7 +15963,7 @@ measurement_unit kg
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">age</span><span class="p">:</span><span class="nb">int</span> <span class="o">=</span> <span class="mi">21</span>
-<span class="n">name</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Guido van Rossum&quot;</span>
+<span class="n">name</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">"Guido van Rossum"</span>
 </pre></div>
 
      </div>
@@ -16020,9 +16020,9 @@ measurement_unit kg
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">name</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s1">&#39;Salut &#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;, ai &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; de ani&#39;</span>
+    <span class="k">return</span> <span class="s1">'Salut '</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">', ai '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' de ani'</span>
 
-<span class="n">f</span><span class="p">(</span><span class="s1">&#39;Rafael&#39;</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
+<span class="n">f</span><span class="p">(</span><span class="s1">'Rafael'</span><span class="p">,</span><span class="mi">23</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16079,9 +16079,9 @@ measurement_unit kg
 
 <span class="k">def</span> <span class="nf">salut_multi</span><span class="p">(</span><span class="n">nume</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">varste</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nume</span><span class="p">,</span> <span class="n">varste</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Salut </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">, ai </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1"> de ani&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Salut </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1">, ai </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1"> de ani'</span><span class="p">)</span>
         
-<span class="n">salut_multi</span><span class="p">([</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">])</span>
+<span class="n">salut_multi</span><span class="p">([</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'Dan'</span><span class="p">,</span> <span class="s1">'Maria'</span><span class="p">],</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -16210,7 +16210,7 @@ Salut Maria, ai 22 de ani
     <span class="k">if</span> <span class="n">param</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">param</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">""</span>
 </pre></div>
 
      </div>
@@ -16388,7 +16388,7 @@ Salut Maria, ai 22 de ani
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;d:\\work\\school\\cursuri\\AI_ML\\curs\\Curs2_Python&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\python39.zip&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\DLLs&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib&#39;, &#39;C:\\Users\\Lucian\\anaconda3&#39;, &#39;&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages\\locket-0.2.1-py3.9.egg&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages\\win32&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages\\win32\\lib&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages\\Pythonwin&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\lib\\site-packages\\IPython\\extensions&#39;, &#39;C:\\Users\\Lucian\\.ipython&#39;]
+<pre>[&#39;d:\\work\\school\\cursuri\\AI_ML\\curs\\PythonForAI_2&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\python39.zip&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\DLLs&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia&#39;, &#39;&#39;, &#39;C:\\Users\\Lucian\\AppData\\Roaming\\Python\\Python39\\site-packages&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib\\site-packages&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib\\site-packages\\win32&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib\\site-packages\\win32\\lib&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib\\site-packages\\Pythonwin&#39;, &#39;C:\\Users\\Lucian\\anaconda3\\envs\\ia\\lib\\site-packages\\IPython\\extensions&#39;, &#39;C:\\Users\\Lucian\\.ipython&#39;]
 </pre>
 </div>
 </div>
@@ -16417,7 +16417,7 @@ Salut Maria, ai 22 de ani
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;./my_modules/&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'./my_modules/'</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">mySmartModule</span> <span class="kn">import</span> <span class="n">my_sum</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
 </pre></div>
@@ -16660,8 +16660,8 @@ Salut Maria, ai 22 de ani
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> <span class="c1"># pachet pentru expresii regulate</span>
-<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Am cumparat: mere, pere, prune... si caise&#39;</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\W+&#39;</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">'Am cumparat: mere, pere, prune... si caise'</span>
+<span class="n">tokens</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\W+'</span><span class="p">,</span> <span class="n">my_string</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
 </pre></div>
 
@@ -16704,14 +16704,14 @@ Salut Maria, ai 22 de ani
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Serializare cu pickle</span>
 <span class="kn">import</span> <span class="nn">pickle</span>
 
-<span class="n">favourite_colour</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;lion&quot;</span><span class="p">:</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;kitty&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span> <span class="p">}</span>
+<span class="n">favourite_colour</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">"lion"</span><span class="p">:</span> <span class="s2">"yellow"</span><span class="p">,</span> <span class="s2">"kitty"</span><span class="p">:</span> <span class="s2">"red"</span> <span class="p">}</span>
 
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">favourite_colour</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span> <span class="p">)</span> <span class="p">)</span>
-<span class="k">del</span> <span class="n">favorite_color</span> <span class="c1"># nu mai e necesara variabila</span>
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">favourite_colour</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">"save.pkl"</span><span class="p">,</span> <span class="s2">"wb"</span> <span class="p">)</span> <span class="p">)</span>
+<span class="k">del</span> <span class="n">favourite_colour</span> <span class="c1"># nu mai e necesara variabila</span>
 
 <span class="c1"># restaurare</span>
-<span class="n">favorite_color_restored</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;save.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span> <span class="p">)</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dupa deserializare:&#39;</span><span class="p">,</span> <span class="n">favorite_color_restored</span><span class="p">)</span>
+<span class="n">favorite_color_restored</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">"save.pkl"</span><span class="p">,</span> <span class="s2">"rb"</span> <span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'dupa deserializare:'</span><span class="p">,</span> <span class="n">favorite_color_restored</span><span class="p">)</span>
 
 <span class="o">!</span>del save.pkl # sterge fisierul pickle de pe disk
 </pre></div>
@@ -16992,8 +16992,8 @@ float16
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numarul de dimensiuni pentru vectorul all_zero:&#39;</span><span class="p">,</span> <span class="n">all_zeros</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numarul de dimensiuni pentru matricea mat:&#39;</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Numarul de dimensiuni pentru vectorul all_zero:'</span><span class="p">,</span> <span class="n">all_zeros</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Numarul de dimensiuni pentru matricea mat:'</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17045,7 +17045,7 @@ Numarul de dimensiuni pentru matricea mat: 2
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mat size: </span><span class="si">{0}</span><span class="se">\n</span><span class="s1">mat element size: </span><span class="si">{1}</span><span class="s1"> bytes</span><span class="se">\n</span><span class="s1">mat.dtype:</span><span class="si">{2}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mat</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">itemsize</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'mat size: </span><span class="si">{0}</span><span class="se">\n</span><span class="s1">mat element size: </span><span class="si">{1}</span><span class="s1"> bytes</span><span class="se">\n</span><span class="s1">mat.dtype:</span><span class="si">{2}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mat</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">itemsize</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -17241,8 +17241,8 @@ mat.dtype:int32
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[0.23084902 0.3691647  0.26597132]
- [0.36418087 0.40568759 0.56470842]]
+<pre>[[0.6502564  0.11801088 0.06288408]
+ [0.7606304  0.01559415 0.27448388]]
 </pre>
 </div>
 </div>
@@ -17770,9 +17770,9 @@ mat.dtype:int32
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># inmultire de matrice cu scalar</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a=</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b=</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17982,7 +17982,7 @@ True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>6.41 ms ± 221 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>4.33 ms ± 170 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -18022,7 +18022,7 @@ True
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>7.54 µs ± 902 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<pre>4.25 µs ± 185 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre>
 </div>
 </div>
@@ -18039,12 +18039,12 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># &#39;ridicarea la putere&#39; folosind ** : fiecare element al matricei este ridicat la putere</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;matricea initiala:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 'ridicarea la putere' folosind ** : fiecare element al matricei este ridicat la putere</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'matricea initiala:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 <span class="n">putere</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dupa ridicarea la puterea 2:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">putere</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'dupa ridicarea la puterea 2:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">putere</span><span class="p">)</span>
 <span class="n">putere_3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dupa ridicarea la puterea 3:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">putere_3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'dupa ridicarea la puterea 3:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">putere_3</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18103,9 +18103,9 @@ dupa ridicarea la puterea 3:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a/b=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a/b='</span><span class="p">,</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18306,7 +18306,7 @@ a/b= [[0.1 0.1 0.1]
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vector[4]=</span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vector</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'vector[4]=</span><span class="si">{0}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vector</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 </pre></div>
 
      </div>
@@ -18419,7 +18419,7 @@ vector[4]=4
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span> <span class="c1"># remarcam ca indicele din dreapta este cu rol de &quot;exclusiv&quot;, nu contribuie la rezultat</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span> <span class="c1"># remarcam ca indicele din dreapta este cu rol de "exclusiv", nu contribuie la rezultat</span>
 </pre></div>
 
      </div>
@@ -18968,9 +18968,9 @@ vector[4]=4
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Inainte:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
 <span class="n">tab</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">tab</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19028,9 +19028,9 @@ Dupa:
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># numerele pare se inmultesc cu 10, celelalte raman cum sunt </span>
 <span class="n">tablou</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte de modificare:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Inainte de modificare:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
 <span class="n">tablou</span><span class="p">[</span><span class="n">tablou</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19087,11 +19087,11 @@ Dupa modificare:
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tablou</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte de modificare</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Inainte de modificare</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
 <span class="c1"># coloanele 0, 2, 3 se modifica</span>
 <span class="n">bool_columns</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
 <span class="n">tablou</span><span class="p">[:,</span> <span class="n">bool_columns</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">tablou</span><span class="p">[:,</span> <span class="n">bool_columns</span><span class="p">]</span> <span class="o">+</span><span class="mi">3</span> <span class="p">)</span><span class="o">/</span><span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">tablou</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19166,9 +19166,7 @@ Dupa modificare
 </div>
 </div>
 </div>
-</div>matrice_din_vector = vector_de_valori.reshape((2, 2))
-print(matrice_din_vector.shape)
-print(vector_de_valori.shape)<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -19176,11 +19174,53 @@ print(vector_de_valori.shape)<div class="jp-Cell jp-CodeCell jp-Notebook-cell   
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matrice_din_vector</span> <span class="o">=</span> <span class="n">vector_de_valori</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matrice_din_vector</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vector_de_valori</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(2, 2)
+(4,)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">],[</span><span class="mf">10.0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">],[</span><span class="mf">20.0</span><span class="p">,</span><span class="mf">20.0</span><span class="p">,</span><span class="mf">20.0</span><span class="p">],[</span><span class="mf">30.0</span><span class="p">,</span><span class="mf">30.0</span><span class="p">,</span><span class="mf">30.0</span><span class="p">]])</span> 
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>  
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -19237,12 +19277,12 @@ b=
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># broadcasting</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;result=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'result=</span><span class="se">\n</span><span class="si">{0}</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -19302,7 +19342,7 @@ sau pentru cazul simplu de mai jos:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -19374,7 +19414,7 @@ sau pentru cazul simplu de mai jos:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
@@ -19388,7 +19428,7 @@ sau pentru cazul simplu de mai jos:</p>
 <span class="c1"># broadcasting</span>
 <span class="n">calories</span> <span class="o">=</span> <span class="n">weights</span> <span class="o">*</span> <span class="n">cal_per_g</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Calorii:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">calories</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Calorii:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">calories</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19440,7 +19480,7 @@ sau pentru cazul simplu de mai jos:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -19483,12 +19523,12 @@ sau pentru cazul simplu de mai jos:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x shape: &#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'x shape: '</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'x:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19529,12 +19569,12 @@ x:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;y shape: &#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;y:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'y shape: '</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'y:</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19572,12 +19612,12 @@ y:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;z shape:&#39;</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;z</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'z shape:'</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'z</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19618,58 +19658,12 @@ z
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># clonam x si cream coloane identice</span>
 <span class="n">x_broadcast</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">x_broadcast</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[92]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0, 0, 0, 0, 0],
-       [1, 1, 1, 1, 1],
-       [2, 2, 2, 2, 2],
-       [3, 3, 3, 3, 3]])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># clonam y si cream linii identice:</span>
-<span class="n">y_broadcast</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<span class="n">y_broadcast</span>
 </pre></div>
 
      </div>
@@ -19693,6 +19687,52 @@ z
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([[0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1],
+       [2, 2, 2, 2, 2],
+       [3, 3, 3, 3, 3]])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># clonam y si cream linii identice:</span>
+<span class="n">y_broadcast</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">y_broadcast</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[94]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>array([[0, 1, 2, 3, 4],
        [0, 1, 2, 3, 4],
        [0, 1, 2, 3, 4],
@@ -19710,7 +19750,7 @@ z
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_broadcast</span> <span class="o">=</span> <span class="n">x_broadcast</span> <span class="o">+</span> <span class="n">y_broadcast</span>
@@ -19829,7 +19869,7 @@ z
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">distante</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">45</span><span class="p">]</span>
@@ -19846,7 +19886,7 @@ z
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># var 1: folosind ciclare</span>
@@ -19854,7 +19894,7 @@ z
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">distante</span><span class="p">)):</span>
     <span class="n">viteze</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">distante</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">timpi</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
     
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Viteze: &#39;</span><span class="p">,</span> <span class="n">viteze</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Viteze: '</span><span class="p">,</span> <span class="n">viteze</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19890,7 +19930,7 @@ z
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># var 2: vectorizare</span>
@@ -19985,7 +20025,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># functie Python implementata naiv</span>
@@ -20034,7 +20074,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> func_python(N)
@@ -20059,7 +20099,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>18.7 ms ± 2.46 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>10.1 ms ± 456 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -20073,7 +20113,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># functie rescrisa folosind facilitatile NumPy si vectorizare</span>
@@ -20118,7 +20158,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> func_numpy(N)
@@ -20143,7 +20183,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1.38 ms ± 100 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+<pre>474 µs ± 5.4 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 </pre>
 </div>
 </div>
@@ -20177,7 +20217,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[102]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
@@ -20194,7 +20234,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> sum(c)
@@ -20219,7 +20259,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>528 µs ± 88.6 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+<pre>403 µs ± 14.1 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 </pre>
 </div>
 </div>
@@ -20233,7 +20273,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># vectorizare</span>
@@ -20250,7 +20290,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[106]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> c_array.sum()
@@ -20275,7 +20315,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>55.7 µs ± 5.09 µs per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+<pre>38.1 µs ± 839 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 </pre>
 </div>
 </div>
@@ -20304,7 +20344,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[106]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -20322,7 +20362,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[108]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianta 1: se calculeaza matricea patratelor distantelor de dimensiune n*n. d[i, j] va reprezenta patratul distantei intre </span>
@@ -20339,7 +20379,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[108]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
@@ -20369,7 +20409,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1.85 s ± 141 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>942 ms ± 50.3 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -20383,7 +20423,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calculul perechii de puncte i, j cu i!= j pentru care distanta e minima</span>
@@ -20409,7 +20449,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Varianta 2: broadcasting, vectorizare</span>
@@ -20425,7 +20465,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>it
@@ -20455,7 +20495,7 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>16.7 ms ± 1.47 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<pre>13.7 ms ± 1.78 ms per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -20469,7 +20509,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[113]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># decomentati %%timeit din celula anterioada daca vreti afisare</span>

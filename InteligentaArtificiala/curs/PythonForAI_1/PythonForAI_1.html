@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Curs1_PythonForAI</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>PythonForAI_1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14620,10 +14620,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Limbaj open source, gratuit</li>
-<li>In Septembrie 2022: primul limbaj ca popularitate in <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
+<li>In februarie 2023: primul limbaj ca popularitate in <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
 <li>In aceeasi luna, indexul <a href="http://pypl.github.io/PYPL.html">PYPL</a> raporteaza Python pe locul al intai
-<img src="./images/pypl_all.png" alt="PYPL_all"> (Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, Septembrie 2022)</li>
-<li>Versiunea stabila actuala de Python este 3.10.7.; Python 2.x se considera depasit si e trecut pe linie moarta </li>
+<img src="./images/pypl_all.png" alt="PYPL_all"> (Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, februarie 2023)</li>
+<li>Versiunea stabila actuala de Python este 3.11.2.; Python 2.x se considera depasit si e trecut pe linie moarta </li>
 <li>Se poate instala manual sau folosind o distributie de tipul <a href="https://conda.io/docs/user-guide/install/download.html">Anaconda</a><ul>
 <li>A se vedea despre distributiile Anaconda, Miniconda, Anaconda Enterprise</li>
 <li>Exista <a href="https://wiki.python.org/moin/PythonDistributions">o lista consistenta de distributii</a> de Python</li>
@@ -14678,7 +14678,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <img src="./images/ipython_screenshot.png" alt="ipython screenshot">
 Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in resursa bibliografica [1], capitolul 1: debug, magic commands, lucru cu interpretorul de comenzi etc. </li>
 <li>Jupyter notebook - codul este scris in browser, cu suport pentru completare automata de cod. Fisierele rezultate sunt cu extensia ipynb.
-<img src="./images/jupyter-notebook-completion.gif" alt="jupyter screenshot">
 O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>. Resurse de lucru cu Jupyter notebooks <a href="https://towardsdatascience.com/jupyter-best-practices-that-will-save-you-a-lot-of-headaches-67e1df45e24d">aici</a></li>
 <li>Folosind diverse framework-uri (de ex Flask), codul Python poate fi folosit pentru crearea de pagini Web, REST endpoints - sau mai simplu, functiile definite in Jupyter notebook pot fi expuse ca servicii web REST etc.</li>
 </ol>
@@ -14706,8 +14705,8 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
-<span class="c1"># sau: print(&#39;Hello world&#39;)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world!"</span><span class="p">)</span>
+<span class="c1"># sau: print('Hello world')</span>
 </pre></div>
 
      </div>
@@ -14765,9 +14764,9 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># x e variabila de tip intreg</span>
-<span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span> <span class="c1"># y este variabila de tip sir de caractere</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s2">"abcd"</span> <span class="c1"># y este variabila de tip sir de caractere</span>
 <span class="c1"># se obisnuieste ca numele compuse ale variabilelor sa fie despartite prin _:</span>
-<span class="n">nume_complet</span> <span class="o">=</span> <span class="s2">&quot;Popescu Ion&quot;</span>
+<span class="n">nume_complet</span> <span class="o">=</span> <span class="s2">"Popescu Ion"</span>
 </pre></div>
 
      </div>
@@ -14876,7 +14875,7 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">height</span> <span class="o">=</span> <span class="mf">1.79</span>
 <span class="n">weight</span> <span class="o">=</span> <span class="mi">78</span>
 <span class="n">body_mass_index</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="n">height</span> <span class="o">**</span> <span class="mi">2</span> <span class="c1"># la numitor este inaltimea la patrat</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Indicele de masa corporala este: &quot;</span><span class="p">,</span> <span class="n">body_mass_index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Indicele de masa corporala este: "</span><span class="p">,</span> <span class="n">body_mass_index</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14916,9 +14915,9 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Pentru tipurile intregi, operatorii utilizabili sunt:</p>
 <ul>
-<li>+</li>
+<li>$+$</li>
 <li>- </li>
-<li>*</li>
+<li>$*$</li>
 <li>/ (impartire cu rezultat in virgula mobila; de retinut ca in Python 2.7 intepretarea operatorul / este diferita fata de cea din Python 3)</li>
 <li>// (impartire intreaga)</li>
 <li>% (modulo)</li>
@@ -14994,7 +14993,7 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">big_number</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="mi">5</span><span class="o">*</span><span class="mi">6</span><span class="o">*</span><span class="mi">7</span><span class="o">*</span><span class="mi">8</span><span class="o">*</span><span class="mi">9</span><span class="o">*</span><span class="mi">10</span><span class="o">*</span><span class="mi">11</span><span class="o">*</span><span class="mi">12</span><span class="o">*</span><span class="mi">13</span><span class="o">*</span><span class="mi">14</span><span class="o">*</span><span class="mi">15</span><span class="o">*</span><span class="mi">16</span><span class="o">*</span><span class="mi">17</span><span class="o">*</span><span class="mi">18</span><span class="o">*</span><span class="mi">19</span><span class="o">*</span><span class="mi">20</span><span class="o">*</span><span class="mi">21</span><span class="o">*</span><span class="mi">22</span><span class="o">*</span><span class="mi">23</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">25</span><span class="o">*</span><span class="mi">26</span><span class="o">*</span><span class="mi">27</span><span class="o">*</span><span class="mi">28</span><span class="o">*</span><span class="mi">29</span><span class="o">*</span><span class="mi">30</span><span class="o">*</span><span class="mi">31</span><span class="o">*</span><span class="mi">32</span><span class="o">*</span><span class="mi">33</span><span class="o">*</span><span class="mi">34</span><span class="o">*</span><span class="mi">35</span><span class="o">*</span><span class="mi">36</span><span class="o">*</span><span class="mi">37</span><span class="o">*</span><span class="mi">38</span><span class="o">*</span><span class="mi">39</span><span class="o">*</span><span class="mi">40</span><span class="o">*</span><span class="mi">41</span><span class="o">*</span><span class="mi">42</span><span class="o">*</span><span class="mi">43</span><span class="o">*</span><span class="mi">44</span><span class="o">*</span><span class="mi">45</span><span class="o">*</span><span class="mi">46</span><span class="o">*</span><span class="mi">47</span><span class="o">*</span><span class="mi">48</span><span class="o">*</span><span class="mi">49</span><span class="o">*</span><span class="mi">50</span><span class="o">*</span><span class="mi">51</span><span class="o">*</span><span class="mi">52</span><span class="o">*</span><span class="mi">53</span><span class="o">*</span><span class="mi">54</span><span class="o">*</span><span class="mi">55</span><span class="o">*</span><span class="mi">56</span><span class="o">*</span><span class="mi">57</span><span class="o">*</span><span class="mi">58</span><span class="o">*</span><span class="mi">59</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">61</span><span class="o">*</span><span class="mi">62</span><span class="o">*</span><span class="mi">63</span><span class="o">*</span><span class="mi">64</span><span class="o">*</span><span class="mi">65</span><span class="o">*</span><span class="mi">66</span><span class="o">*</span><span class="mi">67</span><span class="o">*</span><span class="mi">68</span><span class="o">*</span><span class="mi">69</span><span class="o">*</span><span class="mi">70</span><span class="o">*</span><span class="mi">71</span><span class="o">*</span><span class="mi">72</span><span class="o">*</span><span class="mi">73</span><span class="o">*</span><span class="mi">74</span><span class="o">*</span><span class="mi">75</span><span class="o">*</span><span class="mi">76</span><span class="o">*</span><span class="mi">77</span><span class="o">*</span><span class="mi">78</span><span class="o">*</span><span class="mi">79</span><span class="o">*</span><span class="mi">80</span><span class="o">*</span><span class="mi">81</span><span class="o">*</span><span class="mi">82</span><span class="o">*</span><span class="mi">83</span><span class="o">*</span><span class="mi">84</span><span class="o">*</span><span class="mi">85</span><span class="o">*</span><span class="mi">86</span><span class="o">*</span><span class="mi">87</span><span class="o">*</span><span class="mi">88</span><span class="o">*</span><span class="mi">89</span><span class="o">*</span><span class="mi">90</span><span class="o">*</span><span class="mi">91</span><span class="o">*</span><span class="mi">92</span><span class="o">*</span><span class="mi">93</span><span class="o">*</span><span class="mi">94</span><span class="o">*</span><span class="mi">95</span><span class="o">*</span><span class="mi">96</span><span class="o">*</span><span class="mi">97</span><span class="o">*</span><span class="mi">98</span><span class="o">*</span><span class="mi">99</span><span class="o">*</span><span class="mi">100</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;100!=&#39;</span><span class="p">,</span> <span class="n">big_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'100!='</span><span class="p">,</span> <span class="n">big_number</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15253,15 +15252,15 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;adresa </span><span class="se">\\</span><span class="s1">michel\protect\....&#39;</span> <span class="c1"># remarcam prefixul r</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'adresa </span><span class="se">\\</span><span class="s1">michel\protect\....'</span> <span class="c1"># remarcam prefixul r</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># the hard way...</span>
-<span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;adresa </span><span class="se">\\\\</span><span class="s1">michel</span><span class="se">\\</span><span class="s1">protect</span><span class="se">\\</span><span class="s1">....&#39;</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="s1">'adresa </span><span class="se">\\\\</span><span class="s1">michel</span><span class="se">\\</span><span class="s1">protect</span><span class="se">\\</span><span class="s1">....'</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># caractere Unicode</span>
-<span class="n">a</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;ĂÎÂȘȚ aăîâșț&quot;</span> <span class="c1"># se remarca prefixul u</span>
+<span class="n">a</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">"ĂÎÂȘȚ aăîâșț"</span> <span class="c1"># se remarca prefixul u</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
@@ -15315,10 +15314,23 @@ adresa \\michel\protect\....
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">versuri</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;If you can keep your head when all about you   </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">versuri</span> <span class="o">=</span> <span class="s1">'''If you can keep your head when all about you   </span>
 <span class="s1">    Are losing theirs and blaming it on you,   </span>
 <span class="s1">If you can trust yourself when all men doubt you,</span>
-<span class="s1">    But make allowance for their doubting too;   &#39;&#39;&#39;</span>
+<span class="s1">    But make allowance for their doubting too;   </span>
+<span class="s1">If you can wait and not be tired by waiting,</span>
+<span class="s1">    Or being lied about, don’t deal in lies,</span>
+<span class="s1">Or being hated, don’t give way to hating,</span>
+<span class="s1">    And yet don’t look too good, nor talk too wise:</span>
+
+<span class="s1">If you can dream—and not make dreams your master;   </span>
+<span class="s1">    If you can think—and not make thoughts your aim;   </span>
+<span class="s1">If you can meet with Triumph and Disaster</span>
+<span class="s1">    And treat those two impostors just the same;   </span>
+<span class="s1">If you can bear to hear the truth you’ve spoken</span>
+<span class="s1">    Twisted by knaves to make a trap for fools,</span>
+<span class="s1">Or watch the things you gave your life to, broken,</span>
+<span class="s1">    And stoop and build ’em up with worn-out tools:'''</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">versuri</span><span class="p">)</span>
 </pre></div>
 
@@ -15345,6 +15357,19 @@ adresa \\michel\protect\....
     Are losing theirs and blaming it on you,   
 If you can trust yourself when all men doubt you,
     But make allowance for their doubting too;   
+If you can wait and not be tired by waiting,
+    Or being lied about, don’t deal in lies,
+Or being hated, don’t give way to hating,
+    And yet don’t look too good, nor talk too wise:
+
+If you can dream—and not make dreams your master;   
+    If you can think—and not make thoughts your aim;   
+If you can meet with Triumph and Disaster
+    And treat those two impostors just the same;   
+If you can bear to hear the truth you’ve spoken
+    Twisted by knaves to make a trap for fools,
+Or watch the things you gave your life to, broken,
+    And stoop and build ’em up with worn-out tools:
 </pre>
 </div>
 </div>
@@ -15373,7 +15398,7 @@ If you can trust yourself when all men doubt you,
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sir</span> <span class="o">=</span> <span class="s2">&quot;Ana &quot;</span> <span class="o">+</span> <span class="s2">&quot;are &quot;</span> <span class="o">+</span> <span class="s2">&quot;mere&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sir</span> <span class="o">=</span> <span class="s2">"Ana "</span> <span class="o">+</span> <span class="s2">"are "</span> <span class="o">+</span> <span class="s2">"mere"</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="p">)</span>
 </pre></div>
 
@@ -15413,11 +15438,11 @@ If you can trust yourself when all men doubt you,
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lungimea sirului: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sir</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Primul element din sir: &#39;</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ultimul element din sir: &#39;</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">sir</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ultimul element, in stil Python: &quot;</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Penultimul element din sir, in stil Python: &quot;</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># !!!</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Lungimea sirului: '</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sir</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Primul element din sir: '</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Ultimul element din sir: '</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">sir</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ultimul element, in stil Python: "</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Penultimul element din sir, in stil Python: "</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># !!!</span>
 </pre></div>
 
      </div>
@@ -15462,7 +15487,7 @@ Penultimul element din sir, in stil Python:  r
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Conversia unei variabile de tip non-string in string:</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">mesaj</span> <span class="o">=</span> <span class="s2">&quot;numarul este &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">mesaj</span> <span class="o">=</span> <span class="s2">"numarul este "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mesaj</span><span class="p">)</span>
 </pre></div>
 
@@ -15504,9 +15529,9 @@ Penultimul element din sir, in stil Python:  r
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># metode si operatii posibile pe obiect string:</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;slicing:&#39;</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;nu are&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Ion&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'slicing:'</span><span class="p">,</span> <span class="n">sir</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">7</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'nu are'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sir</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'Ion'</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15548,7 +15573,7 @@ Ion are mere
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multi_ana</span> <span class="o">=</span> <span class="s1">&#39;Ana&#39;</span> <span class="o">*</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">multi_ana</span> <span class="o">=</span> <span class="s1">'Ana'</span> <span class="o">*</span> <span class="mi">10</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">multi_ana</span><span class="p">)</span>
 </pre></div>
 
@@ -15588,9 +15613,9 @@ Ion are mere
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cuvantul_pere_este_in_sir</span> <span class="o">=</span> <span class="s1">&#39;pere&#39;</span> <span class="ow">in</span> <span class="n">sir</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cuvantul_pere_este_in_sir</span> <span class="o">=</span> <span class="s1">'pere'</span> <span class="ow">in</span> <span class="n">sir</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cuvantul_pere_este_in_sir</span><span class="p">)</span>
-<span class="n">cuvantul_pere_nu_este_in_sir</span> <span class="o">=</span> <span class="s1">&#39;pere&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sir</span>
+<span class="n">cuvantul_pere_nu_este_in_sir</span> <span class="o">=</span> <span class="s1">'pere'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sir</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cuvantul_pere_nu_este_in_sir</span><span class="p">)</span>
 </pre></div>
 
@@ -15631,10 +15656,10 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">sir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">sir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Vasile&#39;</span><span class="p">,</span> <span class="s1">&#39;Dana&#39;</span><span class="p">,</span> <span class="s1">&#39;Ion&#39;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">","</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'Vasile'</span><span class="p">,</span> <span class="s1">'Dana'</span><span class="p">,</span> <span class="s1">'Ion'</span><span class="p">]))</span>
 </pre></div>
 
      </div>
@@ -15689,7 +15714,7 @@ Ana,Vasile,Dana,Ion
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">expresie</span> <span class="o">=</span> <span class="s1">&#39;(a+b)/(a**2 + b**2 + 1)&#39;</span>
+<span class="n">expresie</span> <span class="o">=</span> <span class="s1">'(a+b)/(a**2 + b**2 + 1)'</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="n">expresie</span><span class="p">))</span>
 </pre></div>
 
@@ -15806,13 +15831,13 @@ Ana,Vasile,Dana,Ion
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-1 ca bool: &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-1 ca bool: '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;0.0 ca bool: &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'0.0 ca bool: '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;True ca int:&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'True ca int:'</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;False ca int:&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'False ca int:'</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15937,10 +15962,10 @@ True
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lungimea listei este&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tipul listei este&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Lungimea listei este'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Tipul listei este'</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
 <span class="c1"># Lista eterogena: string si int</span>
-<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="mi">234</span><span class="p">]</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="mi">234</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15993,8 +16018,8 @@ Tipul listei este &lt;class &#39;list&#39;&gt;
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ultimul element este:&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Penultimul element este:&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Ultimul element este:'</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Penultimul element este:'</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -16046,7 +16071,7 @@ Penultimul element este: 20
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span> <span class="c1"># efect similar demonstrat anterior pe string &#39;Ana&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span> <span class="c1"># efect similar demonstrat anterior pe string 'Ana'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
 </pre></div>
 
@@ -16204,10 +16229,10 @@ Penultimul element este: 20
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># aliasing</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare via a: b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare via a: b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="c1"># a si b refera aceeasi zona de memorie</span>
 </pre></div>
 
@@ -16252,11 +16277,11 @@ Dupa modificare via a: b= [-1, 2, 3]
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># copiere de lista</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[:]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare: a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare: b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="c1"># a si b refera zone de memorie diferite</span>
 </pre></div>
 
@@ -16314,11 +16339,11 @@ Dupa modificare: b= [1, 2, 3]
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># copiere de lista cu metoda copy</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare: a=&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa modificare: b=&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="c1"># a si b refera zone de memorie diferite</span>
 </pre></div>
 
@@ -16482,7 +16507,7 @@ Dupa modificare: b= [1, 2, 3]
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span>
 <span class="c1">#....</span>
-<span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Ana are mere&#39;</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Ana are mere'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
@@ -16620,7 +16645,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sortare cu cheie specificata</span>
-<span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ccc&#39;</span><span class="p">,</span> <span class="s1">&#39;aaaa&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;bb&#39;</span><span class="p">]</span>
+<span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ccc'</span><span class="p">,</span> <span class="s1">'aaaa'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">,</span> <span class="s1">'bb'</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">siruri</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">))</span>
 </pre></div>
 
@@ -16672,7 +16697,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ccc&#39;</span><span class="p">,</span> <span class="s1">&#39;aaaa&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;bb&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ccc'</span><span class="p">,</span> <span class="s1">'aaaa'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">,</span> <span class="s1">'bb'</span><span class="p">]</span>
 <span class="n">siruri</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">siruri</span><span class="p">)</span>
 </pre></div>
@@ -16778,8 +16803,8 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;are&#39;</span><span class="p">,</span> <span class="s1">&#39;mere&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;portocale&#39;</span> <span class="ow">in</span> <span class="n">lista</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'are'</span><span class="p">,</span> <span class="s1">'mere'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'portocale'</span> <span class="ow">in</span> <span class="n">lista</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16844,23 +16869,23 @@ Dupa modificare: b= [1, 2, 3]
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="c1"># De cate ori apare elementul 10 in lista?</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;De cate ori apare elementul 10 in lista&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'De cate ori apare elementul 10 in lista'</span><span class="p">,</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 <span class="c1"># Care e primul index in care un anumit element apare in lista?</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Care e primul index in care un anumit element apare in lista?&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Care e primul index in care un anumit element apare in lista?'</span><span class="p">,</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 <span class="c1"># daca pentru metoda index se specifica un element care nu exista, se arunca exceptie:</span>
 <span class="c1"># print(lista.index(100000))</span>
 <span class="c1"># ValueError: 100000 is not in list</span>
 <span class="c1"># Inserare elementului 100 pe indexul 2 in lista:</span>
 <span class="n">lista</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inserare elementului 100 pe indexul 2 in lista&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Inserare elementului 100 pe indexul 2 in lista'</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
 <span class="c1"># Inversarea ordinii elementelor dintr-o lista, in-place</span>
 <span class="n">lista</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inversarea ordinii elementelor dintr-o lista, in-place&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Inversarea ordinii elementelor dintr-o lista, in-place'</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
 <span class="c1"># Stergerea unui element din lista, prima aparitie</span>
 <span class="n">lista</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Stergerea unui element din lista, prima aparitie&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Stergerea unui element din lista, prima aparitie'</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
 <span class="n">lista</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista a fost golita:&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Lista a fost golita:'</span><span class="p">,</span> <span class="n">lista</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16917,8 +16942,8 @@ Lista a fost golita: []
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Macar unul e True:&#39;</span><span class="p">,</span> <span class="nb">any</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Toate sunt True:&#39;</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Macar unul e True:'</span><span class="p">,</span> <span class="nb">any</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Toate sunt True:'</span><span class="p">,</span> <span class="nb">all</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -16970,8 +16995,8 @@ Toate sunt True: False
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Macar unul e True:&#39;</span><span class="p">,</span><span class="nb">any</span><span class="p">([]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Toate sunt True:&#39;</span><span class="p">,</span><span class="nb">all</span><span class="p">([]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Macar unul e True:'</span><span class="p">,</span><span class="nb">any</span><span class="p">([]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Toate sunt True:'</span><span class="p">,</span><span class="nb">all</span><span class="p">([]))</span>
 </pre></div>
 
      </div>
@@ -17046,8 +17071,8 @@ Toate sunt True: True
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tuplu1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;informatica&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dimineata&#39;</span><span class="p">)</span>
-<span class="n">tuplu2</span> <span class="o">=</span> <span class="s1">&#39;chimie&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;seara&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tuplu1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'informatica'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'dimineata'</span><span class="p">)</span>
+<span class="n">tuplu2</span> <span class="o">=</span> <span class="s1">'chimie'</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'seara'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tuplu1</span><span class="p">)</span>
 </pre></div>
 
@@ -17452,19 +17477,19 @@ dimineata
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># dictionar gol</span>
-<span class="n">geografie</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Romania&#39;</span><span class="p">:</span> <span class="s1">&#39;Bucuresti&#39;</span><span class="p">,</span> <span class="s1">&#39;Serbia&#39;</span><span class="p">:</span> <span class="s1">&#39;Belgrad&#39;</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lungimea este:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">geografie</span><span class="p">))</span>
-<span class="n">key</span> <span class="o">=</span> <span class="s1">&#39;Romania&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valoarea pentru cheia&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s1">&#39;este&#39;</span><span class="p">,</span><span class="n">geografie</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
-<span class="n">geografie</span><span class="p">[</span><span class="s1">&#39;Grecia&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Atena&#39;</span> <span class="c1"># adaugare de pereche cheie-valoare in dictionar</span>
+<span class="n">geografie</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Romania'</span><span class="p">:</span> <span class="s1">'Bucuresti'</span><span class="p">,</span> <span class="s1">'Serbia'</span><span class="p">:</span> <span class="s1">'Belgrad'</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Lungimea este:'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">geografie</span><span class="p">))</span>
+<span class="n">key</span> <span class="o">=</span> <span class="s1">'Romania'</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Valoarea pentru cheia'</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s1">'este'</span><span class="p">,</span><span class="n">geografie</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+<span class="n">geografie</span><span class="p">[</span><span class="s1">'Grecia'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Atena'</span> <span class="c1"># adaugare de pereche cheie-valoare in dictionar</span>
 <span class="c1"># daca se foloseste o cheie care exista, valoarea asociata va fi suprascrisa cu cea noua</span>
-<span class="n">geografie</span><span class="p">[</span><span class="s1">&#39;Grecia&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Athens&#39;</span>
+<span class="n">geografie</span><span class="p">[</span><span class="s1">'Grecia'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Athens'</span>
 <span class="c1"># accesarea folosind o cheie invalilda duce la eroare (KeyError)</span>
-<span class="c1"># geografie[&#39;Franta&#39;]</span>
+<span class="c1"># geografie['Franta']</span>
 <span class="c1"># pentru a evita eroare la rulare, se poate folosi metoda get; daca cheia nu e gasita in dictionar, se returneaza None</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Franta&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'Franta'</span><span class="p">))</span>
 <span class="c1"># daca se doreste returnarea unei valori prestabilite in cazul lipsei cheii, metoda get accepta un parametru suplimentar</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Franta&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;Nu exista in dictionar&gt;&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'Franta'</span><span class="p">,</span> <span class="s1">'&lt;Nu exista in dictionar&gt;'</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -17518,8 +17543,8 @@ None
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Chei:&#39;</span><span class="p">,</span> <span class="n">geografie</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valori:&#39;</span><span class="p">,</span> <span class="n">geografie</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Chei:'</span><span class="p">,</span> <span class="n">geografie</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Valori:'</span><span class="p">,</span> <span class="n">geografie</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -17624,7 +17649,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">geografie</span><span class="p">[</span><span class="s1">&#39;Grecia&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">geografie</span><span class="p">[</span><span class="s1">'Grecia'</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="p">)</span>
 </pre></div>
 
@@ -17676,7 +17701,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Grecia&#39;</span> <span class="ow">in</span> <span class="n">geografie</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Grecia'</span> <span class="ow">in</span> <span class="n">geografie</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17808,7 +17833,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie_asia</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;China&#39;</span><span class="p">:</span><span class="s1">&#39;Beijing&#39;</span><span class="p">,</span> <span class="s1">&#39;India&#39;</span><span class="p">:</span><span class="s1">&#39;New Delhi&#39;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie_asia</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'China'</span><span class="p">:</span><span class="s1">'Beijing'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">:</span><span class="s1">'New Delhi'</span><span class="p">}</span>
 <span class="n">geografie</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">geografie_asia</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="p">)</span>
 </pre></div>
@@ -17862,8 +17887,8 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie_copie</span> <span class="o">=</span> <span class="n">geografie</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">geografie_copie</span><span class="p">[</span><span class="s1">&#39;India&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;New----Delhi&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="p">[</span><span class="s1">&#39;India&#39;</span><span class="p">],</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">geografie_copie</span><span class="p">[</span><span class="s1">&#39;India&#39;</span><span class="p">])</span>
+<span class="n">geografie_copie</span><span class="p">[</span><span class="s1">'India'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'New----Delhi'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="p">[</span><span class="s1">'India'</span><span class="p">],</span> <span class="s1">','</span><span class="p">,</span> <span class="n">geografie_copie</span><span class="p">[</span><span class="s1">'India'</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -17947,7 +17972,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17986,7 +18011,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18025,7 +18050,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18075,7 +18100,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lista1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
 </pre></div>
@@ -18130,7 +18155,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m'</span><span class="p">,</span> <span class="s1">'n'</span><span class="p">,</span> <span class="s1">'p'</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">pereche</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista1</span><span class="p">,</span> <span class="n">lista2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">pereche</span><span class="p">)</span>
@@ -18302,7 +18327,7 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'1'</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18355,8 +18380,8 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nu se afiseaza&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Linia aceasta nu face parte din blocul corespunzator instructiunii if&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Nu se afiseaza'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Linia aceasta nu face parte din blocul corespunzator instructiunii if'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18418,8 +18443,8 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;Comentariu</span>
-<span class="sd">foarte lung&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">"""Comentariu</span>
+<span class="sd">foarte lung"""</span>
 </pre></div>
 
      </div>
@@ -18542,9 +18567,9 @@ Valori: dict_values([&#39;Bucuresti&#39;, &#39;Belgrad&#39;, &#39;Athens&#39;])
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Inainte de interschimbare: &#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Inainte de interschimbare: '</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dupa interschimbare: &#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa interschimbare: '</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18616,10 +18641,10 @@ Dupa interschimbare:  3 2
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">var2</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="k">if</span> <span class="n">var1</span> <span class="o">&gt;</span> <span class="n">var2</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In if - Got a true expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"In if - Got a true expression value"</span><span class="p">)</span>
    <span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In else - Got a false expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"In else - Got a false expression value"</span><span class="p">)</span>
    <span class="nb">print</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
 </pre></div>
 
@@ -18684,17 +18709,17 @@ Dupa interschimbare:  3 2
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="k">if</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"1 - Got a true expression value"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"2 - Got a true expression value"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3 - Got a true expression value&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"3 - Got a true expression value"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4 - Got a false expression value&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"4 - Got a false expression value"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18749,9 +18774,9 @@ Dupa interschimbare:  3 2
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CNP</span> <span class="o">=</span> <span class="s1">&#39;5678901234567&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CNP</span> <span class="o">=</span> <span class="s1">'5678901234567'</span>
 <span class="n">gen_masculin</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">CNP</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;gen masculin:&#39;</span><span class="p">,</span> <span class="n">gen_masculin</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'gen masculin:'</span><span class="p">,</span> <span class="n">gen_masculin</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18814,7 +18839,7 @@ Dupa interschimbare:  3 2
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;i=&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'i='</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18860,7 +18885,7 @@ i= 2
 <span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">p</span> <span class="o">*=</span> <span class="n">i</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;!=&#39;</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">'!='</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18902,7 +18927,7 @@ i= 2
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %%timeit</span>
 <span class="c1"># n = 100</span>
 <span class="c1"># list_numbers = [str(i) for i in range(1, n+1)]</span>
-<span class="c1"># expression = &#39;*&#39;.join(list_numbers)</span>
+<span class="c1"># expression = '*'.join(list_numbers)</span>
 <span class="c1"># print(eval(expression))</span>
 </pre></div>
 
@@ -18919,7 +18944,7 @@ i= 2
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista_nume</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ana&#39;</span><span class="p">,</span> <span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="s1">&#39;Rares&#39;</span><span class="p">,</span> <span class="s1">&#39;Dana&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lista_nume</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'Dan'</span><span class="p">,</span> <span class="s1">'Rares'</span><span class="p">,</span> <span class="s1">'Dana'</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">nume</span> <span class="ow">in</span> <span class="n">lista_nume</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">nume</span><span class="p">)</span>
 </pre></div>
@@ -18963,7 +18988,7 @@ Dana
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Romania&#39;</span><span class="p">:</span> <span class="s1">&#39;Bucuresti&#39;</span><span class="p">,</span> <span class="s1">&#39;Serbia&#39;</span><span class="p">:</span> <span class="s1">&#39;Belgrad&#39;</span><span class="p">,</span> <span class="s1">&#39;Grecia&#39;</span><span class="p">:</span><span class="s1">&#39;Atena&#39;</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">geografie</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Romania'</span><span class="p">:</span> <span class="s1">'Bucuresti'</span><span class="p">,</span> <span class="s1">'Serbia'</span><span class="p">:</span> <span class="s1">'Belgrad'</span><span class="p">,</span> <span class="s1">'Grecia'</span><span class="p">:</span><span class="s1">'Atena'</span><span class="p">}</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">geografie</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 </pre></div>
@@ -19008,7 +19033,7 @@ Atena
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iterare cu doua elemente, peste colectie de perechi</span>
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">geografie</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Capitala pentru&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s1">&#39;este&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Capitala pentru'</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s1">'este'</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19092,10 +19117,10 @@ Capitala pentru Grecia este Atena
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># enumerare peste doua colectii &#39;impreunate&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># enumerare peste doua colectii 'impreunate'</span>
 <span class="n">lista_ani</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">nume</span><span class="p">,</span> <span class="n">ani</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista_nume</span><span class="p">,</span> <span class="n">lista_ani</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">nume</span><span class="p">,</span> <span class="s1">&#39;are&#39;</span><span class="p">,</span> <span class="n">ani</span><span class="p">,</span> <span class="s1">&#39;ani&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nume</span><span class="p">,</span> <span class="s1">'are'</span><span class="p">,</span> <span class="n">ani</span><span class="p">,</span> <span class="s1">'ani'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19257,11 +19282,11 @@ Dana are 23 ani
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span> <span class="n">n</span><span class="p">,</span> <span class="s1">&#39;equals&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span> <span class="n">n</span><span class="p">,</span> <span class="s1">'equals'</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="n">n</span><span class="o">//</span><span class="n">x</span><span class="p">)</span>
             <span class="k">break</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="c1"># loop fell through without finding a factor</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;is a prime number&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">'is a prime number'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19344,7 +19369,7 @@ Dana are 23 ani
     <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>    <span class="c1"># update counter</span>
 
 <span class="c1"># print the sum</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The sum is&quot;</span><span class="p">,</span> <span class="n">my_sum</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The sum is"</span><span class="p">,</span> <span class="n">my_sum</span><span class="p">)</span>
 </pre></div>
 
      </div>
