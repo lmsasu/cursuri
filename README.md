@@ -1,5 +1,5 @@
 # Cursuri
 
 * Medii vizuale de programare
-* Sisteme computationale inteligente
+* Inteligență artificială
 * Introducere in Data Science
