@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14591,6 +14592,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Bibliografie">Bibliografie<a class="anchor-link" href="#Bibliografie">&#182;</a></h1><ol>
+<li>Charles Severance, <a href="https://www.py4e.com/lessons">*Python for Everybody (PY4E)</a></li>
+<li>Al Sweigart, <a href="https://automatetheboringstuff.com/"><em>Automate the Boring Stuff with Python</em></a></li>
+<li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html"><em>Python 3 Patterns, Recipes, and Idioms</em></a></li>
+<li>Leonardo Giordani, <a href="https://leanpub.com/clean-architectures-in-python"><em>Clean Architectures in Python</em></a>, Editia a doua</li>
 <li>Allen B. Downey, <a href="http://greenteapress.com/wp/think-python-2e/"><em>Think Python: How to Think Like a Computer Scientist</em></a>, editia a doua, Green Tea Press</li>
 <li><a href="https://www.edx.org/xseries/mitx-computational-thinking-using-python">Learn to think computationally and write programs to tackle useful problems</a></li>
 <li>Zed A. Shaw, <a href="https://learnpythonthehardway.org">Learn Python the Hard Way</a>, Addison-Wesley Professional, 2017</li>
@@ -14620,17 +14625,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Limbaj open source, gratuit</li>
-<li>In februarie 2023: primul limbaj ca popularitate in <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
+<li>In octombrie 2023: primul limbaj ca popularitate in <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
 <li>In aceeasi luna, indexul <a href="http://pypl.github.io/PYPL.html">PYPL</a> raporteaza Python pe locul al intai
-<img src="./images/pypl_all.png" alt="PYPL_all"> (Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, februarie 2023)</li>
-<li>Versiunea stabila actuala de Python este 3.11.2.; Python 2.x se considera depasit si e trecut pe linie moarta </li>
+<img src="./images/pypl_all.png" alt="PYPL_all"> (Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, octombrie 2023)</li>
+<li>Versiunea stabila actuala de Python este 3.12.0.; Python 2.x se considera depasit si e trecut pe linie moarta </li>
 <li>Se poate instala manual sau folosind o distributie de tipul <a href="https://conda.io/docs/user-guide/install/download.html">Anaconda</a><ul>
 <li>A se vedea despre distributiile Anaconda, Miniconda, Anaconda Enterprise</li>
 <li>Exista <a href="https://wiki.python.org/moin/PythonDistributions">o lista consistenta de distributii</a> de Python</li>
 </ul>
 </li>
 <li>Python este limbaj interpretat si netipizat</li>
-<li>Permite programare imperativa, orientata pe obiect, <a href="https://docs.python.org/3/library/functional.html">functionala</a></li>
+<li>Permite programare imperativa, orientata pe obiect, <a href="https://docs.python.org/3/library/functional.html">functionala</a>, <a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Metaprogramming.html">metaprogramare</a></li>
 <li>Exista o paleta larga de biblioteci deja implementate pentru Python, usurand considerabil dezvoltarea de prototipuri sau chiar de aplicatii comerciale larg raspandite.
 <img src="https://imgs.xkcd.com/comics/python.png" alt="Python flying"> (Sursa: <a href="https://xkcd.com/353/">https://xkcd.com/353/</a>)</li>
 <li><a href="https://pypi.python.org/pypi">Peste 400000 de pachete dezvoltate</a></li>
@@ -14638,7 +14643,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><a href="https://www.sayonetech.com/blog/can-your-enterprise-choose-python-software-development/">Can Your Enterprise choose Python for Software Development?</a></li>
 <li><a href="https://www.fullstackpython.com/enterprise-python.html">Full Stack Python</a></li>
 <li><a href="https://www.quora.com/Which-Internet-companies-use-Python">Which Internet companies use Python</a></li>
-<li><a href="https://www.quora.com/Who-uses-Python">Who uses Python</a></li>
+<li><a href="https://www.quora.com/Who-uses-Python">Who uses Python?</a></li>
 <li><a href="https://julien.danjou.info/is-python-a-good-choice-for-entreprise-projects/">Is Python a Good Choice for Entreprise Projects?</a></li>
 </ul>
 </li>
@@ -14676,7 +14681,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Codul poate fi scris intr-un fisier text cu extensia py. Lansarea codului se face cu comanda <code>python nume_script.py</code></li>
 <li>Se poate folosi interpretorul python sau ipython, in care modul de lucru este REPL: read-evaluate-print-loop. REPL permite o prototipizare rapida si scrierea codului in mod incremental. Interpretorul ipython este o varianta imbunatatita a interpretoruui python. 
 <img src="./images/ipython_screenshot.png" alt="ipython screenshot">
-Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in resursa bibliografica [1], capitolul 1: debug, magic commands, lucru cu interpretorul de comenzi etc. </li>
+Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in resursa bibliografica [5], capitolul 1: debug, magic commands, lucru cu interpretorul de comenzi etc. </li>
 <li>Jupyter notebook - codul este scris in browser, cu suport pentru completare automata de cod. Fisierele rezultate sunt cu extensia ipynb.
 O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>. Resurse de lucru cu Jupyter notebooks <a href="https://towardsdatascience.com/jupyter-best-practices-that-will-save-you-a-lot-of-headaches-67e1df45e24d">aici</a></li>
 <li>Folosind diverse framework-uri (de ex Flask), codul Python poate fi folosit pentru crearea de pagini Web, REST endpoints - sau mai simplu, functiile definite in Jupyter notebook pot fi expuse ca servicii web REST etc.</li>
@@ -14748,8 +14753,9 @@ O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>.
 <div class="highlight"><pre><span></span><span class="nb">print</span> <span class="s2">&quot;Hello world!&quot;</span>
 </pre></div>
 <ul>
-<li>se observa lipsa parantezelor. In ambele cazuri delimitarea sirurilor de caractere se poate face cu apostroafe sau ghilimele.</li>
+<li>se observa lipsa parantezelor. </li>
 </ul>
+<p>In ambele cazuri delimitarea sirurilor de caractere se poate face cu apostroafe sau ghilimele.</p>
 <p>Variabilele nu se declara in prealabil impreuna cu tipul lor - Python este un limbaj slab tipizat. Natura unei variabile se deduce din valoarea care ii este asociata:</p>
 
 </div>
