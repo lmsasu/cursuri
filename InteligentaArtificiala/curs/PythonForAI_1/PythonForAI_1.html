@@ -7554,13 +7554,13 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>Limbaj open source, gratuit</li>
-<li>In februarie 2024: primul limbaj ca popularitate in <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
+<li>In septembrie 2024: primul limbaj ca popularitate in <a href="thttps://www.tiobe.com/tiobe-index/">TIOBE Index</a>, devansand C, C++, Java</li>
 <li>In aceeasi luna, indexul <a href="http://pypl.github.io/PYPL.html">PYPL</a> raporteaza Python pe locul al intai</li>
 </ul>
 <p><img alt="PYPL_all" src="./images/pypl_all.png"/> 
-(Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, februarie 2024)</p>
+(Sursa: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>, septembrie 2024)</p>
 <ul>
-<li>Versiunea stabila actuala de Python este 3.12.2.; Python 2.x se considera depasit si e trecut pe linie moarta</li>
+<li>Versiunea stabila actuala de Python este 3.12.6.; Python 2.x se considera depasit si e trecut pe linie moarta</li>
 <li>Se poate instala manual sau folosind o distributie de tipul <a href="https://conda.io/docs/user-guide/install/download.html">Anaconda</a><ul>
 <li>A se vedea despre distributiile Anaconda, Miniconda, Anaconda Enterprise</li>
 <li>Exista <a href="https://wiki.python.org/moin/PythonDistributions">o lista consistenta de distributii</a> de Python</li>
@@ -7572,11 +7572,11 @@ a.anchor-link {
 </ul>
 <p><img alt="Python flying" src="https://imgs.xkcd.com/comics/python.png"/> (Sursa: <a href="https://xkcd.com/353/">https://xkcd.com/353/</a>)</p>
 <ul>
-<li><a href="https://pypi.python.org/pypi">Peste 400000 de pachete dezvoltate</a></li>
+<li><a href="https://pypi.python.org/pypi">Peste 500000 de pachete dezvoltate</a></li>
 <li>Python este in adoptare crescanda pentru proiecte comerciale:<ul>
 <li><a href="https://www.sayonetech.com/blog/can-your-enterprise-choose-python-software-development/">Can Your Enterprise choose Python for Software Development?</a></li>
 <li><a href="https://www.fullstackpython.com/enterprise-python.html">Full Stack Python</a></li>
-<li><a href="https://www.quora.com/Which-Internet-companies-use-Python">Which Internet companies use Python</a></li>
+<li><a href="https://www.quora.com/Which-Internet-companies-use-Python">Which Internet companies use Python?</a></li>
 <li><a href="https://www.quora.com/Who-uses-Python">Who uses Python?</a></li>
 <li><a href="https://julien.danjou.info/is-python-a-good-choice-for-entreprise-projects/">Is Python a Good Choice for Entreprise Projects?</a></li>
 </ul>
@@ -7592,12 +7592,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="De-ce-Python?">De ce Python?<a class="anchor-link" href="#De-ce-Python?">¶</a></h2><p>Iata cateva motive solide pentru a utiliza Python, conform <a href="https://lwn.net/Articles/724255/">The unexpected effectiveness of Python in science</a></p>
+<h2 id="De-ce-Python?">De ce Python?<a class="anchor-link" href="#De-ce-Python?">¶</a></h2><p>Iata cateva motive solide pentru a utiliza Python, conform <a href="https://lwn.net/Articles/724255/">The unexpected effectiveness of Python in science</a>:</p>
 <ol>
 <li>Limbajul vine "cu toate bateriile incluse": multitudinea de biblioteci il face perfect pentru o gama larga de proiecte. Cercetatorii care il folosesc activeaza in astronomie, fizica, bioinformatica, chimie, stiinte cognitive etc. - si pentru toate aceste domenii exista biblioteci care simplifica mult dezvoltarea de prototipuri. Prin comparatie, limbaje traditionale precum C/C++/Java/Python vin cu mai putin suport disponibil, iar uneori includerea unui pachet/biblioteci poate fi o experienta consumatoare de timp.</li>
 <li>Capacitatea de interoperare cu alte limbaje este iarasi un plus. Exista punti de comunicare (bridges) care permit apelul de cod Python din alte limbaje sau invers. Desigur, aceasta facilitate se regaseste si in alte limbaje.</li>
-<li>Natura dinamica a limbajului poate fi inteligent speculata: o functie poate sa preia o multitudine de parametri (lista, tuplu, dictionar) si cateva linii de cod functioneaza la fel de bine peste toate acestea.</li>
-<li>Python incurajeaza un stil de lucru experimental, via REPL: poate e nevoie de cateva incercari pentru a ajunge la instructiunile potrivite pentru o anumita functionalitate. Incercarea unei alte instructiuni nu necesita recompilarea sau rerularea codului anterior, ci vine in completare - pana cand ajungi la ce doresti sa obtii.</li>
+<li>Natura dinamica a limbajului poate fi inteligent speculata: o functie poate sa preia o colectie de valori organizata in diverse moduri si cateva linii de cod functioneaza la fel de bine peste toate acestea.</li>
+<li>Python incurajeaza un stil de lucru experimental, via Read, Evaluate, Print, and Loop (REPL): poate e nevoie de cateva incercari pentru a ajunge la instructiunile potrivite pentru o anumita functionalitate. Incercarea unei alte instructiuni nu necesita recompilarea sau rerularea codului anterior, ci vine in completare - pana cand ajungi la ce doresti sa obtii.</li>
 </ol>
 </div>
 </div>
@@ -7611,16 +7611,16 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Moduri-de-utilizare">Moduri de utilizare<a class="anchor-link" href="#Moduri-de-utilizare">¶</a></h2><ol>
 <li>Codul poate fi scris intr-un fisier text cu extensia py. Lansarea codului se face cu comanda <code>python nume_script.py</code></li>
-<li>Se poate folosi interpretorul python sau ipython, in care modul de lucru este REPL: read-evaluate-print-loop. REPL permite o prototipizare rapida si scrierea codului in mod incremental. Interpretorul ipython este o varianta imbunatatita a interpretorului python.</li>
+<li>Se poate folosi interpretorul python sau ipython, in care modul de lucru este REPL. REPL permite o prototipizare rapida si evolutia codului in mod incremental. Interpretorul ipython este o varianta imbunatatita a interpretorului python.</li>
 </ol>
-<p><img alt="ipython screenshot" src="./images/ipython_screenshot.png"/>
+<p><img alt="ipython screenshot" src="./images/ipython_screenshot.png"/> 
 Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliografie: debug, magic commands, lucru cu interpretorul de comenzi etc.</p>
 <ol>
 <li>Jupyter notebook - codul este scris in browser, cu suport pentru completare automata de cod. Fisierele rezultate sunt cu extensia ipynb.</li>
 </ol>
 <p>O lista de notebooks se gaseste <a href="http://nbviewer.jupyter.org/">aici</a>. Resurse de lucru cu Jupyter notebooks <a href="https://towardsdatascience.com/jupyter-best-practices-that-will-save-you-a-lot-of-headaches-67e1df45e24d">aici</a></p>
 <ol>
-<li>Folosind diverse framework-uri (de ex Flask), codul Python poate fi folosit pentru crearea de pagini Web, REST endpoints - sau mai simplu, functiile definite in Jupyter notebook pot fi expuse ca servicii web REST etc.</li>
+<li>Folosind diverse framework-uri (<em>i.e.</em> Flask), codul Python poate fi folosit pentru crearea de pagini Web, REST endpoints - sau mai simplu, functiile definite in Jupyter notebook pot fi expuse ca servicii web REST etc.</li>
 </ol>
 </div>
 </div>
@@ -7641,7 +7641,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello world!"</span><span class="p">)</span>
@@ -7674,9 +7674,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <p>Pentru Python versiunea 2, afisarea se face folosind <em>instructiunea</em> print:</p>
 <div class="highlight"><pre><span></span><span class="nb">print</span> <span class="s2">"Hello world!"</span>
 </pre></div>
-<ul>
-<li>se observa lipsa parantezelor.</li>
-</ul>
+<p>Se observa lipsa parantezelor.</p>
 <p>In ambele cazuri delimitarea sirurilor de caractere se poate face cu apostroafe sau ghilimele.</p>
 <p>Variabilele nu se declara in prealabil impreuna cu tipul lor - Python este un limbaj slab tipizat. Natura unei variabile se deduce din valoarea care ii este asociata:</p>
 </div>
@@ -7687,7 +7685,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># x e variabila de tip intreg</span>
@@ -7726,7 +7724,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># functia type</span>
@@ -7779,7 +7777,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">height</span> <span class="o">=</span> <span class="mf">1.79</span>
@@ -7832,7 +7830,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
@@ -7876,7 +7874,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">big_number</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="mi">5</span><span class="o">*</span><span class="mi">6</span><span class="o">*</span><span class="mi">7</span><span class="o">*</span><span class="mi">8</span><span class="o">*</span><span class="mi">9</span><span class="o">*</span><span class="mi">10</span><span class="o">*</span><span class="mi">11</span><span class="o">*</span><span class="mi">12</span><span class="o">*</span><span class="mi">13</span><span class="o">*</span><span class="mi">14</span><span class="o">*</span><span class="mi">15</span><span class="o">*</span><span class="mi">16</span><span class="o">*</span><span class="mi">17</span><span class="o">*</span><span class="mi">18</span><span class="o">*</span><span class="mi">19</span><span class="o">*</span><span class="mi">20</span><span class="o">*</span><span class="mi">21</span><span class="o">*</span><span class="mi">22</span><span class="o">*</span><span class="mi">23</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">25</span><span class="o">*</span><span class="mi">26</span><span class="o">*</span><span class="mi">27</span><span class="o">*</span><span class="mi">28</span><span class="o">*</span><span class="mi">29</span><span class="o">*</span><span class="mi">30</span><span class="o">*</span><span class="mi">31</span><span class="o">*</span><span class="mi">32</span><span class="o">*</span><span class="mi">33</span><span class="o">*</span><span class="mi">34</span><span class="o">*</span><span class="mi">35</span><span class="o">*</span><span class="mi">36</span><span class="o">*</span><span class="mi">37</span><span class="o">*</span><span class="mi">38</span><span class="o">*</span><span class="mi">39</span><span class="o">*</span><span class="mi">40</span><span class="o">*</span><span class="mi">41</span><span class="o">*</span><span class="mi">42</span><span class="o">*</span><span class="mi">43</span><span class="o">*</span><span class="mi">44</span><span class="o">*</span><span class="mi">45</span><span class="o">*</span><span class="mi">46</span><span class="o">*</span><span class="mi">47</span><span class="o">*</span><span class="mi">48</span><span class="o">*</span><span class="mi">49</span><span class="o">*</span><span class="mi">50</span><span class="o">*</span><span class="mi">51</span><span class="o">*</span><span class="mi">52</span><span class="o">*</span><span class="mi">53</span><span class="o">*</span><span class="mi">54</span><span class="o">*</span><span class="mi">55</span><span class="o">*</span><span class="mi">56</span><span class="o">*</span><span class="mi">57</span><span class="o">*</span><span class="mi">58</span><span class="o">*</span><span class="mi">59</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">61</span><span class="o">*</span><span class="mi">62</span><span class="o">*</span><span class="mi">63</span><span class="o">*</span><span class="mi">64</span><span class="o">*</span><span class="mi">65</span><span class="o">*</span><span class="mi">66</span><span class="o">*</span><span class="mi">67</span><span class="o">*</span><span class="mi">68</span><span class="o">*</span><span class="mi">69</span><span class="o">*</span><span class="mi">70</span><span class="o">*</span><span class="mi">71</span><span class="o">*</span><span class="mi">72</span><span class="o">*</span><span class="mi">73</span><span class="o">*</span><span class="mi">74</span><span class="o">*</span><span class="mi">75</span><span class="o">*</span><span class="mi">76</span><span class="o">*</span><span class="mi">77</span><span class="o">*</span><span class="mi">78</span><span class="o">*</span><span class="mi">79</span><span class="o">*</span><span class="mi">80</span><span class="o">*</span><span class="mi">81</span><span class="o">*</span><span class="mi">82</span><span class="o">*</span><span class="mi">83</span><span class="o">*</span><span class="mi">84</span><span class="o">*</span><span class="mi">85</span><span class="o">*</span><span class="mi">86</span><span class="o">*</span><span class="mi">87</span><span class="o">*</span><span class="mi">88</span><span class="o">*</span><span class="mi">89</span><span class="o">*</span><span class="mi">90</span><span class="o">*</span><span class="mi">91</span><span class="o">*</span><span class="mi">92</span><span class="o">*</span><span class="mi">93</span><span class="o">*</span><span class="mi">94</span><span class="o">*</span><span class="mi">95</span><span class="o">*</span><span class="mi">96</span><span class="o">*</span><span class="mi">97</span><span class="o">*</span><span class="mi">98</span><span class="o">*</span><span class="mi">99</span><span class="o">*</span><span class="mi">100</span>
@@ -7915,7 +7913,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">5.0</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
@@ -7968,7 +7966,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
@@ -8014,7 +8012,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">3.997</span>
@@ -8045,7 +8043,7 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Alte exemple: https://www.tutorialspoint.com/python/python_numbers.htm</span>
@@ -8081,14 +8079,14 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'adresa </span><span class="se">\\</span><span class="s1">michel\protect\....'</span> <span class="c1"># remarcam prefixul r</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'adresa </span><span class="se">\\</span><span class="s1">server\share\....'</span> <span class="c1"># remarcam prefixul r</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># the hard way...</span>
-<span class="n">a</span> <span class="o">=</span> <span class="s1">'adresa </span><span class="se">\\\\</span><span class="s1">michel</span><span class="se">\\</span><span class="s1">protect</span><span class="se">\\</span><span class="s1">....'</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="s1">'adresa </span><span class="se">\\\\</span><span class="s1">server</span><span class="se">\\</span><span class="s1">share</span><span class="se">\\</span><span class="s1">....'</span> 
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 
 <span class="c1"># caractere Unicode</span>
@@ -8106,8 +8104,8 @@ Mai multe detalii pentru lucrul cu interpretorul ipython se gasesc in bibliograf
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>adresa \\michel\protect\....
-adresa \\michel\protect\....
+<pre>adresa \\server\share\....
+adresa \\server\share\....
 ĂÎÂȘȚ aăîâșț
 </pre>
 </div>
@@ -8130,7 +8128,7 @@ adresa \\michel\protect\....
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">versuri</span> <span class="o">=</span> <span class="s1">'''If you can keep your head when all about you   </span>
@@ -8201,7 +8199,7 @@ Or watch the things you gave your life to, broken,
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sir</span> <span class="o">=</span> <span class="s2">"Ana "</span> <span class="o">+</span> <span class="s2">"are "</span> <span class="o">+</span> <span class="s2">"mere"</span>
@@ -8229,7 +8227,7 @@ Or watch the things you gave your life to, broken,
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Lungimea sirului: '</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sir</span><span class="p">))</span>
@@ -8264,7 +8262,7 @@ Penultimul element din sir, in stil Python:  r
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Conversia unei variabile de tip non-string in string:</span>
@@ -8294,7 +8292,7 @@ Penultimul element din sir, in stil Python:  r
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># metode si operatii posibile pe obiect string:</span>
@@ -8328,7 +8326,7 @@ Ion are mere
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">multi_ana</span> <span class="o">=</span> <span class="s1">'Ana'</span> <span class="o">*</span> <span class="mi">10</span>
@@ -8356,7 +8354,7 @@ Ion are mere
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cuvantul_pere_este_in_sir</span> <span class="o">=</span> <span class="s1">'pere'</span> <span class="ow">in</span> <span class="n">sir</span>
@@ -8387,7 +8385,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">tokens</span> <span class="o">=</span> <span class="n">sir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
@@ -8430,7 +8428,7 @@ Ana,Vasile,Dana,Ion
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
@@ -8482,7 +8480,7 @@ Ana,Vasile,Dana,Ion
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
@@ -8521,7 +8519,7 @@ Ana,Vasile,Dana,Ion
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -8569,7 +8567,7 @@ False ca int: 0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
@@ -8577,7 +8575,8 @@ False ca int: 0
 <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">)</span>
 <span class="c1"># nu exista xor, dar...</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">a_xor_b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_xor_b</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8626,7 +8625,7 @@ True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
@@ -8669,7 +8668,7 @@ Tipul listei este &lt;class 'list'&gt;
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
@@ -8710,7 +8709,7 @@ Penultimul element este: 20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">5</span> <span class="c1"># efect similar demonstrat anterior pe string 'Ana'</span>
@@ -8749,7 +8748,7 @@ Penultimul element este: 20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
@@ -8783,7 +8782,7 @@ Penultimul element este: 20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
@@ -8835,7 +8834,7 @@ Penultimul element este: 20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># aliasing</span>
@@ -8871,7 +8870,7 @@ Dupa modificare via a: b= [-1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># copiere de lista</span>
@@ -8882,7 +8881,7 @@ Dupa modificare via a: b= [-1, 2, 3]
 <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="c1"># a si b refera zone de memorie diferite</span>
+<span class="c1"># Concluzia: a si b refera zone de memorie diferite</span>
 </pre></div>
 </div>
 </div>
@@ -8920,7 +8919,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># copiere de lista cu metoda copy</span>
@@ -8931,7 +8930,7 @@ Dupa modificare: b= [1, 2, 3]
 <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: a='</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Dupa modificare: b='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="c1"># a si b refera zone de memorie diferite</span>
+<span class="c1"># Concluzia: a si b refera zone de memorie diferite</span>
 </pre></div>
 </div>
 </div>
@@ -8969,7 +8968,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
@@ -9010,7 +9009,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
@@ -9050,7 +9049,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span>
@@ -9095,7 +9094,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sortare crescatoare</span>
@@ -9124,7 +9123,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sortare descrescatoare</span>
@@ -9152,10 +9151,10 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sortare cu cheie specificata</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sortare cu criteriu specificat</span>
 <span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ccc'</span><span class="p">,</span> <span class="s1">'aaaa'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">,</span> <span class="s1">'bb'</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">siruri</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">))</span>
 </pre></div>
@@ -9192,7 +9191,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">siruri</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ccc'</span><span class="p">,</span> <span class="s1">'aaaa'</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">,</span> <span class="s1">'bb'</span><span class="p">]</span>
@@ -9232,7 +9231,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
@@ -9272,7 +9271,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'are'</span><span class="p">,</span> <span class="s1">'mere'</span><span class="p">]</span>
@@ -9322,7 +9321,7 @@ Dupa modificare: b= [1, 2, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
@@ -9383,7 +9382,7 @@ Lista a fost golita: []
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
@@ -9424,7 +9423,7 @@ Toate sunt True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Toate sunt True:'</span><span class="p">,</span><span class="nb">all</span><span class="p">([]))</span>
@@ -9486,7 +9485,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">tuplu1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'informatica'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">'dimineata'</span><span class="p">)</span>
@@ -9515,7 +9514,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tuplu1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -9542,7 +9541,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tuplu1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -9569,7 +9568,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tuplu1</span><span class="p">))</span>
@@ -9596,7 +9595,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">tuplu_gol</span> <span class="o">=</span> <span class="p">()</span>
@@ -9624,7 +9623,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">la_tuplul_cu_doar_o_valoare_trebuie_adaugata_virgula_la_sfarsit</span> <span class="o">=</span> <span class="p">(</span><span class="mi">42</span><span class="p">,)</span>
@@ -9663,7 +9662,7 @@ Macar unul e True: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tuplu1</span><span class="p">)</span>
@@ -9697,7 +9696,7 @@ dimineata
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Tuplele se pot concatena</span>
@@ -9712,7 +9711,7 @@ dimineata
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>('informatica', 3, 'dimineata', 'chimie', 2, 'seara')</pre>
 </div>
@@ -9724,7 +9723,7 @@ dimineata
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convertirea unei liste in tuplu:</span>
@@ -9778,7 +9777,7 @@ dimineata
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geografie</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># dictionar gol</span>
@@ -9832,7 +9831,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Chei:'</span><span class="p">,</span> <span class="n">geografie</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
@@ -9872,7 +9871,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
@@ -9912,7 +9911,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">geografie</span><span class="p">[</span><span class="s1">'Grecia'</span><span class="p">]</span>
@@ -9951,7 +9950,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Grecia'</span> <span class="ow">in</span> <span class="n">geografie</span><span class="p">)</span>
@@ -9989,7 +9988,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># geografie.clear()</span>
@@ -10014,7 +10013,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">geografie</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
@@ -10054,7 +10053,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geografie_asia</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'China'</span><span class="p">:</span><span class="s1">'Beijing'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">:</span><span class="s1">'New Delhi'</span><span class="p">}</span>
@@ -10094,7 +10093,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geografie_copie</span> <span class="o">=</span> <span class="n">geografie</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -10165,7 +10164,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
@@ -10192,7 +10191,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
@@ -10219,7 +10218,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
@@ -10257,7 +10256,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">]</span>
@@ -10299,7 +10298,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'m'</span><span class="p">,</span> <span class="s1">'n'</span><span class="p">,</span> <span class="s1">'p'</span><span class="p">]</span>
@@ -10375,7 +10374,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> \
@@ -10415,7 +10414,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista_lunga</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
@@ -10441,7 +10440,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'1'</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'2'</span><span class="p">)</span>
@@ -10471,7 +10470,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Un bloc de instructiuni va folosi aceeasi indentare. Se poate folosi orice pentru indentare (tab, sau acelasi numar de spatii), dar stilul de indentare trebuie sa fie unitar. Un astfel de bloc de instructiuni se termina cu prima linie care nu e indentata in acelasi stil ca si blocul.</p>
+<p>Un bloc de instructiuni va folosi aceeasi indentare. Se poate folosi orice pentru indentare (tab, sau mereu un acelasi numar de spatii), dar stilul de indentare trebuie sa fie unitar. Un astfel de bloc de instructiuni se termina cu prima linie care nu e indentata in acelasi stil ca si blocul.</p>
 </div>
 </div>
 </div>
@@ -10480,7 +10479,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
@@ -10531,7 +10530,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="sd">"""Comentariu</span>
@@ -10546,7 +10545,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'Comentariu\nfoarte lung'</pre>
 </div>
@@ -10569,7 +10568,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Atribuire multipla cu o valoare</span>
@@ -10584,7 +10583,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Atribuire multipla cu mai multe valori simultan</span>
@@ -10624,7 +10623,7 @@ Valori: dict_values(['Bucuresti', 'Belgrad', 'Athens'])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Inainte de interschimbare: '</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
@@ -10682,7 +10681,7 @@ Dupa interschimbare:  3 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span>
@@ -10738,7 +10737,7 @@ Dupa interschimbare:  3 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span>
@@ -10792,7 +10791,7 @@ Dupa interschimbare:  3 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">CNP</span> <span class="o">=</span> <span class="s1">'5678901234567'</span>
@@ -10843,7 +10842,7 @@ Dupa interschimbare:  3 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
@@ -10873,7 +10872,7 @@ i= 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Exemplu: calculul factorialului unui numar</span>
@@ -10905,7 +10904,7 @@ i= 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%timeit</span>
@@ -10923,7 +10922,7 @@ i= 2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">lista_nume</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Ana'</span><span class="p">,</span> <span class="s1">'Dan'</span><span class="p">,</span> <span class="s1">'Rares'</span><span class="p">,</span> <span class="s1">'Dana'</span><span class="p">]</span>
@@ -10955,7 +10954,7 @@ Dana
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geografie</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Romania'</span><span class="p">:</span> <span class="s1">'Bucuresti'</span><span class="p">,</span> <span class="s1">'Serbia'</span><span class="p">:</span> <span class="s1">'Belgrad'</span><span class="p">,</span> <span class="s1">'Grecia'</span><span class="p">:</span><span class="s1">'Atena'</span><span class="p">}</span>
@@ -10986,7 +10985,7 @@ Atena
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># iterare cu doua elemente, peste colectie de perechi</span>
@@ -11017,7 +11016,7 @@ Capitala pentru Grecia este Atena
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lista_nume</span><span class="p">):</span>
@@ -11048,7 +11047,7 @@ Capitala pentru Grecia este Atena
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># enumerare peste doua colectii 'impreunate'</span>
@@ -11092,7 +11091,7 @@ Dana are 23 ani
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
@@ -11127,7 +11126,7 @@ Dana are 23 ani
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
@@ -11172,7 +11171,7 @@ Dana are 23 ani
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
@@ -11238,7 +11237,7 @@ Dana are 23 ani
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
@@ -11278,7 +11277,7 @@ Dana are 23 ani
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Se poate ca o instructiune <code>while</code> sa se termine cu <code>else</code>, al carei bloc se executa cand expresia de test devine falsa, dar numai daca nu s-a ajuns la un <code>break</code>.</p>
+<p>Se poate ca o instructiune <code>while</code> sa se termine cu <code>else</code>, al carei bloc se executa cand expresia de test devine falsa, dar numai daca nu s-a executat un <code>break</code>.</p>
 </div>
 </div>
 </div>
