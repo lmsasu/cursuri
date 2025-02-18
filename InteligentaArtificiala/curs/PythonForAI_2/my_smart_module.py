@@ -1,10 +1,10 @@
 from typing import List, Union
 
 def my_sum(lista: List[Union[int, float]]) -> Union[int, float]:
-    suma = 0
+    s = 0
     for item in lista:
-        suma += item
-    return suma
+        s += item
+    return s
 	
 if __name__ == '__main__':
 	print('A small example on calling my_sum')
