@@ -1,6 +1,4 @@
-from typing import List, Union
-
-def my_sum(lista: List[Union[int, float]]) -> Union[int, float]:
+def my_sum(lista: list[int|float]) -> int|float:
     s = 0
     for item in lista:
         s += item
