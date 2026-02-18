@@ -1,1 +1,0 @@
-from .mySmartModule import my_sum
